@@ -16,29 +16,30 @@ const Navbar = () => {
   const inactiveLink =
     "h-[2px] w-full transform scale-x-0 rounded-lg bg-primary transition-all duration-300 ease-in-out group-hover:scale-x-100";
 
-  const toggleMobileNavbar = () => {};
+  const toggleMobileNavbar = () => {
+    setMobileNavOpen(!isMobileNavOpen);
+    console.log(isMobileNavOpen);
+  };
 
   return (
     <nav className="bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link to="/" className="flex items-center">
-          <img
+          {/* <img
             src="https://flowbite.com/docs/images/logo.svg"
             className="h-8 mr-3"
             alt="Three M Tool & Machine Logo"
-          />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+          /> */}
+          <span className="self-center text-2xl font-semibold whitespace-nowrap">
             Three M
           </span>
         </Link>
         <div className="flex md:order-2 gap-2">
           <Button type="link" text="Contact Us" to="/contact" />
           <button
-            data-collapse-toggle="navbar-sticky"
             type="button"
-            className="inline-flex items-center p-2.5 w-10 h-10 justify-center text-gray-500 rounded-lg lg:hidden hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-200"
-            aria-controls="navbar-sticky"
-            aria-expanded="false"
+            onClick={toggleMobileNavbar}
+            className="inline-flex items-center p-2.5 justify-center text-gray-500 rounded-lg lg:hidden hover:bg-gray-200 focus:outline-none border-2 border-gray-200"
           >
             <span className="sr-only">Open main menu</span>
             <svg
@@ -50,9 +51,9 @@ const Navbar = () => {
             >
               <path
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M1 1h15M1 7h15M1 13h15"
               />
             </svg>

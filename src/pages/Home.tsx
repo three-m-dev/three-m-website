@@ -3,8 +3,10 @@ import { Footer, Navbar } from "../components";
 const Home = () => {
   return (
     <>
-      <Navbar />
-      {/* <Footer /> */}
+      <div className="h-screen">
+        <Navbar />
+      </div>
+      <Footer />
     </>
   );
 };
