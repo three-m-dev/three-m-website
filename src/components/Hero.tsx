@@ -15,7 +15,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative h-[88vh] flex items-center justify-center">
+    <div className="relative h-[75vh] flex items-center justify-center">
       <video
         ref={videoRef}
         autoPlay

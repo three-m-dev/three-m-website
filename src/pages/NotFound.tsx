@@ -5,7 +5,7 @@ const NotFound = () => {
     <>
       <div className="h-screen">
         <Navbar />
-        <div className="h-full flex flex-col gap-4 items-center justify-center">
+        <div className="h-full flex flex-col gap-4 items-center justify-center pb-40">
           <h1 className="text-3xl px-8 text-center">
             Uh oh.. Looks like that page doesn't exist
           </h1>

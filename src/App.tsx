@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Home, NotFound } from "./pages";
-import ScrollToTop from "./utils/scrollToTop";
+import ScrollToTop from "./utils/ScrollToTop";
 
 const App = () => {
   return (

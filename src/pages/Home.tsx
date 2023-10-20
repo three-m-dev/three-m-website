@@ -1,4 +1,11 @@
-import { Footer, Hero, Navbar } from "../components";
+import {
+  BulletinPreview,
+  ContentBlock,
+  Footer,
+  Hero,
+  Navbar,
+  Testimonials,
+} from "../components";
 
 const Home = () => {
   return (
@@ -7,6 +14,9 @@ const Home = () => {
         <Navbar />
         <Hero />
       </div>
+      <ContentBlock />
+      <Testimonials />
+      <BulletinPreview />
       <Footer />
     </>
   );
