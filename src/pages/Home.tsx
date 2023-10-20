@@ -1,5 +1,12 @@
+import { Footer, Navbar } from "../components";
+
 const Home = () => {
-  return <div className="text-red-500 font-5xl">Home</div>;
+  return (
+    <>
+      <Navbar />
+      {/* <Footer /> */}
+    </>
+  );
 };
 
 export default Home;
