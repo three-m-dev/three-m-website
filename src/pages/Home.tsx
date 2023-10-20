@@ -1,10 +1,11 @@
-import { Footer, Navbar } from "../components";
+import { Footer, Hero, Navbar } from "../components";
 
 const Home = () => {
   return (
     <>
       <div className="h-screen">
         <Navbar />
+        <Hero />
       </div>
       <Footer />
     </>

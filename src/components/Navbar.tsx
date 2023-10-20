@@ -35,7 +35,7 @@ const Navbar = () => {
           </span>
         </Link>
         <div className="flex md:order-2 gap-2">
-          <Button type="link" text="Contact Us" to="/contact" />
+          <Button type="link" text="Contact Us" to="/contact-us" />
           <button
             type="button"
             onClick={toggleMobileNavbar}
@@ -63,7 +63,7 @@ const Navbar = () => {
           className="items-center justify-between hidden w-full lg:flex md:w-auto md:order-1"
           id="navbar-sticky"
         >
-          <ul className="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row gap-12 md:mt-0 md:border-0 md:bg-white uppercase font-bold">
+          <ul className="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row gap-12 md:mt-0 md:border-0 md:bg-white uppercase">
             <li className="group py-2">
               <Link to="/">
                 Home
