@@ -4,6 +4,7 @@ import {
   Footer,
   Hero,
   Navbar,
+  Stats,
   Testimonials,
 } from "../components";
 
@@ -12,9 +13,10 @@ const Home = () => {
     <>
       <Navbar />
       <Hero />
+      <Stats />
       <ContentBlock />
-      <Testimonials />
-      <BulletinPreview />
+      {/* <Testimonials />
+      <BulletinPreview /> */}
       <Footer />
     </>
   );

@@ -1,17 +1,23 @@
 const ContentBlock = () => {
   return (
-    <section className="bg-primary text-white">
-      <div className="py-8 px-4 md:px-8 mx-auto max-w-screen-xl lg:py-16">
+    <section className="bg-primary text-white py-8 md:py-16">
+      <div className="px-4 mx-auto max-w-screen-xl">
         <div className="max-w-screen-lg sm:text-lg">
           <h2 className="mb-4 text-4xl tracking-wide uppercase">
             Powering innovation at <span className="font-bold">200,000+</span>{" "}
             companies worldwide
           </h2>
           <p className="mb-4 font-light">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam ex unde corrupti non atque sed modi pariatur consequatur excepturi, aliquam similique aperiam autem enim, accusantium, facilis voluptates voluptas odio! Suscipit.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam ex
+            unde corrupti non atque sed modi pariatur consequatur excepturi,
+            aliquam similique aperiam autem enim, accusantium, facilis
+            voluptates voluptas odio! Suscipit.
           </p>
           <p className="mb-4 font-medium">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis consectetur dignissimos facilis dicta! Quae laudantium sint rerum quasi veniam molestias sunt quis, nam odit totam in quia. Ratione, esse laboriosam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+            consectetur dignissimos facilis dicta! Quae laudantium sint rerum
+            quasi veniam molestias sunt quis, nam odit totam in quia. Ratione,
+            esse laboriosam.
           </p>
           <a
             href="#"

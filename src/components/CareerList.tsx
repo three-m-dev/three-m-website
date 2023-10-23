@@ -21,7 +21,7 @@ const CareerList = () => {
       <div className="max-w-screen-xl px-4 mx-auto">
         <div className="max-w-4xl mx-auto mb-8 text-center">
           <span className="inline-block py-1 px-2 mb-4 text-sm leading-5 text-primary bg-blue-200 uppercase rounded-md shadow-sm">
-            Open Positions
+            Career Openings
           </span>
           <h3 className="mb-4 text-3xl md:text-5xl leading-tight text-darkCoolGray-900 font-bold tracking-tighter">
             Join our team

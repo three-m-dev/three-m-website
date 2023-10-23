@@ -73,7 +73,7 @@ const BulletinList = () => {
             Articles & Updates
           </span>
           <h3 className="mb-4 text-3xl md:text-5xl leading-tight text-darkCoolGray-900 font-bold tracking-tighter">
-            Stay Informed with the Latest from Three M
+            Stay informed with the latest from Three M
           </h3>
           <p className="mb-10 text-lg md:text-xl text-coolGray-500 font-medium">
             With our integrated CRM, project management, collaboration and
@@ -131,7 +131,7 @@ const BulletinList = () => {
               </a>
               <div className="mb-4">
                 <a
-                  className="inline-block py-1 px-3 text-sm leading-5 text-primary hover:text-blue-600 uppercase bg-blue-200 hover:bg-gray-200 rounded-md shadow-sm"
+                  className="inline-block py-1 px-2 text-sm leading-5 text-primary hover:text-blue-600 bg-blue-200 hover:bg-gray-200 rounded-md shadow-sm"
                   href="#"
                 >
                   {post.type}
