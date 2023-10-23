@@ -1,8 +1,8 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const BulletinList = () => {
-  const [bulletinView, setBulletinView] = useState();
+  // const [bulletinView, setBulletinView] = useState();
 
   const bulletinPosts = [
     {

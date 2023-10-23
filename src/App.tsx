@@ -1,7 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { About, Bulletin, Careers, Home, NotFound } from "./pages";
-import ScrollToTop from "./utils/ScrollToTop";
-import CareerDetails from "./pages/CareerDetails";
+import {
+  About,
+  Bulletin,
+  CareerDetails,
+  Careers,
+  Home,
+  NotFound,
+} from "./pages";
+import ScrollToTop from "./utils/ScrollToTop.ts";
 
 const App = () => {
   return (
