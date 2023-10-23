@@ -9,8 +9,8 @@ const Navbar = () => {
   const homeMatch = useMatch("/");
   const aboutMatch = useMatch("/about");
   const servicesMatch = useMatch("/services");
-  const careersMatch = useMatch("/careers");
-  const bulletinMatch = useMatch("/bulletin");
+  const careersMatch = useMatch("/careers/*");
+  const bulletinMatch = useMatch("/bulletin/*");
 
   const activeLink =
     "h-[2px] w-full transform scale-x-100 rounded-lg bg-primary transition-all duration-300 ease-in-out]";

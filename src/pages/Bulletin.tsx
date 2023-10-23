@@ -1,9 +1,13 @@
-import React from "react";
+import { BulletinList, Footer, Navbar } from "../components";
 
-type Props = {};
-
-const Bulletin = (props: Props) => {
-  return <div>Bulletin</div>;
+const Bulletin = () => {
+  return (
+    <>
+      <Navbar />
+      <BulletinList />
+      <Footer />
+    </>
+  );
 };
 
 export default Bulletin;

@@ -1,3 +1,4 @@
+export { default as BulletinList } from "./BulletinList";
 export { default as BulletinPreview } from "./BulletinPreview";
 export { default as Button } from "./Button";
 export { default as CareerList } from "./CareerList";

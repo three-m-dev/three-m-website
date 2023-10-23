@@ -18,7 +18,7 @@ type Props = ButtonProps | LinkProps;
 
 const Button = (props: Props) => {
   const objectClass =
-    "py-2.5 px-4 border-2 border-primary uppercase text-primary font-bold rounded-md text-md hover:text-white hover:bg-primary transition-all duration-300";
+    "py-2 px-4 border-2 border-primary uppercase text-primary font-bold rounded-md text-md hover:text-white hover:bg-primary transition-all duration-300";
   switch (props.type) {
     case "button":
       return (

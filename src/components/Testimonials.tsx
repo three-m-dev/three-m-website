@@ -12,51 +12,13 @@ const Testimonials = () => {
     <section className="bg-gray-50 overflow-x-hidden">
       <div className="py-8 px-4 mx-auto max-w-screen-xl md:py-16">
         <div className="container mx-auto px-4">
-          <div className="pt-8 pb-16 flex flex-wrap justify-center items-center">
-            <button className="mr-3 lg:mr-0 order-last lg:order-first bg-white p-4 shadow-md text- hover:text-primary transition duration-200">
-              <svg
-                className="w-6 h-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M10 19l-7-7m0 0l7-7m-7 7h18"
-                ></path>
-              </svg>
-            </button>
-            <div className="text-center max-w-xl mx-auto">
-              <h1 className="text-4xl tracking-wide text-background uppercase">
-                Testimonials
-              </h1>
-              <div className="text-center mb-10">
-                <span className="inline-block w-1 h-1 rounded-full bg-primary ml-1"></span>
-                <span className="inline-block w-3 h-1 rounded-full bg-primary ml-1"></span>
-                <span className="inline-block w-40 h-1 rounded-full bg-primary"></span>
-                <span className="inline-block w-3 h-1 rounded-full bg-primary ml-1"></span>
-                <span className="inline-block w-1 h-1 rounded-full bg-primary ml-1"></span>
-              </div>
+          <div className="text-center max-w-xl mx-auto">
+            <h1 className="text-4xl tracking-wide text-background uppercase">
+              Testimonials
+            </h1>
+            <div className="text-center mb-10">
+              <span className="inline-block w- h-1 rounded-full bg-primary ml-1"></span>
             </div>
-            <button className="order-last bg-white p-4 rounded-full shadow-md text- hover:text-green-400 transition duration-200">
-              <svg
-                className="w-6 h-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M14 5l7 7m0 0l-7 7m7-7H3"
-                ></path>
-              </svg>
-            </button>
           </div>
           <div className="flex w-full relative">
             <div

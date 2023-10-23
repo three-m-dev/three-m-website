@@ -3,30 +3,30 @@ import { Link } from "react-router-dom";
 const CareerList = () => {
   const openPositions = [
     {
+      id: "1",
       title: "CNC Mill Machinist",
       location: "On-site",
       type: "Full-time",
-      link: "/",
     },
     {
+      id: "2",
       title: "CNC Lathe Machinist",
       location: "On-site",
       type: "Full-time",
-      link: "",
     },
   ];
 
   return (
-    <section className="py-24 md:pb-32 bg-white">
+    <section className="py8 md:py-16 bg-white">
       <div className="max-w-screen-xl px-4 mx-auto">
         <div className="max-w-4xl mx-auto mb-8 text-center">
-          <span className="inline-block py-px px-2 mb-4 text-xs leading-5 text-primary bg-blue-100 font-medium uppercase rounded-full shadow-sm">
-            We are hiring
+          <span className="inline-block py-1 px-2 mb-4 text-sm leading-5 text-primary bg-blue-200 uppercase rounded-md shadow-sm">
+            Open Positions
           </span>
-          <h3 className="mb-4 text-3xl md:text-4xl leading-tight font-bold tracking-tighter">
+          <h3 className="mb-4 text-3xl md:text-5xl leading-tight text-darkCoolGray-900 font-bold tracking-tighter">
             Join our team
           </h3>
-          <p className="text-lg md:text-xl text-coolGray-500 font-medium">
+          <p className="mb-10 text-lg md:text-xl text-coolGray-500 font-medium">
             Our philosophy is simple — hire a team of diverse, passionate people
             and foster a culture that empowers you to do you best work.
           </p>
@@ -144,8 +144,8 @@ const CareerList = () => {
             </div>
             <div className="w-full md:w-auto">
               <Link
-                className="py-2.5 px-4 border-2 border-primary uppercase text-white bg-primary font-bold rounded-md text-md hover:text-primary hover:bg-white transition-all duration-300"
-                to={position.link}
+                className="py-2 px-4 border-2 border-primary uppercase text-white bg-primary font-bold rounded-md text-md hover:text-primary hover:bg-white transition-all duration-300"
+                to={`/careers/` + position.id}
               >
                 Learn More
               </Link>

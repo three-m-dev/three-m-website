@@ -9,11 +9,7 @@ const BulletinPreview = () => {
             Updates
           </h1>
           <div className="text-center mb-10">
-            <span className="inline-block w-1 h-1 rounded-full bg-primary ml-1"></span>
-            <span className="inline-block w-3 h-1 rounded-full bg-primary ml-1"></span>
-            <span className="inline-block w-40 h-1 rounded-full bg-primary"></span>
-            <span className="inline-block w-3 h-1 rounded-full bg-primary ml-1"></span>
-            <span className="inline-block w-1 h-1 rounded-full bg-primary ml-1"></span>
+            <span className="inline-block w- h-1 rounded-full bg-primary ml-1"></span>
           </div>
         </div>
         <div className="grid gap-8 lg:grid-cols-2">

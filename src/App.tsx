@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Bulletin, Careers, Home, NotFound } from "./pages";
 import ScrollToTop from "./utils/ScrollToTop";
+import CareerDetails from "./pages/CareerDetails";
 
 const App = () => {
   return (
@@ -9,7 +10,10 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/" element={<Home />} />
+
         <Route path="/careers" element={<Careers />} />
+        <Route path="/careers/:careerId" element={<CareerDetails />} />
+
         <Route path="/bulletin" element={<Bulletin />} />
 
         <Route path="*" element={<NotFound />} />

@@ -1,5 +1,12 @@
+import { Footer, Navbar } from "../components";
+
 const CareerDetails = () => {
-  return <div>CareerDetails</div>;
+  return (
+    <>
+      <Navbar />
+      <Footer />
+    </>
+  );
 };
 
 export default CareerDetails;

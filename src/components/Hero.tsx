@@ -47,7 +47,7 @@ const Hero = () => {
         </h1>
         <Link
           to={slides[currentSlide].ctaLink}
-          className="py-2.5 px-4 border-2 border-white uppercase text-white font-bold rounded-md text-md hover:text-black hover:bg-white"
+          className="py-2 px-4 border-2 border-white uppercase text-white font-bold rounded-md text-md hover:text-black hover:bg-white"
         >
           {slides[currentSlide].ctaText}
         </Link>
