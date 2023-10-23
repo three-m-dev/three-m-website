@@ -75,11 +75,13 @@ const Navbar = () => {
             </span>
           </Link>
           <div className="flex md:order-2 gap-2">
-            <Button type="link" text="Contact Us" to="/contact-us" />
+            <div className="hidden lg:flex">
+              <Button type="link" text="Contact Us" to="/contact-us" />
+            </div>
             <button
               type="button"
               onClick={toggleMobileNavbar}
-              className="inline-flex items-center p-2.5 justify-center text-gray-500 rounded-lg lg:hidden hover:bg-gray-200 focus:outline-none border-2 border-gray-200"
+              className="inline-flex items-center p-2.5 justify-center text-primary rounded-lg lg:hidden hover:bg-primary hover:text-white transition-all duration-300 focus:outline-none border-2 border-primary"
             >
               <span className="sr-only">Open main menu</span>
               <svg

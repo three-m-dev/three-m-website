@@ -2,6 +2,7 @@ import {
   BulletinPreview,
   ContentBlock,
   Footer,
+  FrequentQuestions,
   Hero,
   Navbar,
   Stats,
@@ -17,6 +18,7 @@ const Home = () => {
       <ContentBlock />
       {/* <Testimonials />
       <BulletinPreview /> */}
+      <FrequentQuestions />
       <Footer />
     </>
   );
