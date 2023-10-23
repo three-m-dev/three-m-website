@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link, useMatch } from "react-router-dom";
 import Button from "./Button";
-import CopyToClipboard from "../utils/CopyToClipboard";
 
 const Navbar = () => {
   const [isMobileNavOpen, setMobileNavOpen] = useState(false);
