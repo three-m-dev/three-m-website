@@ -7,27 +7,23 @@ import {
   Home,
   NotFound,
 } from "./pages";
-import useScrollToTop from "./utils/ScrollToTop";
-
-const RouterContent = () => {
-  useScrollToTop();
-
-  return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/careers" element={<Careers />} />
-      <Route path="/careers/:careerId" element={<CareerDetails />} />
-      <Route path="/bulletin" element={<Bulletin />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
-  );
-};
+import ScrollToTop from "./utils/ScrollToTop";
 
 const App = () => {
   return (
     <Router>
-      <RouterContent />
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+
+        <Route path="/careers" element={<Careers />} />
+        <Route path="/careers/:careerId" element={<CareerDetails />} />
+
+        <Route path="/bulletin" element={<Bulletin />} />
+
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </Router>
   );
 };
