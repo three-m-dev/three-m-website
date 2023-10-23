@@ -10,10 +10,8 @@ import {
 const Home = () => {
   return (
     <>
-      <div className="h-screen">
-        <Navbar />
-        <Hero />
-      </div>
+      <Navbar />
+      <Hero />
       <ContentBlock />
       <Testimonials />
       <BulletinPreview />

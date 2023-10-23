@@ -9,7 +9,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="bg-gray-50">
+    <section className="bg-gray-50 overflow-x-hidden">
       <div className="py-8 px-4 mx-auto max-w-screen-xl md:py-16">
         <div className="container mx-auto px-4">
           <div className="pt-8 pb-16 flex flex-wrap justify-center items-center">
@@ -22,9 +22,9 @@ const Testimonials = () => {
                 stroke="currentColor"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M10 19l-7-7m0 0l7-7m-7 7h18"
                 ></path>
               </svg>
@@ -50,9 +50,9 @@ const Testimonials = () => {
                 stroke="currentColor"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M14 5l7 7m0 0l-7 7m7-7H3"
                 ></path>
               </svg>
