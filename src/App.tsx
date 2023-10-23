@@ -7,7 +7,7 @@ import {
   Home,
   NotFound,
 } from "./pages";
-import ScrollToTop from "./utils/ScrollToTop.ts";
+import ScrollToTop from "./utils/ScrollToTop";
 
 const App = () => {
   return (
