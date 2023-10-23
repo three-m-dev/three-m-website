@@ -1,12 +1,12 @@
 const Testimonials = () => {
-  const customerTestimonials = [
-    {
-      name: "John Smith",
-      company: "McDonald's",
-      quote:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum quas temporibus dolore nam, at fugit ad. Fugit reiciendis excepturi non ullam sunt. Consectetur iure reiciendis explicabo! Assumenda dolore corporis quis.",
-    },
-  ];
+  // const customerTestimonials = [
+  //   {
+  //     name: "John Smith",
+  //     company: "McDonald's",
+  //     quote:
+  //       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum quas temporibus dolore nam, at fugit ad. Fugit reiciendis excepturi non ullam sunt. Consectetur iure reiciendis explicabo! Assumenda dolore corporis quis.",
+  //   },
+  // ];
 
   return (
     <section className="bg-gray-50 overflow-x-hidden">
