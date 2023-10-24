@@ -1,7 +1,7 @@
 const ContentBlock = () => {
   return (
     <section className="bg-primary text-white py-8 md:py-16">
-      <div className="px-4 mx-auto max-w-screen-xl">
+      <div className="px-4 mx-auto max-w-screen-2xl">
         <div className="max-w-screen-lg sm:text-lg">
           <h2 className="mb-4 text-4xl tracking-wide uppercase">
             Powering innovation at <span className="font-bold">200,000+</span>{" "}
