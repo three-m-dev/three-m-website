@@ -75,15 +75,14 @@ const BulletinList = () => {
       <div className="max-w-screen-xl px-4 mx-auto">
         <div className="md:max-w-5xl mx-auto mb-8 md:mb-8 text-center">
           <span className="inline-block py-1 px-2 mb-4 text-sm leading-5 tracking-wider text-primary bg-blue-200 uppercase rounded-md shadow-sm">
-            Articles & Updates
+            News & Insights
           </span>
           <h3 className="mb-4 text-3xl md:text-5xl leading-tight text-darkgray-900 font-bold tracking-tighter">
-            Stay informed with the latest from Three M
+            The Latest Developments from Three M
           </h3>
           <p className="mb-10 text-lg md:text-xl text-gray-500 font-medium">
-            With our integrated CRM, project management, collaboration and
-            invoicing capabilities, you can manage your business in one secure
-            platform.
+            Stay ahead of the curve. Explore our latest projects, innovations,
+            and milestones, all in one place.
           </p>
           <div className="relative mx-auto md:w-80 flex justify-between">
             <input
@@ -93,8 +92,6 @@ const BulletinList = () => {
             />
           </div>
         </div>
-
-        <div></div>
 
         <ul className="flex flex-wrap gap-2 mb-8 text-center text-sm">
           <li>

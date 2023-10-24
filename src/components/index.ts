@@ -3,6 +3,7 @@ export { default as BulletinList } from "./BulletinList";
 export { default as BulletinPreview } from "./BulletinPreview";
 export { default as Button } from "./Button";
 export { default as CareerList } from "./CareerList";
+export { default as ContactForm } from "./ContactForm";
 export { default as ContentBlock } from "./ContentBlock";
 export { default as Footer } from "./Footer";
 export { default as FrequentQuestions } from "./FrequentQuestions";

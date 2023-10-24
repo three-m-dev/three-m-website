@@ -1,9 +1,13 @@
-import React from "react";
+import { ContactForm, Footer, Navbar } from "../components";
 
-type Props = {};
-
-const Contact = (props: Props) => {
-  return <div>Contact</div>;
+const Contact = () => {
+  return (
+    <>
+      <Navbar />
+      <ContactForm />
+      <Footer />
+    </>
+  );
 };
 
 export default Contact;

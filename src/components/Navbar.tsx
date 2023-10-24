@@ -75,27 +75,26 @@ const Navbar = () => {
           </Link>
           <div className="flex md:order-2 gap-2">
             <div className="hidden lg:flex">
-              <Button type="link" text="Contact Us" to="/contact-us" />
+              <Button type="link" text="Contact Us" to="/contact" />
             </div>
             <button
               type="button"
               onClick={toggleMobileNavbar}
-              className="inline-flex items-center p-2.5 justify-center text-primary rounded-lg lg:hidden hover:bg-primary hover:text-white transition-all duration-300 focus:outline-none border-2 border-primary"
+              className="inline-flex items-center p-2 justify-center text-primary rounded-lg lg:hidden hover:bg-primary hover:text-white transition-all duration-300 focus:outline-none border-2 border-primary"
             >
               <span className="sr-only">Open main menu</span>
               <svg
-                className="w-5 h-5"
-                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
-                viewBox="0 0 17 14"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6"
               >
                 <path
-                  stroke="currentColor"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M1 1h15M1 7h15M1 13h15"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
                 />
               </svg>
             </button>

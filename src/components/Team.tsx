@@ -15,14 +15,14 @@ const Team = () => {
       <div className="relative container px-4 mx-auto">
         <div className="mb-16 text-center">
           <span className="inline-block py-1 px-2 mb-4 text-sm leading-5 text-primary bg-blue-200 uppercase rounded-md shadow-sm">
-            Team Members
+            Our Experts
           </span>
           <h3 className="mb-4 text-3xl md:text-5xl leading-tight text-coolGray-900 font-bold tracking-tighter">
-            Our team is the best in the business.
+            Meet the Talented Team at Three M
           </h3>
           <p className="text-lg md:text-xl text-coolGray-500 font-medium">
-            Highly professional and capable of running your business across all
-            digital channels.
+            Dedication, expertise, and innovation drive our experts. Discover
+            the people who shape our vision and success.
           </p>
         </div>
         <div className="flex flex-wrap -mx-4">
