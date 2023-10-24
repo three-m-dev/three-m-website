@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <>
       <div className="bg-primary text-white z-60">
-        <div className="max-w-screen-2xl flex mx-auto justify-between py-2.5 px-4">
+        <div className="max-w-screen-xl flex mx-auto justify-between py-2.5 px-4">
           <a href="mailto:sales@three-m.com" className="flex gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +62,7 @@ const Navbar = () => {
         </div>
       </div>
       <nav className="bg-white sticky top-0 z-50 left-0 border-b border-gray-200">
-        <div className="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link to="/" className="flex items-center">
             {/* <img
             src="https://flowbite.com/docs/images/logo.svg"

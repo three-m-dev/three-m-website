@@ -2,14 +2,14 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-white">
-      <div className="mx-auto w-full max-w-screen-2xl">
+    <footer className="bg-gray-800 text-white">
+      <div className="mx-auto w-full max-w-screen-xl">
         <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
           <div>
-            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
+            <h2 className="mb-6 text-sm font-semibold text-white uppercase">
               Company
             </h2>
-            <ul className="text-gray-500">
+            <ul className="text-gray-100">
               <li className="mb-4">
                 <Link to="/about" className=" hover:underline">
                   About
@@ -33,10 +33,10 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
+            <h2 className="mb-6 text-sm font-semibold text-white uppercase">
               Help
             </h2>
-            <ul className="text-gray-500 font-medium">
+            <ul className="text-gray-200">
               <li className="mb-4">
                 <Link to="/customer-portal" className="hover:underline">
                   Customer Portal
@@ -50,10 +50,10 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
+            <h2 className="mb-6 text-sm font-semibold text-white uppercase">
               Legal
             </h2>
-            <ul className="text-gray-500 font-medium">
+            <ul className="text-gray-100">
               <li className="mb-4">
                 <Link to="/privacy-policy" className="hover:underline">
                   Privacy Policy
@@ -67,8 +67,8 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="px-4 py-6 bg-gray-100 md:flex md:items-center md:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center">
+        <div className="px-4 py-6 md:flex md:items-center md:justify-between">
+          <span className="text-sm text-gray-200 sm:text-center">
             © 2023{" "}
             <Link to="/" className="hover:underline">
               Three M Tool & Machine
@@ -77,7 +77,7 @@ const Footer = () => {
           </span>
           <div className="flex mt-4 space-x-5 sm:justify-center md:mt-0">
             <Link
-              className="text-gray-400 hover:text-gray-900"
+              className="text-gray-200 hover:text-white"
               to="https://www.facebook.com/threemtoolandmachineinc"
               target="blank"
             >
@@ -97,7 +97,7 @@ const Footer = () => {
               <span className="sr-only">Facebook</span>
             </Link>
             <Link
-              className="text-gray-400 hover:text-gray-900"
+              className="text-gray-200 hover:text-white"
               to="https://www.linkedin.com/company/three-m-tool-&-machine-inc"
               target="blank"
             >
@@ -116,7 +116,7 @@ const Footer = () => {
               <span className="sr-only">Linkedin</span>
             </Link>
             <Link
-              className="text-gray-400 hover:text-gray-900"
+              className="text-gray-200 hover:text-white"
               to="https://www.indeed.com/cmp/Three-M-Tool-&-Machine"
               target="blank"
             >

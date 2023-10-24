@@ -1,20 +1,10 @@
-import {
-  ContentBlock,
-  Footer,
-  FrequentQuestions,
-  Hero,
-  Navbar,
-  Stats,
-} from "../components";
+import { Footer, Hero, Navbar } from "../components";
 
 const Home = () => {
   return (
     <>
       <Navbar />
       <Hero />
-      {/* <Stats /> */}
-      {/* <ContentBlock /> */}
-      {/* <FrequentQuestions /> */}
       <Footer />
     </>
   );
