@@ -9,6 +9,9 @@ export default {
         // light: "#d9dcd6",
         // dark: "#16425b",
       },
+      height: {
+        140: "35rem",
+      },
     },
     fontFamily: {
       nunito: ["Nunito", "sans-serif"],

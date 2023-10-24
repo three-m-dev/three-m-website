@@ -9,7 +9,7 @@ const ContactForm = () => {
           <h3 className="mb-4 text-3xl md:text-5xl leading-tight text-darkgray-900 font-bold tracking-tighter">
             Contact Three M for Business Opportunities
           </h3>
-          <p className="mb-10 text-md md:text-xl text-gray-500 font-medium">
+          <p className="mb-10 text-lg md:text-xl text-gray-500 font-medium">
             Our dedicated team is here to assist. Connect with us for inquiries,
             support, or partnerships
           </p>

@@ -23,23 +23,16 @@ const CareerList = () => {
           <span className="inline-block py-1 px-2 mb-4 text-sm leading-5 text-primary bg-blue-200 uppercase rounded-md shadow-sm">
             Growth & Opportunities
           </span>
-          <h3 className="mb-4 text-3xl md:text-5xl leading-tight text-darkCoolGray-900 font-bold tracking-tighter">
+          <h3 className="mb-4 text-3xl md:text-5xl leading-tight text-gray-800 font-bold tracking-tighter">
             Join the Future at Three M
           </h3>
-          <p className="mb-10 text-lg md:text-xl text-coolGray-500 font-medium">
+          <p className="mb-10 text-lg md:text-xl text-gray-500 font-medium">
             Empower your career. Be a part of a team that values progress,
             collaboration, and excellence.
           </p>
         </div>
         <div className="mx-auto max-w-6xl">
           <div className="flex flex-wrap items-center justify-center mb-14 -mx-3">
-            <div className="w-full md:w-1/3 px-3 mb-3 md:mb-0">
-              <input
-                className="w-full h-full py-3 pl-12 pr-4 text-coolGray-500 leading-tight placeholder-coolGray-500 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50 border border-coolGray-200 rounded-lg shadow-xsm"
-                type="text"
-                placeholder="Search"
-              />
-            </div>
             <div className="w-full md:w-1/3 px-3 mb-3 md:mb-0">
               <div className="relative bg-white border border-coolGray-200 rounded-lg shadow-md">
                 <svg

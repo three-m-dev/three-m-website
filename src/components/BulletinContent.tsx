@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 type Props = {
@@ -10,6 +11,8 @@ type Props = {
 };
 
 const BulletinContent = (props: Props) => {
+  const [loading, setLoading] = useState(true);
+
   const copyLink = () => {};
 
   const parseContent = () => {};

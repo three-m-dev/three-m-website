@@ -13,8 +13,8 @@ const Home = () => {
       <Navbar />
       <Hero />
       {/* <Stats /> */}
-      <ContentBlock />
-      <FrequentQuestions />
+      {/* <ContentBlock /> */}
+      {/* <FrequentQuestions /> */}
       <Footer />
     </>
   );

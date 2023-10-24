@@ -3,9 +3,31 @@ import { Link } from "react-router-dom";
 const Team = () => {
   const teamMembers = [
     {
-      name: "Jacob Reppuhn",
-      title: "Data Analyst",
-      photo: "",
+      name: "Sam Medwid",
+      title: "President",
+      photo:
+        "https://t4.ftcdn.net/jpg/02/19/63/31/240_F_219633151_BW6TD8D1EA9OqZu4JgdmeJGg4JBaiAHj.jpg",
+      linkedin: "https://www.linkedin.com/",
+    },
+    {
+      name: "Jamie Headley",
+      title: "Integrator",
+      photo:
+        "https://t4.ftcdn.net/jpg/04/80/05/77/240_F_480057743_J7wTBWRW3vABPnqEv2IwSVVXjj50xevN.jpg",
+      linkedin: "https://www.linkedin.com/",
+    },
+    {
+      name: "Daniel O'Connell",
+      title: "Production Manager",
+      photo:
+        "https://t3.ftcdn.net/jpg/01/61/83/48/240_F_161834881_clbpIhlxdIFFBS1hYquat5fJdep9LrAn.jpg",
+      linkedin: "https://www.linkedin.com/",
+    },
+    {
+      name: "Erika Miu",
+      title: "Finance Manager",
+      photo:
+        "https://t3.ftcdn.net/jpg/00/79/52/98/240_F_79529800_pPrRqNWqKRN6iRDUWibQSKlqM8pltsUZ.jpg",
       linkedin: "https://www.linkedin.com/",
     },
   ];
@@ -17,10 +39,10 @@ const Team = () => {
           <span className="inline-block py-1 px-2 mb-4 text-sm leading-5 text-primary bg-blue-200 uppercase rounded-md shadow-sm">
             Our Experts
           </span>
-          <h3 className="mb-4 text-3xl md:text-5xl leading-tight text-coolGray-900 font-bold tracking-tighter">
+          <h3 className="mb-4 text-3xl md:text-5xl leading-tight text-gray-800 font-bold tracking-tighter">
             Meet the Talented Team at Three M
           </h3>
-          <p className="text-lg md:text-xl text-coolGray-500 font-medium">
+          <p className="mb-10 text-lg md:text-xl text-gray-500 font-medium">
             Dedication, expertise, and innovation drive our experts. Discover
             the people who shape our vision and success.
           </p>
@@ -33,7 +55,7 @@ const Team = () => {
             >
               <div className="text-center max-w-xs mx-auto">
                 <img
-                  className="w-24 h-24 mx-auto mb-6 rounded-md"
+                  className="w-24 h-24 mx-auto mb-6 rounded-md object-cover"
                   src={teamMember.photo}
                   alt={`Three M Tool & Machine Team Member ` + teamMember.name}
                 />
