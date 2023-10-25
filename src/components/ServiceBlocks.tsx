@@ -5,8 +5,17 @@ const ServiceBlocks = () => {
   const [isModalOpen, setModalOpen] = useState(false);
 
   const toggleModal = () => {
+    if (!isModalOpen) {
+      const documentWidth = document.documentElement.clientWidth;
+      const scrollbarWidth = Math.abs(window.innerWidth - documentWidth);
+      document.body.style.overflow = "hidden";
+      document.body.style.paddingRight = `${scrollbarWidth}px`;
+    } else {
+      document.body.style.overflow = "";
+      document.body.style.paddingRight = "";
+    }
+
     setModalOpen(!isModalOpen);
-    console.log("Toggle");
   };
 
   return (

@@ -49,7 +49,7 @@ const BulletinList = () => {
           </p>
         </div>
 
-        <ul className="flex flex-wrap gap-2 mb-8 text-center text-sm items-center justify-center">
+        <ul className="flex flex-wrap gap-2 mb-10 text-center text-sm items-center justify-center">
           <li>
             <button
               onClick={() => setFilter("all")}

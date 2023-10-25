@@ -32,7 +32,7 @@ const CareerList = () => {
           </p>
         </div>
         <div className="mx-auto max-w-6xl">
-          <div className="flex flex-wrap items-center justify-center mb-14 -mx-3">
+          <div className="flex flex-wrap items-center justify-center mb-10 -mx-3">
             <div className="w-full md:w-1/3 px-3 mb-3 md:mb-0">
               <div className="relative bg-white border border-coolGray-200 rounded-lg shadow-md">
                 <svg
