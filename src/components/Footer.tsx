@@ -4,9 +4,9 @@ const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white">
       <div className="mx-auto w-full max-w-screen-xl">
-        <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+        <div className="grid grid-cols-2 gap-8 px-4 py-6 md:grid-cols-4 lg:py-8">
           <div>
-            <h2 className="mb-6 text-sm font-semibold text-white uppercase">
+            <h2 className="mb-6 text-sm font-semibold uppercase text-white">
               Company
             </h2>
             <ul className="text-gray-100">
@@ -33,7 +33,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h2 className="mb-6 text-sm font-semibold text-white uppercase">
+            <h2 className="mb-6 text-sm font-semibold uppercase text-white">
               Help
             </h2>
             <ul className="text-gray-200">
@@ -50,7 +50,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h2 className="mb-6 text-sm font-semibold text-white uppercase">
+            <h2 className="mb-6 text-sm font-semibold uppercase text-white">
               Legal
             </h2>
             <ul className="text-gray-100">
@@ -75,14 +75,14 @@ const Footer = () => {
             </Link>
             . All Rights Reserved.
           </span>
-          <div className="flex mt-4 space-x-5 sm:justify-center md:mt-0">
+          <div className="mt-4 flex space-x-5 sm:justify-center md:mt-0">
             <Link
               className="text-gray-200 hover:text-white"
               to="https://www.facebook.com/threemtoolandmachineinc"
               target="blank"
             >
               <svg
-                className="w-4 h-4"
+                className="h-4 w-4"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"

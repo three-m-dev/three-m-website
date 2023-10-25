@@ -9,6 +9,7 @@ export { default as FrequentQuestions } from "./FrequentQuestions";
 export { default as Hero } from "./Hero";
 export { default as Navbar } from "./Navbar";
 export { default as Newsletter } from "./NewsletterCTA";
+export { default as QualityPolicy } from "./QualityPolicy";
 export { default as ServiceBlocks } from "./ServiceBlocks";
 export { default as ServiceModal } from "./ServiceModal";
 export { default as ServicePreview } from "./ServicePreview";

@@ -18,37 +18,37 @@ const BulletinContent = (props: Props) => {
   const parseContent = () => {};
 
   return (
-    <section className="py-8 md:py-16 bg-white">
-      <div className="max-w-screen-xl px-4 mx-auto">
-        <div className="flex flex-wrap lg:items-center mb-12 -mx-4">
-          <div className="w-full md:w-1/2 2xl:w-5/12 px-4 mb-8 md:mb-0">
-            <div className="mx-auto md:ml-0 max-w-max overflow-hidden rounded-lg">
+    <section className="bg-white py-8 md:py-16">
+      <div className="mx-auto max-w-screen-xl px-4">
+        <div className="-mx-4 mb-12 flex flex-wrap lg:items-center">
+          <div className="mb-8 w-full px-4 md:mb-0 md:w-1/2 2xl:w-5/12">
+            <div className="mx-auto max-w-max overflow-hidden rounded-lg md:ml-0">
               <img
                 src="https://images.unsplash.com/photo-1624841970647-87dce8628d72?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y25jfGVufDB8fDB8fHww"
                 alt=""
               />
             </div>
           </div>
-          <div className="w-full md:w-1/2 px-4">
-            <p className="mb-2 text-gray-500 flex gap-2 items-center">
-              <span className="bg-gray-200 text-gray-500 py-1 px-2 text-xs uppercase tracking-wider rounded-md">
+          <div className="w-full px-4 md:w-1/2">
+            <p className="mb-2 flex items-center gap-2 text-gray-500">
+              <span className="rounded-md bg-gray-200 px-2 py-1 text-xs uppercase tracking-wider text-gray-500">
                 {props.type}
               </span>
-              <span className="uppercase tracking-wider text-sm">
+              <span className="text-sm uppercase tracking-wider">
                 {props.date}
               </span>
             </p>
-            <h2 className="mb-4 text-3xl md:text-4xl lg:text-5xl leading-tight text-gray-900 font-bold tracking-tighter">
+            <h2 className="mb-4 text-3xl font-bold leading-tight tracking-tighter text-gray-900 md:text-4xl lg:text-5xl">
               {props.title}
             </h2>
           </div>
         </div>
-        <div className="flex flex-wrap -mx-4">
-          <div className="w-full md:w-5/12 lg:w-4/12 xl:w-3/12 px-4 mb-8">
-            <ul className="pb-6 mb-8 border-b border-gray-100">
+        <div className="-mx-4 flex flex-wrap">
+          <div className="mb-8 w-full px-4 md:w-5/12 lg:w-4/12 xl:w-3/12">
+            <ul className="mb-8 border-b border-gray-100 pb-6">
               <li className="mb-2">
                 <a
-                  className="inline-block py-2 text-gray-400 hover:text-primary font-semibold"
+                  className="inline-block py-2 font-semibold text-gray-400 hover:text-primary"
                   href="#"
                 >
                   Introduction
@@ -56,7 +56,7 @@ const BulletinContent = (props: Props) => {
               </li>
               <li className="mb-2">
                 <a
-                  className="inline-block py-2 text-gray-400 hover:text-primary font-semibold"
+                  className="inline-block py-2 font-semibold text-gray-400 hover:text-primary"
                   href="#"
                 >
                   Header 1
@@ -64,7 +64,7 @@ const BulletinContent = (props: Props) => {
               </li>
               <li className="mb-2">
                 <a
-                  className="inline-block py-2 text-gray-400 hover:text-primary font-semibold"
+                  className="inline-block py-2 font-semibold text-gray-400 hover:text-primary"
                   href="#"
                 >
                   Header 1
@@ -72,7 +72,7 @@ const BulletinContent = (props: Props) => {
               </li>
               <li>
                 <a
-                  className="inline-block py-3 text-gray-400 hover:text-primary font-semibold"
+                  className="inline-block py-3 font-semibold text-gray-400 hover:text-primary"
                   href="#summary"
                 >
                   Summary
@@ -82,7 +82,7 @@ const BulletinContent = (props: Props) => {
             <div className="flex items-center">
               <button
                 onClick={copyLink}
-                className="inline-flex mr-4 items-center justify-center py-2 px-4 text-gray-300 hover:text-primary border border-gray-200 hover:border-gray-300 rounded-md shadow-md transition duration-200"
+                className="mr-4 inline-flex items-center justify-center rounded-md border border-gray-200 px-4 py-2 text-gray-300 shadow-md transition duration-200 hover:border-gray-300 hover:text-primary"
               >
                 <svg
                   width="20"
@@ -96,12 +96,12 @@ const BulletinContent = (props: Props) => {
                     fill="currentColor"
                   ></path>
                 </svg>
-                <span className="ml-2 text-sm text-gray-500 font-medium">
+                <span className="ml-2 text-sm font-medium text-gray-500">
                   Copy Link
                 </span>
               </button>
               <Link
-                className="inline-flex mr-2 h-9 w-9 items-center justify-center text-gray-500 hover:text-primary border border-gray-200 hover:border-gray-300 rounded-md shadow-md transition duration-200"
+                className="mr-2 inline-flex h-9 w-9 items-center justify-center rounded-md border border-gray-200 text-gray-500 shadow-md transition duration-200 hover:border-gray-300 hover:text-primary"
                 to="https://www.facebook.com/threemtoolandmachineinc"
                 target="blank"
               >
@@ -119,7 +119,7 @@ const BulletinContent = (props: Props) => {
                 </svg>
               </Link>
               <Link
-                className="inline-flex mr-2 h-9 w-9 items-center justify-center text-gray-500 hover:text-primary border border-gray-200 hover:border-gray-300 rounded-md shadow-md transition duration-200"
+                className="mr-2 inline-flex h-9 w-9 items-center justify-center rounded-md border border-gray-200 text-gray-500 shadow-md transition duration-200 hover:border-gray-300 hover:text-primary"
                 to="https://www.linkedin.com/company/three-m-tool-&-machine-inc"
                 target="blank"
               >
@@ -137,7 +137,7 @@ const BulletinContent = (props: Props) => {
                 </svg>
               </Link>
               <Link
-                className="inline-flex h-9 w-9 items-center justify-center text-gray-500 hover:text-primary border border-gray-200 hover:border-gray-300 rounded-md shadow-md transition duration-200"
+                className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-gray-200 text-gray-500 shadow-md transition duration-200 hover:border-gray-300 hover:text-primary"
                 to="https://www.indeed.com/cmp/Three-M-Tool-&-Machine"
                 target="blank"
               >
@@ -155,36 +155,36 @@ const BulletinContent = (props: Props) => {
               </Link>
             </div>
           </div>
-          <div className="w-full md:flex-1 px-4">
-            <p className="mb-8 pb-10 text-lg md:text-xl font-medium text-gray-500 border-b border-gray-100">
+          <div className="w-full px-4 md:flex-1">
+            <p className="mb-8 border-b border-gray-100 pb-10 text-lg font-medium text-gray-500 md:text-xl">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
               ullamcorper mattis lorem non. Ultrices praesent amet ipsum justo
               massa. Eu dolor aliquet risus gravida nunc at feugiat consequat
               purus. Non massa enim vitae duis mattis. Vel in ultricies vel
               fringilla.
             </p>
-            <h3 className="mb-4 text-2xl md:text-3xl font-semibold text-gray-800">
+            <h3 className="mb-4 text-2xl font-semibold text-gray-800 md:text-3xl">
               Header 1
             </h3>
-            <p className="mb-4 text-base md:text-lg text-gray-500">
+            <p className="mb-4 text-base text-gray-500 md:text-lg">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
               ullamcorper mattis lorem non. Ultrices praesent amet ipsum justo
               massa. Eu dolor aliquet risus gravida nunc at feugiat consequat
               purus. Non massa enim vitae duis mattis. Vel in ultricies vel
               fringilla.
             </p>
-            <div className="mb-6 p-6 border-l-2 border-primary">
-              <p className="mb-4 text-xl md:text-2xl leading-tight font-medium text-gray-800">
+            <div className="mb-6 border-l-2 border-primary p-6">
+              <p className="mb-4 text-xl font-medium leading-tight text-gray-800 md:text-2xl">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
                 ullamcorper mattis lorem non. Ultrices praesent amet ipsum justo
                 massa. Eu dolor aliquet risus gravida nunc at feugiat consequat
                 purus.
               </p>
-              <span className="text-base md:text-lg text-gray-400 font-medium">
+              <span className="text-base font-medium text-gray-400 md:text-lg">
                 — John Doe, CEO &amp; Founder
               </span>
             </div>
-            <p className="mb-6 text-base md:text-lg text-gray-500">
+            <p className="mb-6 text-base text-gray-500 md:text-lg">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
               ullamcorper mattis lorem non. Ultrices praesent amet ipsum justo
               massa. Eu dolor aliquet risus gravida nunc at feugiat consequat
@@ -197,24 +197,24 @@ const BulletinContent = (props: Props) => {
                 alt=""
               />
             </div>
-            <p className="mb-8 text-base md:text-lg text-gray-400 font-medium">
+            <p className="mb-8 text-base font-medium text-gray-400 md:text-lg">
               <span>Non massa enim vitae duis mattis. Vel in</span>
-              <a className="hover:text-gray-600 underline" href="#">
+              <a className="underline hover:text-gray-600" href="#">
                 ultricies
               </a>
               <span>vel fringilla.</span>
             </p>
-            <h3 className="mb-4 text-2xl md:text-3xl font-semibold text-gray-800">
+            <h3 className="mb-4 text-2xl font-semibold text-gray-800 md:text-3xl">
               Header 1
             </h3>
-            <p className="mb-14 text-base md:text-lg text-gray-500">
+            <p className="mb-14 text-base text-gray-500 md:text-lg">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
               ullamcorper mattis lorem non. Ultrices praesent amet ipsum justo
               massa. Eu dolor aliquet risus gravida nunc at feugiat consequat
               purus. Non massa enim vitae duis mattis. Vel in ultricies vel
               fringilla.
             </p>
-            <p id="summary" className="mb-4 text-base md:text-lg text-gray-500">
+            <p id="summary" className="mb-4 text-base text-gray-500 md:text-lg">
               Sagittis et eu at elementum, quis in. Proin praesent volutpat
               egestas sociis sit lorem nunc nunc sit. Eget diam curabitur mi ac.
               Auctor rutrum lacus malesuada massa ornare et. Vulputate
@@ -222,7 +222,7 @@ const BulletinContent = (props: Props) => {
               sit dignissim massa erat cursus vulputate gravida id. Sed quis
               auctor vulputate hac elementum gravida cursus dis.
             </p>
-            <ol className="list-decimal list-inside md:px-5 text-base md:text-lg text-gray-500">
+            <ol className="list-inside list-decimal text-base text-gray-500 md:px-5 md:text-lg">
               <li>Lectus id duis vitae porttitor enim gravida morbi.</li>
               <li>
                 Eu turpis posuere semper feugiat volutpat elit, ultrices

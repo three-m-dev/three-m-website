@@ -3,40 +3,40 @@ const Timeline = () => {
 
   return (
     <section className="py-8 md:py-16">
-      <div className="relative max-w-screen-xl px-4 mx-auto">
+      <div className="relative mx-auto max-w-screen-xl px-4">
         <div className="mb-16 text-center">
-          <span className="inline-block py-1 px-2 mb-4 text-sm leading-5 text-primary bg-blue-200 uppercase rounded-md shadow-sm">
+          <span className="mb-4 inline-block rounded-md bg-blue-200 px-2 py-1 text-sm uppercase leading-5 text-primary shadow-sm">
             Timeline & History
           </span>
-          <h3 className="mb-4 text-3xl md:text-5xl leading-tight text-gray-800 font-bold tracking-tighter">
+          <h3 className="mb-4 text-3xl font-bold leading-tight tracking-tighter text-gray-800 md:text-5xl">
             Our Journey Over the Years
           </h3>
-          <p className="mb-10 text-lg md:text-xl text-gray-500 font-medium">
+          <p className="mb-10 text-lg font-medium text-gray-500 md:text-xl">
             Explore the key milestones and events that have shaped our company's
             history.
           </p>
         </div>
 
-        <div className="relative text-gray-700 antialiased text-sm font-semibold">
-          <div className="hidden sm:block w-1 bg-blue-200 absolute h-full left-1/2 transform -translate-x-1/2"></div>
+        <div className="relative text-sm font-semibold text-gray-700 antialiased">
+          <div className="absolute left-1/2 hidden h-full w-1 -translate-x-1/2 transform bg-blue-200 sm:block"></div>
 
-          <div className="mt-6 sm:mt-0 sm:mb-12">
-            <div className="flex flex-col sm:flex-row items-center">
-              <div className="flex justify-start w-full mx-auto items-center">
+          <div className="mt-6 sm:mb-12 sm:mt-0">
+            <div className="flex flex-col items-center sm:flex-row">
+              <div className="mx-auto flex w-full items-center justify-start">
                 <div className="w-full sm:w-1/2 sm:pr-8">
-                  <div className="p-4 bg-white rounded-md border-2 border-primary shadow">
+                  <div className="rounded-md border-2 border-primary bg-white p-4 shadow">
                     2000 - Founded with a vision.
                   </div>
                 </div>
               </div>
-              <div className="rounded-md bg-primary text-white w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+              <div className="absolute left-1/2 flex h-8 w-8 -translate-x-1/2 -translate-y-4 transform items-center justify-center rounded-md bg-primary text-white sm:translate-y-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="w-6 h-6"
+                  className="h-6 w-6"
                 >
                   <path
                     strokeLinecap="round"
@@ -48,23 +48,23 @@ const Timeline = () => {
             </div>
           </div>
 
-          <div className="mt-6 sm:mt-0 sm:mb-12">
-            <div className="flex flex-col sm:flex-row items-center">
-              <div className="flex justify-end w-full mx-auto items-center">
+          <div className="mt-6 sm:mb-12 sm:mt-0">
+            <div className="flex flex-col items-center sm:flex-row">
+              <div className="mx-auto flex w-full items-center justify-end">
                 <div className="w-full sm:w-1/2 sm:pl-8">
-                  <div className="p-4 bg-white rounded-md border-2 border-primary shadow">
+                  <div className="rounded-md border-2 border-primary bg-white p-4 shadow">
                     2005 - Launched our first product.
                   </div>
                 </div>
               </div>
-              <div className="rounded-md bg-primary text-white w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+              <div className="absolute left-1/2 flex h-8 w-8 -translate-x-1/2 -translate-y-4 transform items-center justify-center rounded-md bg-primary text-white sm:translate-y-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="w-6 h-6"
+                  className="h-6 w-6"
                 >
                   <path
                     strokeLinecap="round"
@@ -76,23 +76,23 @@ const Timeline = () => {
             </div>
           </div>
 
-          <div className="mt-6 sm:mt-0 sm:mb-12">
-            <div className="flex flex-col sm:flex-row items-center">
-              <div className="flex justify-start w-full mx-auto items-center">
+          <div className="mt-6 sm:mb-12 sm:mt-0">
+            <div className="flex flex-col items-center sm:flex-row">
+              <div className="mx-auto flex w-full items-center justify-start">
                 <div className="w-full sm:w-1/2 sm:pr-8">
-                  <div className="p-4 bg-white rounded-md border-2 border-primary shadow">
+                  <div className="rounded-md border-2 border-primary bg-white p-4 shadow">
                     2015 - Focused on innovation.
                   </div>
                 </div>
               </div>
-              <div className="rounded-md bg-primary text-white w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+              <div className="absolute left-1/2 flex h-8 w-8 -translate-x-1/2 -translate-y-4 transform items-center justify-center rounded-md bg-primary text-white sm:translate-y-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="w-6 h-6"
+                  className="h-6 w-6"
                 >
                   <path
                     strokeLinecap="round"
@@ -105,22 +105,22 @@ const Timeline = () => {
           </div>
 
           <div className="mt-6 sm:mt-0">
-            <div className="flex flex-col sm:flex-row items-center">
-              <div className="flex justify-end w-full mx-auto items-center">
+            <div className="flex flex-col items-center sm:flex-row">
+              <div className="mx-auto flex w-full items-center justify-end">
                 <div className="w-full sm:w-1/2 sm:pl-8">
-                  <div className="p-4 bg-white rounded-md border-2 border-primary shadow">
+                  <div className="rounded-md border-2 border-primary bg-white p-4 shadow">
                     2020 - Committed to sustainability.
                   </div>
                 </div>
               </div>
-              <div className="rounded-md bg-primary text-white w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+              <div className="absolute left-1/2 flex h-8 w-8 -translate-x-1/2 -translate-y-4 transform items-center justify-center rounded-md bg-primary text-white sm:translate-y-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="w-6 h-6"
+                  className="h-6 w-6"
                 >
                   <path
                     strokeLinecap="round"

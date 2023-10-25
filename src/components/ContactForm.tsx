@@ -1,96 +1,92 @@
 const ContactForm = () => {
   return (
-    <section className="py-8 md:py-16 bg-gray-50">
+    <section className="bg-gray-50 py-8 md:py-16">
       <div className="container mx-auto px-4">
-        <div className="md:max-w-5xl mx-auto mb-8 md:mb-8 text-center">
-          <span className="inline-block py-1 px-2 mb-4 text-sm leading-5 tracking-wider text-primary bg-blue-200 uppercase rounded-md shadow-sm">
+        <div className="mx-auto mb-8 text-center md:mb-8 md:max-w-5xl">
+          <span className="mb-4 inline-block rounded-md bg-blue-200 px-2 py-1 text-sm uppercase leading-5 tracking-wider text-primary shadow-sm">
             Reach Out & Connect
           </span>
-          <h3 className="mb-4 text-3xl md:text-5xl leading-tight text-darkgray-900 font-bold tracking-tighter">
+          <h3 className="text-darkgray-900 mb-4 text-3xl font-bold leading-tight tracking-tighter md:text-5xl">
             Contact Three M for Business Opportunities
           </h3>
-          <p className="mb-10 text-lg md:text-xl text-gray-500 font-medium">
+          <p className="mb-10 text-lg font-medium text-gray-500 md:text-xl">
             Our dedicated team is here to assist. Connect with us for inquiries,
             support, or partnerships
           </p>
         </div>
-        <div className="max-w-screen-5xl mx-auto">
-          {/* <form className="p-10 bg-gray-100 border border-gray-100 rounded-3xl">
-            <div className="flex flex-wrap -m-5 mb-1">
-              <div className="w-full md:w-1/2 p-5">
-                <label className="block mb-2 text-sm text-gray-500 font-bold">
-                  Full Name
-                </label>
-                <input
-                  className="appearance-none px-6 py-3.5 w-full text-md text-gray-500 font-bold bg-white placeholder-gray-500 outline-none focus:ring-4 focus:ring-blue-200 rounded-md"
-                  type="text"
-                  placeholder="Enter your name"
-                />
+        <div className="mx-auto">
+          <div className="mx-auto max-w-md rounded-md bg-white shadow md:max-w-none">
+            <div className="-mx-4 flex flex-wrap">
+              <div className="mb-16 w-full px-4 lg:mb-0 lg:w-1/2">
+                <div className="max-w-md">
+                  <span className="text-sm font-semibold uppercase">
+                    <span>Feel free to </span>
+                    <span className="text-primary">contact us</span>
+                  </span>
+                  <h4 className="font-heading mb-24 mt-2 max-w-xs text-3xl sm:text-4xl">
+                    See what this extension tool looks like
+                  </h4>
+                </div>
               </div>
-              <div className="w-full md:w-1/2 p-5">
-                <label className="block mb-2 text-sm text-gray-500 font-bold">
-                  Emaill address
-                </label>
-                <input
-                  className="appearance-none px-6 py-3.5 w-full text-md text-gray-500 font-bold bg-white placeholder-gray-500 outline-none focus:ring-4 focus:ring-blue-200 rounded-md"
-                  type="text"
-                  placeholder="Email address"
-                />
-              </div>
-            </div>
-            <div className="flex flex-wrap -m-5">
-              <div className="w-full md:w-1/2 p-5">
-                <label className="block mb-2 text-sm text-gray-500 font-bold">
-                  Phone
-                </label>
-                <input
-                  className="appearance-none px-6 py-3.5 w-full text-md text-gray-500 font-bold bg-white placeholder-gray-500 outline-none focus:ring-4 focus:ring-blue-200 rounded-md"
-                  type="text"
-                  placeholder="Enter your phone number"
-                />
-              </div>
-              <div className="w-full md:w-1/2 p-5">
-                <label className="block mb-2 text-sm text-gray-500 font-bold">
-                  Subject
-                </label>
-                <input
-                  className="appearance-none px-6 py-3.5 w-full text-md text-gray-500 font-bold bg-white placeholder-gray-500 outline-none focus:ring-4 focus:ring-blue-200 rounded-md"
-                  type="text"
-                  placeholder="Type your subject"
-                />
-              </div>
-            </div>
-            <div className="flex flex-wrap -m-3.5">
-              <div className="w-full p-3.5">
-                <label className="block mb-2 text-sm text-gray-500 font-bold">
-                  Message
-                </label>
-                <textarea
-                  className="appearance-none px-6 py-5 w-full text-md text-gray-500 font-bold bg-white placeholder-gray-500 outline-none focus:ring-4 focus:ring-blue-200 rounded-md"
-                  rows={8}
-                  placeholder="Enter your message"
-                ></textarea>
-              </div>
-              <div className="w-full">
-                <div className="flex flex-wrap md:justify-end">
-                  <button className="py-2 px-4 border-2 border-primary uppercase text-primary font-bold rounded-md text-md hover:text-white hover:bg-primary transition-all duration-300">
-                    Send Message
-                  </button>
+              <div className="w-full px-4 lg:w-1/2">
+                <div>
+                  <h4 className="font-heading mb-4 text-lg font-medium">
+                    Send a message
+                  </h4>
+                  <form action="">
+                    <div className="mb-4">
+                      <label className="mb-2 block text-sm leading-6">
+                        Name
+                      </label>
+                      <input
+                        className="font-heading block w-full rounded bg-gray-50 p-4 text-gray-300 placeholder-gray-300 outline-none"
+                        type="text"
+                        placeholder="Type your name"
+                      />
+                    </div>
+                    <div className="mb-4">
+                      <label className="mb-2 block text-sm leading-6">
+                        E-mail address
+                      </label>
+                      <input
+                        className="font-heading block w-full rounded bg-gray-50 p-4 text-gray-300 placeholder-gray-300 outline-none"
+                        type="email"
+                        placeholder="Type your e-mail"
+                      />
+                    </div>
+                    <div className="mb-6">
+                      <label className="mb-2 block text-sm leading-6">
+                        Message
+                      </label>
+                      <textarea
+                        className="font-heading block h-40 w-full resize-none rounded bg-gray-50 p-4 text-gray-300 placeholder-gray-300 outline-none"
+                        placeholder="Type your message"
+                      ></textarea>
+                    </div>
+                    <div className="text-right">
+                      <button
+                        className="font-heading mb-4 inline-block w-full rounded-sm border border-primary bg-primary px-6 py-4 text-center text-base font-medium text-white transition duration-200 hover:border-green-600 hover:bg-green-600 sm:mb-0 sm:mr-4 sm:w-auto"
+                        type="submit"
+                      >
+                        Send now
+                      </button>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
-          </form> */}
-          <div className="flex flex-wrap -m-4">
-            <div className="w-full md:w-1/3 p-4">
+          </div>
+          <div className="-m-4 flex flex-wrap">
+            <div className="w-full p-4 md:w-1/3">
               <div className="py-10 text-center">
-                <div className="flex items-center justify-center mb-6 w-12 h-12 mx-auto bg-gray-100 rounded-md">
+                <div className="mx-auto mb-6 flex h-12 w-12 items-center justify-center rounded-md bg-gray-100">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="w-6 h-6"
+                    className="h-6 w-6"
                   >
                     <path
                       strokeLinecap="round"
@@ -99,23 +95,23 @@ const ContactForm = () => {
                     />
                   </svg>
                 </div>
-                <h3 className="font-heading mb-2 text-xl text-gray-900 font-black">
+                <h3 className="font-heading mb-2 text-xl font-black text-gray-900">
                   Email Us
                 </h3>
-                <p className="text-gray-500 font-bold">sales@three-m.com</p>
-                <p className="text-gray-500 font-bold">support@three-m.com</p>
+                <p className="font-bold text-gray-500">sales@three-m.com</p>
+                <p className="font-bold text-gray-500">support@three-m.com</p>
               </div>
             </div>
-            <div className="w-full md:w-1/3 p-4">
-              <div className="py-10 text-center h-full rounded-3xl">
-                <div className="flex items-center justify-center mb-6 w-12 h-12 mx-auto bg-gray-100 rounded-md">
+            <div className="w-full p-4 md:w-1/3">
+              <div className="h-full rounded-3xl py-10 text-center">
+                <div className="mx-auto mb-6 flex h-12 w-12 items-center justify-center rounded-md bg-gray-100">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="w-6 h-6"
+                    className="h-6 w-6"
                   >
                     <path
                       strokeLinecap="round"
@@ -124,25 +120,25 @@ const ContactForm = () => {
                     />
                   </svg>
                 </div>
-                <h3 className="font-heading mb-2 text-xl text-gray-900 font-black">
+                <h3 className="font-heading mb-2 text-xl font-black text-gray-900">
                   Call Us
                 </h3>
-                <p className="text-gray-500 font-bold">
+                <p className="font-bold text-gray-500">
                   Mon - Fri : 7am - 3:30pm
                 </p>
-                <p className="text-gray-500 font-bold">+1 248 363 1555</p>
+                <p className="font-bold text-gray-500">+1 248 363 1555</p>
               </div>
             </div>
-            <div className="w-full md:w-1/3 p-4">
-              <div className="py-10 text-center h-full rounded-3xl">
-                <div className="flex items-center justify-center mb-6 w-12 h-12 mx-auto bg-gray-100 rounded-md">
+            <div className="w-full p-4 md:w-1/3">
+              <div className="h-full rounded-3xl py-10 text-center">
+                <div className="mx-auto mb-6 flex h-12 w-12 items-center justify-center rounded-md bg-gray-100">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="w-6 h-6"
+                    className="h-6 w-6"
                   >
                     <path
                       strokeLinecap="round"
@@ -156,11 +152,11 @@ const ContactForm = () => {
                     />
                   </svg>
                 </div>
-                <h3 className="font-heading mb-2 text-xl text-gray-900 font-black">
+                <h3 className="font-heading mb-2 text-xl font-black text-gray-900">
                   Address
                 </h3>
-                <p className="text-gray-500 font-bold">8155 Richardson Road</p>
-                <p className="text-gray-500 font-bold">
+                <p className="font-bold text-gray-500">8155 Richardson Road</p>
+                <p className="font-bold text-gray-500">
                   Commerce, Michigan, 48390
                 </p>
               </div>

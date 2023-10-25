@@ -4,17 +4,17 @@ type Props = {
 
 const ServiceModal = (props: Props) => {
   return (
-    <div className="fixed top-0 left-0 w-full h-full px-4 flex items-center bg-gray-900 bg-opacity-50 overflow-y-hidden z-50">
-      <div className="max-w-3xl mx-auto bg-gray-100 rounded-lg overflow-hidden">
+    <div className="fixed left-0 top-0 z-50 flex h-full w-full items-center overflow-y-hidden bg-gray-900 bg-opacity-50 px-4">
+      <div className="mx-auto max-w-3xl overflow-hidden rounded-lg bg-gray-100">
         <div className="relative">
           <img
-            className="h-40 md:h-auto w-full object-cover"
+            className="h-40 w-full object-cover md:h-auto"
             src="https://www.pretool.com/uploads/3/7/8/6/37861209/header_images/1687817843.jpg"
             alt=""
           />
           <button
             onClick={props.toggle}
-            className="absolute top-0 right-0 p-2 bg-white rounded-md m-2 text-primary hover:bg-gray-200"
+            className="absolute right-0 top-0 m-2 rounded-md bg-white p-2 text-primary hover:bg-gray-200"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -22,7 +22,7 @@ const ServiceModal = (props: Props) => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-6 h-6"
+              className="h-6 w-6"
             >
               <path
                 strokeLinecap="round"
@@ -31,34 +31,34 @@ const ServiceModal = (props: Props) => {
               />
             </svg>
           </button>
-          <div className="absolute bottom-0 left-1/2 mb-6 transform -translate-x-1/2">
+          <div className="absolute bottom-0 left-1/2 mb-6 -translate-x-1/2 transform">
             <a
-              className="inline-block w-3 h-3 mr-3 bg-coolGray-100 rounded-full"
+              className="bg-coolGray-100 mr-3 inline-block h-3 w-3 rounded-full"
               href="#"
             ></a>
             <a
-              className="inline-block w-3 h-3 mr-3 bg-primary rounded-full"
+              className="mr-3 inline-block h-3 w-3 rounded-full bg-primary"
               href="#"
             ></a>
             <a
-              className="inline-block w-3 h-3 bg-coolGray-100 rounded-full"
+              className="bg-coolGray-100 inline-block h-3 w-3 rounded-full"
               href="#"
             ></a>
           </div>
         </div>
         <div className="flex flex-wrap">
-          <div className="w-full md:w-4/6 border-b md:border-b-0 md:border-r border-coolGray-100">
+          <div className="border-coolGray-100 w-full border-b md:w-4/6 md:border-b-0 md:border-r">
             <div className="py-10 pl-10 pr-8">
-              <h3 className="mb-2 text-xl font-semibold text-coolGray-800 leading-7">
+              <h3 className="text-coolGray-800 mb-2 text-xl font-semibold leading-7">
                 Service Name
               </h3>
-              <p className="mb-4 text-sm text-coolGray-500 font-medium">
+              <p className="text-coolGray-500 mb-4 text-sm font-medium">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
                 ullamcorper mattis lorem non. Ultrices praesent amet ipsum justo
                 massa.
               </p>
               <a
-                className="inline-flex items-center text-primary hover:text-green-600 font-medium"
+                className="inline-flex items-center font-medium text-primary hover:text-green-600"
                 href="#"
               >
                 <span className="mr-2">Learn More</span>
@@ -77,36 +77,36 @@ const ServiceModal = (props: Props) => {
               </a>
             </div>
           </div>
-          <div className="w-full md:w-2/6 pt-6 pb-10 px-8">
+          <div className="w-full px-8 pb-10 pt-6 md:w-2/6">
             <div>
               <div className="mb-10">
-                <div className="flex mb-3 items-center justify-between">
-                  <span className="text-sm font-medium text-coolGray-500">
+                <div className="mb-3 flex items-center justify-between">
+                  <span className="text-coolGray-500 text-sm font-medium">
                     Size
                   </span>
-                  <span className="text-sm font-medium text-coolGray-900">
+                  <span className="text-coolGray-900 text-sm font-medium">
                     2.5 MB
                   </span>
                 </div>
-                <div className="flex mb-3 items-center justify-between">
-                  <span className="text-sm font-medium text-coolGray-500">
+                <div className="mb-3 flex items-center justify-between">
+                  <span className="text-coolGray-500 text-sm font-medium">
                     Lenght
                   </span>
-                  <span className="text-sm font-medium text-coolGray-900">
+                  <span className="text-coolGray-900 text-sm font-medium">
                     88 Pages
                   </span>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-sm font-medium text-coolGray-500">
+                  <span className="text-coolGray-500 text-sm font-medium">
                     Last Update
                   </span>
-                  <span className="text-sm font-medium text-coolGray-900">
+                  <span className="text-coolGray-900 text-sm font-medium">
                     12 Days ago
                   </span>
                 </div>
               </div>
               <a
-                className="inline-block py-3 px-7 w-full text-base text-green-50 font-medium text-center leading-6 bg-primary hover:bg-green-600 focus:ring-2 focus:ring-primary focus:ring-opacity-50 rounded-md shadow-sm"
+                className="inline-block w-full rounded-md bg-primary px-7 py-3 text-center text-base font-medium leading-6 text-green-50 shadow-sm hover:bg-green-600 focus:ring-2 focus:ring-primary focus:ring-opacity-50"
                 href="#"
               >
                 Download PDF

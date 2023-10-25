@@ -1,10 +1,11 @@
-import { Footer, Navbar, ServiceBlocks } from "../components";
+import { Footer, Navbar, QualityPolicy, ServiceBlocks } from "../components";
 
 const Services = () => {
   return (
     <>
       <Navbar />
       <ServiceBlocks />
+      <QualityPolicy />
       <Footer />
     </>
   );

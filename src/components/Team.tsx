@@ -34,35 +34,35 @@ const Team = () => {
 
   return (
     <section className="py-8 md:py-16">
-      <div className="relative container px-4 mx-auto">
+      <div className="container relative mx-auto px-4">
         <div className="mb-16 text-center">
-          <span className="inline-block py-1 px-2 mb-4 text-sm leading-5 text-primary bg-blue-200 uppercase rounded-md shadow-sm">
+          <span className="mb-4 inline-block rounded-md bg-blue-200 px-2 py-1 text-sm uppercase leading-5 text-primary shadow-sm">
             Our Experts
           </span>
-          <h3 className="mb-4 text-3xl md:text-5xl leading-tight text-gray-800 font-bold tracking-tighter">
+          <h3 className="mb-4 text-3xl font-bold leading-tight tracking-tighter text-gray-800 md:text-5xl">
             Meet the Talented Team at Three M
           </h3>
-          <p className="mb-10 text-lg md:text-xl text-gray-500 font-medium">
+          <p className="mb-10 text-lg font-medium text-gray-500 md:text-xl">
             Dedication, expertise, and innovation drive our experts. Discover
             the people who shape our vision and success.
           </p>
         </div>
-        <div className="flex flex-wrap -mx-4">
+        <div className="-mx-4 flex flex-wrap">
           {teamMembers.map((teamMember, index) => (
             <div
               key={index}
-              className="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-4 mb-10"
+              className="mb-10 w-full px-4 md:w-1/2 lg:w-1/3 xl:w-1/4"
             >
-              <div className="text-center max-w-xs mx-auto">
+              <div className="mx-auto max-w-xs text-center">
                 <img
-                  className="w-24 h-24 mx-auto mb-6 rounded-md object-cover"
+                  className="mx-auto mb-6 h-24 w-24 rounded-md object-cover"
                   src={teamMember.photo}
                   alt={`Three M Tool & Machine Team Member ` + teamMember.name}
                 />
-                <h3 className="mb-1 text-lg text-coolGray-800 font-semibold">
+                <h3 className="text-coolGray-800 mb-1 text-lg font-semibold">
                   {teamMember.name}
                 </h3>
-                <span className="inline-block mb-6 text-lg font-medium text-primary">
+                <span className="mb-6 inline-block text-lg font-medium text-primary">
                   {teamMember.title}
                 </span>
                 <div className="flex items-center justify-center">

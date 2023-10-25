@@ -23,8 +23,8 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="bg-primary text-white z-60">
-        <div className="max-w-screen-xl flex mx-auto justify-between py-2.5 px-4">
+      <div className="z-60 bg-primary text-white">
+        <div className="mx-auto flex max-w-screen-xl justify-between px-4 py-2.5">
           <a href="mailto:sales@three-m.com" className="flex gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +32,7 @@ const Navbar = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-6 h-6"
+              className="h-6 w-6"
             >
               <path
                 strokeLinecap="round"
@@ -49,7 +49,7 @@ const Navbar = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-6 h-6"
+              className="h-6 w-6"
             >
               <path
                 strokeLinecap="round"
@@ -61,26 +61,26 @@ const Navbar = () => {
           </a>
         </div>
       </div>
-      <nav className="bg-white sticky top-0 z-50 left-0 border-b border-gray-200">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <nav className="sticky left-0 top-0 z-50 border-b border-gray-200 bg-white">
+        <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
           <Link to="/" className="flex items-center">
             {/* <img
             src="https://flowbite.com/docs/images/logo.svg"
             className="h-8 mr-3"
             alt="Three M Tool & Machine Logo"
           /> */}
-            <span className="self-center text-2xl font-semibold whitespace-nowrap">
+            <span className="self-center whitespace-nowrap text-2xl font-semibold">
               Three M
             </span>
           </Link>
-          <div className="flex md:order-2 gap-2">
+          <div className="flex gap-2 md:order-2">
             <div className="hidden lg:flex">
               <Button type="link" text="Contact Us" to="/contact" />
             </div>
             <button
               type="button"
               onClick={toggleMobileNavbar}
-              className="inline-flex items-center p-2 justify-center text-primary rounded-lg lg:hidden hover:bg-primary hover:text-white transition-all duration-300 focus:outline-none border-2 border-primary"
+              className="inline-flex items-center justify-center rounded-lg border-2 border-primary p-2 text-primary transition-all duration-300 hover:bg-primary hover:text-white focus:outline-none lg:hidden"
             >
               <span className="sr-only">Open main menu</span>
               <svg
@@ -89,7 +89,7 @@ const Navbar = () => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-6 h-6"
+                className="h-6 w-6"
               >
                 <path
                   strokeLinecap="round"
@@ -100,10 +100,10 @@ const Navbar = () => {
             </button>
           </div>
           <div
-            className="items-center justify-between hidden w-full lg:flex md:w-auto md:order-1"
+            className="hidden w-full items-center justify-between md:order-1 md:w-auto lg:flex"
             id="navbar-sticky"
           >
-            <ul className="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row gap-12 md:mt-0 md:border-0 md:bg-white uppercase">
+            <ul className="mt-4 flex flex-col gap-12 rounded-lg border border-gray-100 bg-gray-50 p-4 uppercase md:mt-0 md:flex-row md:border-0 md:bg-white md:p-0">
               <li className="group py-2">
                 <Link to="/">
                   Home

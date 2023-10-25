@@ -17,26 +17,26 @@ const CareerList = () => {
   ];
 
   return (
-    <section className="py8 md:py-16 bg-white">
-      <div className="max-w-screen-xl px-4 mx-auto">
-        <div className="max-w-4xl mx-auto mb-8 text-center">
-          <span className="inline-block py-1 px-2 mb-4 text-sm leading-5 text-primary bg-blue-200 uppercase rounded-md shadow-sm">
+    <section className="bg-white py-8 md:py-16">
+      <div className="mx-auto max-w-screen-xl px-4">
+        <div className="mx-auto mb-8 max-w-4xl text-center">
+          <span className="mb-4 inline-block rounded-md bg-blue-200 px-2 py-1 text-sm uppercase leading-5 text-primary shadow-sm">
             Growth & Opportunities
           </span>
-          <h3 className="mb-4 text-3xl md:text-5xl leading-tight text-gray-800 font-bold tracking-tighter">
+          <h3 className="mb-4 text-3xl font-bold leading-tight tracking-tighter text-gray-800 md:text-5xl">
             Join the Future at Three M
           </h3>
-          <p className="mb-10 text-lg md:text-xl text-gray-500 font-medium">
+          <p className="mb-10 text-lg font-medium text-gray-500 md:text-xl">
             Empower your career. Be a part of a team that values progress,
             collaboration, and excellence.
           </p>
         </div>
         <div className="mx-auto max-w-6xl">
-          <div className="flex flex-wrap items-center justify-center mb-10 -mx-3">
-            <div className="w-full md:w-1/3 px-3 mb-3 md:mb-0">
-              <div className="relative bg-white border border-coolGray-200 rounded-lg shadow-md">
+          <div className="-mx-3 mb-10 flex flex-wrap items-center justify-center">
+            <div className="mb-3 w-full px-3 md:mb-0 md:w-1/3">
+              <div className="border-coolGray-200 relative rounded-lg border bg-white shadow-md">
                 <svg
-                  className="absolute top-1/2 transform -translate-y-1/2 right-0 mr-5"
+                  className="absolute right-0 top-1/2 mr-5 -translate-y-1/2 transform"
                   width="12"
                   height="8"
                   viewBox="0 0 12 8"
@@ -49,7 +49,7 @@ const CareerList = () => {
                   ></path>
                 </svg>
                 <select
-                  className="px-4 py-3 w-full appearance-none outline-none border-0 bg-transparent hover:cursor-pointer leading-6 text-coolGray-500 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50 rounded-lg"
+                  className="text-coolGray-500 w-full appearance-none rounded-lg border-0 bg-transparent px-4 py-3 leading-6 outline-none hover:cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
                   name=""
                 >
                   <option value="1">Location</option>
@@ -58,10 +58,10 @@ const CareerList = () => {
                 </select>
               </div>
             </div>
-            <div className="w-full md:w-1/3 px-3">
-              <div className="relative bg-white border border-coolGray-200 rounded-lg shadow-md">
+            <div className="w-full px-3 md:w-1/3">
+              <div className="border-coolGray-200 relative rounded-lg border bg-white shadow-md">
                 <svg
-                  className="absolute top-1/2 transform -translate-y-1/2 right-0 mr-5"
+                  className="absolute right-0 top-1/2 mr-5 -translate-y-1/2 transform"
                   width="12"
                   height="8"
                   viewBox="0 0 12 8"
@@ -74,7 +74,7 @@ const CareerList = () => {
                   ></path>
                 </svg>
                 <select
-                  className="px-4 py-3 w-full appearance-none outline-none border-0 bg-transparent hover:cursor-pointer leading-6 text-coolGray-500 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50 rounded-lg"
+                  className="text-coolGray-500 w-full appearance-none rounded-lg border-0 bg-transparent px-4 py-3 leading-6 outline-none hover:cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
                   name=""
                 >
                   <option value="1">Type</option>
@@ -88,16 +88,16 @@ const CareerList = () => {
         {openPositions.map((position, index) => (
           <div
             key={index}
-            className="flex flex-wrap items-center py-7 bg-coolGray-50 rounded-md"
+            className="bg-coolGray-50 flex flex-wrap items-center rounded-md py-7"
           >
-            <div className="w-full md:w-auto mr-auto mb-6 md:mb-0">
-              <h3 className="text-lg md:text-xl font-semibold">
+            <div className="mb-6 mr-auto w-full md:mb-0 md:w-auto">
+              <h3 className="text-lg font-semibold md:text-xl">
                 {position.title}
               </h3>
             </div>
-            <div className="w-full md:w-auto lg:mr-10 mb-6 md:mb-0">
+            <div className="mb-6 w-full md:mb-0 md:w-auto lg:mr-10">
               <div className="flex flex-wrap">
-                <div className="inline-flex w-full lg:w-auto mb-2 lg:mb-0 lg:mr-10 items-center">
+                <div className="mb-2 inline-flex w-full items-center lg:mb-0 lg:mr-10 lg:w-auto">
                   <svg
                     className="text-coolGray-300"
                     width="24"
@@ -111,11 +111,11 @@ const CareerList = () => {
                       fill="currentColor"
                     ></path>
                   </svg>
-                  <span className="ml-2 font-medium text-coolGray-500">
+                  <span className="text-coolGray-500 ml-2 font-medium">
                     {position.location}
                   </span>
                 </div>
-                <div className="inline-flex w-full lg:w-auto items-center">
+                <div className="inline-flex w-full items-center lg:w-auto">
                   <svg
                     className="text-coolGray-300"
                     width="24"
@@ -129,7 +129,7 @@ const CareerList = () => {
                       fill="currentColor"
                     ></path>
                   </svg>
-                  <span className="ml-2 font-medium text-coolGray-500">
+                  <span className="text-coolGray-500 ml-2 font-medium">
                     {position.type}
                   </span>
                 </div>
@@ -137,7 +137,7 @@ const CareerList = () => {
             </div>
             <div className="w-full md:w-auto">
               <Link
-                className="py-2 px-4 border-2 border-primary uppercase text-white bg-primary font-bold rounded-md text-md hover:text-primary hover:bg-white transition-all duration-300"
+                className="text-md rounded-md border-2 border-primary bg-primary px-4 py-2 font-bold uppercase text-white transition-all duration-300 hover:bg-white hover:text-primary"
                 to={`/careers/` + position.id}
               >
                 Learn More

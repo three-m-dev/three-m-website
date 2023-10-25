@@ -1,30 +1,30 @@
 const FrequentQuestions = () => {
   return (
     <section className="py-8 md:py-16">
-      <div className="container px-4 mx-auto">
-        <div className="flex flex-wrap -mx-4">
-          <div className="w-full md:w-1/2 px-4 mb-20 md:mb-0">
+      <div className="container mx-auto px-4">
+        <div className="-mx-4 flex flex-wrap">
+          <div className="mb-20 w-full px-4 md:mb-0 md:w-1/2">
             <div className="max-w-md">
-              <span className="inline-block py-px px-2 mb-4 text-xs leading-5 text-primary bg-green-100 font-medium rounded-full shadow-sm">
+              <span className="mb-4 inline-block rounded-full bg-green-100 px-2 py-px text-xs font-medium leading-5 text-primary shadow-sm">
                 FAQ
               </span>
-              <h2 className="mb-4 text-4xl md:text-5xl leading-tight text-coolGray-900 font-bold tracking-tighter">
+              <h2 className="text-coolGray-900 mb-4 text-4xl font-bold leading-tight tracking-tighter md:text-5xl">
                 Frequently Asked Questions
               </h2>
-              <p className="text-lg md:text-xl text-coolGray-500 font-medium">
+              <p className="text-coolGray-500 text-lg font-medium md:text-xl">
                 Flex is the only saas business platform that lets you run your
                 business on one platform, seamlessly across all digital
                 channels.
               </p>
             </div>
           </div>
-          <div className="w-full md:w-1/2 px-4">
-            <a className="flex flex-wrap w-full mb-10 text-left" href="#">
-              <div className="w-full md:w-auto md:pr-10 mb-2 md:mb-0">
-                <h3 className="mb-4 text-xl text-coolGray-900 font-bold">
+          <div className="w-full px-4 md:w-1/2">
+            <a className="mb-10 flex w-full flex-wrap text-left" href="#">
+              <div className="mb-2 w-full md:mb-0 md:w-auto md:pr-10">
+                <h3 className="text-coolGray-900 mb-4 text-xl font-bold">
                   How long does it take to ship my order?
                 </h3>
-                <p className="max-w-md text-coolGray-500 font-medium">
+                <p className="text-coolGray-500 max-w-md font-medium">
                   Orders are usually shipped within 1-2 business days after
                   placing the order.
                 </p>
@@ -45,11 +45,11 @@ const FrequentQuestions = () => {
               </div>
             </a>
             <a
-              className="flex flex-wrap w-full mb-10 text-primary hover:text-green-600 hover:underline text-left"
+              className="mb-10 flex w-full flex-wrap text-left text-primary hover:text-green-600 hover:underline"
               href="#"
             >
-              <div className="w-full md:w-auto md:pr-10 mb-2 md:mb-0">
-                <h3 className="text-xl text-coolGray-900 font-bold">
+              <div className="mb-2 w-full md:mb-0 md:w-auto md:pr-10">
+                <h3 className="text-coolGray-900 text-xl font-bold">
                   What payment methods do you accept?
                 </h3>
               </div>
@@ -69,11 +69,11 @@ const FrequentQuestions = () => {
               </div>
             </a>
             <a
-              className="flex flex-wrap w-full mb-10 text-primary hover:text-green-600 hover:underline text-left"
+              className="mb-10 flex w-full flex-wrap text-left text-primary hover:text-green-600 hover:underline"
               href="#"
             >
-              <div className="w-full md:w-auto md:pr-10 mb-2 md:mb-0">
-                <h3 className="text-xl text-coolGray-900 font-bold">
+              <div className="mb-2 w-full md:mb-0 md:w-auto md:pr-10">
+                <h3 className="text-coolGray-900 text-xl font-bold">
                   What shipping options do you have?
                 </h3>
               </div>
@@ -93,11 +93,11 @@ const FrequentQuestions = () => {
               </div>
             </a>
             <a
-              className="flex flex-wrap w-full mb-10 text-primary hover:text-green-600 hover:underline text-left"
+              className="mb-10 flex w-full flex-wrap text-left text-primary hover:text-green-600 hover:underline"
               href="#"
             >
-              <div className="w-full md:w-auto md:pr-10 mb-2 md:mb-0">
-                <h3 className="text-xl text-coolGray-900 font-bold">
+              <div className="mb-2 w-full md:mb-0 md:w-auto md:pr-10">
+                <h3 className="text-coolGray-900 text-xl font-bold">
                   How do I make changes to an existing order?
                 </h3>
               </div>
@@ -117,11 +117,11 @@ const FrequentQuestions = () => {
               </div>
             </a>
             <a
-              className="flex flex-wrap w-full text-primary hover:text-green-600 hover:underline text-left"
+              className="flex w-full flex-wrap text-left text-primary hover:text-green-600 hover:underline"
               href="#"
             >
-              <div className="w-full md:w-auto md:pr-10 mb-2 md:mb-0">
-                <h3 className="text-xl text-coolGray-900 font-bold">
+              <div className="mb-2 w-full md:mb-0 md:w-auto md:pr-10">
+                <h3 className="text-coolGray-900 text-xl font-bold">
                   When will my order arrive?
                 </h3>
               </div>
