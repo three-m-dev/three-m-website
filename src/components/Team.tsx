@@ -36,7 +36,7 @@ const Team = () => {
     <section className="py-8 md:py-16">
       <div className="container relative mx-auto px-4">
         <div className="mb-16 text-center">
-          <span className="mb-4 inline-block rounded-md bg-blue-200 px-2 py-1 text-sm uppercase leading-5 text-primary shadow-sm">
+          <span className="mb-4 inline-block bg-blue-200 px-2 py-1 text-sm uppercase leading-5 text-primary shadow-sm">
             Our Experts
           </span>
           <h3 className="mb-4 text-3xl font-bold leading-tight tracking-tighter text-gray-800 md:text-5xl">
@@ -55,11 +55,11 @@ const Team = () => {
             >
               <div className="mx-auto max-w-xs text-center">
                 <img
-                  className="mx-auto mb-6 h-24 w-24 rounded-md object-cover"
+                  className="mx-auto mb-6 h-24 w-24 object-cover"
                   src={teamMember.photo}
                   alt={`Three M Tool & Machine Team Member ` + teamMember.name}
                 />
-                <h3 className="text-coolGray-800 mb-1 text-lg font-semibold">
+                <h3 className="mb-1 text-lg font-semibold text-gray-800">
                   {teamMember.name}
                 </h3>
                 <span className="mb-6 inline-block text-lg font-medium text-primary">

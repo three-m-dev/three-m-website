@@ -22,7 +22,7 @@ const ServiceBlocks = () => {
     <section className="overflow-hidden py-8 md:py-16">
       <div className="mx-auto max-w-screen-xl px-4">
         <div className="mx-auto mb-8 max-w-4xl text-center">
-          <span className="mb-4 inline-block rounded-md bg-blue-200 px-2 py-1 text-sm uppercase leading-5 text-primary shadow-sm">
+          <span className="mb-4 inline-block bg-blue-200 px-2 py-1 text-sm uppercase leading-5 text-primary shadow-sm">
             Innovative Manufacturing
           </span>
           <h3 className="mb-4 text-3xl font-bold leading-tight tracking-tighter text-gray-800 md:text-5xl">
@@ -41,7 +41,7 @@ const ServiceBlocks = () => {
                   onClick={() => {
                     toggleModal();
                   }}
-                  className="relative flex h-72 w-full items-end overflow-hidden rounded-md p-6"
+                  className="relative flex h-72 w-full items-end overflow-hidden p-6"
                 >
                   <img
                     className="absolute left-0 top-0 h-full w-full object-cover"
@@ -63,7 +63,7 @@ const ServiceBlocks = () => {
                   onClick={() => {
                     toggleModal();
                   }}
-                  className="relative flex h-72 w-full items-end overflow-hidden rounded-md p-6"
+                  className="relative flex h-72 w-full items-end overflow-hidden p-6"
                 >
                   <img
                     className="absolute left-0 top-0 h-full w-full object-cover"
@@ -85,7 +85,7 @@ const ServiceBlocks = () => {
                   onClick={() => {
                     toggleModal();
                   }}
-                  className="relative flex h-140 w-full items-end overflow-hidden rounded-md p-6"
+                  className="relative flex h-140 w-full items-end overflow-hidden p-6"
                 >
                   <img
                     className="absolute left-0 top-0 h-full w-full object-cover"
@@ -111,7 +111,7 @@ const ServiceBlocks = () => {
                   onClick={() => {
                     toggleModal();
                   }}
-                  className="relative flex h-140 w-full items-end overflow-hidden rounded-md p-6"
+                  className="relative flex h-140 w-full items-end overflow-hidden p-6"
                 >
                   <img
                     className="absolute left-0 top-0 h-full w-full object-cover"
@@ -133,7 +133,7 @@ const ServiceBlocks = () => {
                   onClick={() => {
                     toggleModal();
                   }}
-                  className="relative flex h-72 w-full items-end overflow-hidden rounded-md p-6"
+                  className="relative flex h-72 w-full items-end overflow-hidden p-6"
                 >
                   <img
                     className="absolute left-0 top-0 h-full w-full object-cover"
@@ -155,7 +155,7 @@ const ServiceBlocks = () => {
                   onClick={() => {
                     toggleModal();
                   }}
-                  className="relative flex h-72 w-full items-end overflow-hidden rounded-md p-6"
+                  className="relative flex h-72 w-full items-end overflow-hidden p-6"
                 >
                   <img
                     className="absolute left-0 top-0 h-full w-full object-cover"

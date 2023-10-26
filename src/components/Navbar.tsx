@@ -63,7 +63,7 @@ const Navbar = () => {
           </a>
         </div>
       </div>
-      <nav className="sticky left-0 top-0 z-50 border-b border-gray-200 bg-white">
+      <nav className="sticky left-0 top-0 z-50 bg-white shadow">
         <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
           <Link to="/" className="flex items-center">
             <img

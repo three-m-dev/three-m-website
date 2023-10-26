@@ -37,7 +37,7 @@ const BulletinList = () => {
     <section className="bg-white py-8 md:py-16">
       <div className="mx-auto max-w-screen-xl px-4">
         <div className="mx-auto mb-8 text-center md:mb-8 md:max-w-5xl">
-          <span className="mb-4 inline-block rounded-md bg-blue-200 px-2 py-1 text-sm uppercase leading-5 tracking-wider text-primary shadow-sm">
+          <span className="mb-4 inline-block bg-blue-200 px-2 py-1 text-sm uppercase leading-5 tracking-wider text-primary shadow-sm">
             News & Insights
           </span>
           <h1 className="mb-4 text-3xl font-bold leading-tight tracking-tighter text-gray-800 md:text-5xl">
@@ -53,7 +53,7 @@ const BulletinList = () => {
           <li>
             <button
               onClick={() => setFilter("all")}
-              className={`rounded-md px-4 py-2 text-gray-800 transition-all duration-300 ${
+              className={`px-4 py-2 text-gray-800 transition-all duration-300 ${
                 filter === "all" ? "bg-gray-300" : "bg-gray-200"
               }`}
             >
@@ -63,7 +63,7 @@ const BulletinList = () => {
           <li>
             <button
               onClick={() => setFilter("article")}
-              className={`rounded-md px-4 py-2 text-gray-800 transition-all duration-300 ${
+              className={`px-4 py-2 text-gray-800 transition-all duration-300 ${
                 filter === "article" ? "bg-gray-300" : "bg-gray-200"
               }`}
             >
@@ -73,7 +73,7 @@ const BulletinList = () => {
           <li>
             <button
               onClick={() => setFilter("update")}
-              className={`rounded-md px-4 py-2 text-gray-800 transition-all duration-300 ${
+              className={`px-4 py-2 text-gray-800 transition-all duration-300 ${
                 filter === "update" ? "bg-gray-300" : "bg-gray-200"
               }`}
             >
@@ -95,7 +95,7 @@ const BulletinList = () => {
                   <span className="text-sm uppercase tracking-wider">
                     {post.date}
                   </span>
-                  <span className="rounded-md bg-blue-200 px-2 py-1 text-xs uppercase tracking-wider text-primary">
+                  <span className="bg-blue-200 px-2 py-1 text-xs uppercase tracking-wider text-primary">
                     {post.type}
                   </span>
                 </p>
@@ -120,7 +120,7 @@ const BulletinList = () => {
           <div className="flex flex-col items-center">
             <button
               onClick={loadMore}
-              className="rounded-md border-2 border-primary bg-primary px-4 py-2 font-bold uppercase text-white hover:bg-white hover:text-primary"
+              className="border-2 border-primary bg-primary px-4 py-2 font-bold uppercase text-white hover:bg-white hover:text-primary"
             >
               <span>View More</span>
             </button>

@@ -3,7 +3,7 @@ const ContactForm = () => {
     <section className="bg-gray-50 py-8 md:py-16">
       <div className="container mx-auto px-4">
         <div className="mx-auto mb-8 text-center md:mb-8 md:max-w-5xl">
-          <span className="mb-4 inline-block rounded-md bg-blue-200 px-2 py-1 text-sm uppercase leading-5 tracking-wider text-primary shadow-sm">
+          <span className="mb-4 inline-block bg-blue-200 px-2 py-1 text-sm uppercase leading-5 tracking-wider text-primary shadow-sm">
             Reach Out & Connect
           </span>
           <h3 className="text-darkgray-900 mb-4 text-3xl font-bold leading-tight tracking-tighter md:text-5xl">
@@ -15,7 +15,7 @@ const ContactForm = () => {
           </p>
         </div>
         <div className="mx-auto">
-          <div className="mx-auto max-w-md rounded-md bg-white shadow md:max-w-none">
+          <div className="mx-auto max-w-md bg-white shadow md:max-w-none">
             <div className="-mx-4 flex flex-wrap">
               <div className="mb-16 w-full px-4 lg:mb-0 lg:w-1/2">
                 <div className="max-w-md">
@@ -79,7 +79,7 @@ const ContactForm = () => {
           <div className="-m-4 flex flex-wrap">
             <div className="w-full p-4 md:w-1/3">
               <div className="py-10 text-center">
-                <div className="mx-auto mb-6 flex h-12 w-12 items-center justify-center rounded-md bg-gray-100">
+                <div className="mx-auto mb-6 flex h-12 w-12 items-center justify-center bg-gray-100">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -104,7 +104,7 @@ const ContactForm = () => {
             </div>
             <div className="w-full p-4 md:w-1/3">
               <div className="h-full rounded-3xl py-10 text-center">
-                <div className="mx-auto mb-6 flex h-12 w-12 items-center justify-center rounded-md bg-gray-100">
+                <div className="mx-auto mb-6 flex h-12 w-12 items-center justify-center bg-gray-100">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -131,7 +131,7 @@ const ContactForm = () => {
             </div>
             <div className="w-full p-4 md:w-1/3">
               <div className="h-full rounded-3xl py-10 text-center">
-                <div className="mx-auto mb-6 flex h-12 w-12 items-center justify-center rounded-md bg-gray-100">
+                <div className="mx-auto mb-6 flex h-12 w-12 items-center justify-center bg-gray-100">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
