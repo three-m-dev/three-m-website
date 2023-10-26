@@ -7,6 +7,7 @@ export { default as ContactForm } from "./ContactForm";
 export { default as Footer } from "./Footer";
 export { default as FrequentQuestions } from "./FrequentQuestions";
 export { default as Hero } from "./Hero";
+export { default as ImageMenu } from "./ImageMenu";
 export { default as Navbar } from "./Navbar";
 export { default as NewsletterCTA } from "./NewsletterCTA";
 export { default as QualityPolicy } from "./QualityPolicy";

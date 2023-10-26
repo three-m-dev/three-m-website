@@ -1,11 +1,11 @@
-import { Footer, Hero, Navbar } from "../components";
-import NewsletterCTA from "../components/NewsletterCTA";
+import { Footer, Hero, ImageMenu, Navbar, NewsletterCTA } from "../components";
 
 const Home = () => {
   return (
     <>
       <Navbar />
       <Hero />
+      <ImageMenu />
       <NewsletterCTA />
       <Footer />
     </>

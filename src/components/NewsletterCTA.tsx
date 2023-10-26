@@ -1,6 +1,6 @@
 const NewsletterCTA = () => {
   return (
-    <section className="bg-white py-8 md:py-16">
+    <section className="bg-primary text-white py-8 md:py-16">
       <div className="mx-auto max-w-screen-xl px-4">
         <div className="-mx-4 flex flex-wrap">
           <div className="mb-10 w-full px-4 md:mb-0 md:w-1/2">
@@ -16,13 +16,13 @@ const NewsletterCTA = () => {
               <div className="mb-1 flex flex-wrap">
                 <div className="mb-3 w-full md:mb-0 md:mr-6 md:flex-1">
                   <input
-                    className="text-coolGray-500 placeholder-coolGray-500 border-coolGray-200 shadow-xsm w-full rounded-lg border px-4 py-3 leading-tight focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
+                    className="text-coolGray-500 placeholder-coolGray-500 border-coolGray-200 shadow-xsm w-full border px-4 py-3 leading-tight focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
                     type="text"
                     placeholder="Enter your email"
                   />
                 </div>
                 <div className="w-full md:w-auto">
-                  <button className="text-md rounded-md border-2 border-primary px-4 py-2 font-bold uppercase text-primary transition-all duration-300 hover:bg-primary hover:text-white">
+                  <button className="text-md border-2 border-white px-4 py-2 font-bold uppercase text-white transition-all duration-500 hover:bg-white hover:text-primary">
                     Subscribe
                   </button>
                 </div>
