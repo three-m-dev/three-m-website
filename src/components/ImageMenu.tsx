@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 const ImageMenu = () => {
   return (
     <div className="flex flex-col md:flex-row">
-      <div
+      <Link
+        to="/services"
         className="relative h-[100vw] w-screen bg-red-500 md:h-[33.33vw] lg:w-1/3"
         style={{
           backgroundImage:
@@ -16,8 +17,9 @@ const ImageMenu = () => {
         <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-3xl font-bold uppercase tracking-wider text-white">
           Services
         </span>
-      </div>
-      <div
+      </Link>
+      <Link
+        to="/careers"
         className="relative h-[100vw] w-screen bg-blue-500 object-cover md:h-[33.33vw] lg:w-1/3"
         style={{
           backgroundImage:
@@ -30,9 +32,9 @@ const ImageMenu = () => {
         <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-3xl font-bold uppercase tracking-wider text-white">
           Careers
         </span>
-      </div>
+      </Link>
       <Link
-        to="/services"
+        to="/contact"
         className="relative h-[100vw] w-screen bg-green-500 md:h-[33.33vw] lg:w-1/3"
         style={{
           backgroundImage:
