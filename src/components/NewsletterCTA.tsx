@@ -1,34 +1,35 @@
 const NewsletterCTA = () => {
   return (
-    <section className="bg-primary text-white py-8 md:py-16">
-      <div className="mx-auto max-w-screen-xl px-4">
-        <div className="-mx-4 flex flex-wrap">
-          <div className="mb-10 w-full px-4 md:mb-0 md:w-1/2">
-            <h3 className="mb-4 text-3xl font-bold leading-tight tracking-tighter md:text-4xl">
-              Sign up for our newsletter
-            </h3>
-            <p className="text-coolGray-500 text-lg font-medium md:text-xl">
-              Stay in the loop with everything you need to know.
-            </p>
-          </div>
-          <div className="w-full px-4 md:w-1/2">
-            <div className="mx-auto md:mr-0 md:max-w-md">
-              <div className="mb-1 flex flex-wrap">
-                <div className="mb-3 w-full md:mb-0 md:mr-6 md:flex-1">
-                  <input
-                    className="text-coolGray-500 placeholder-coolGray-500 border-coolGray-200 shadow-xsm w-full border px-4 py-3 leading-tight focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
-                    type="text"
-                    placeholder="Enter your email"
-                  />
-                </div>
-                <div className="w-full md:w-auto">
-                  <button className="text-md border-2 border-white px-4 py-2 font-bold uppercase text-white transition-all duration-500 hover:bg-white hover:text-primary">
-                    Subscribe
-                  </button>
-                </div>
-              </div>
+    <section className="bg-primary py-8 md:py-16">
+      <div className="px-8 md:px-12 lg:px-16">
+        <div className="mx-auto max-w-lg text-center">
+          <h2 className="text-2xl font-bold text-white md:text-3xl">
+            Stay in the Loop
+          </h2>
+
+          <p className="hidden text-white sm:mt-4 sm:block">
+            Subscribe to our newsletter for the latest updates, exclusive
+            insights, and expert tips from the heart of the manufacturing world.
+            Don't miss out on the innovations of Three M.
+          </p>
+        </div>
+
+        <div className="mx-auto mt-8 max-w-xl">
+          <form action="#" className="sm:flex sm:gap-4">
+            <div className="sm:flex-1">
+              <label className="sr-only">Email</label>
+
+              <input
+                type="email"
+                placeholder="Email address"
+                className="mb-4 w-full border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none sm:mb-0"
+              />
             </div>
-          </div>
+
+            <button className="text-md border-2 border-white px-4 py-2 font-bold uppercase tracking-wider text-white transition-all duration-300 hover:bg-white hover:text-primary">
+              <span> Sign Up </span>
+            </button>
+          </form>
         </div>
       </div>
     </section>
