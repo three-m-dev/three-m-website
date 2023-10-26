@@ -16,35 +16,35 @@ const Hero = () => {
       image:
         "https://st3.depositphotos.com/1594308/35318/i/450/depositphotos_353185344-stock-photo-content-young-multi-ethnic-coworkers.jpg",
       alt: "Slide Image",
-      message: "Your First Message Here",
+      message: "In-House CAD Design",
       ctaLink: "/first-link",
       ctaText: "Learn More",
       align: "left",
     },
     {
       image:
-        "https://three-m.com/wp-content/uploads/2014/09/MikeZeiss-960x360.jpg",
+        "https://static6.depositphotos.com/1003697/539/i/450/depositphotos_5392705-stock-photo-industry-workers-in-factory.jpg",
       alt: "Slide Image",
-      message: "Your Second Message Here",
+      message: "Manufacturing Excellence",
       ctaLink: "/second-link",
       ctaText: "Learn More",
       align: "right",
     },
     {
       image:
-        "https://static6.depositphotos.com/1003697/539/i/450/depositphotos_5392705-stock-photo-industry-workers-in-factory.jpg",
+        "https://three-m.com/wp-content/uploads/2014/09/MikeZeiss-960x360.jpg",
       alt: "Slide Image",
-      message: "Your Third Message Here",
+      message: "Quality Inspection Guaranteed",
       ctaLink: "/third-link",
       ctaText: "Learn More",
       align: "left",
     },
     {
       image:
-        "https://static6.depositphotos.com/1003697/539/i/450/depositphotos_5392705-stock-photo-industry-workers-in-factory.jpg",
+        "https://st5.depositphotos.com/7247698/66216/i/450/depositphotos_662161590-stock-photo-senior-male-worker-engineer-working.jpg",
       alt: "Slide Image",
-      message: "Your Third Message Here",
-      ctaLink: "/third-link",
+      message: "Tailored Manufacturing Solutions",
+      ctaLink: "/fourth-link",
       ctaText: "Learn More",
       align: "right",
     },
@@ -61,13 +61,13 @@ const Hero = () => {
       />
       <div className="absolute z-10 h-full w-full bg-black opacity-60"></div>
 
-      <div className="relative z-20 mx-auto flex w-full max-w-screen-xl px-4 justify-center lg:justify-start">
+      <div className="relative z-20 mx-auto flex w-full max-w-screen-xl justify-center px-4 lg:justify-start">
         <div
           className={`flex flex-col items-center gap-8 ${
             slides[currentSlide].align === "right" && "lg:ml-auto"
           } ${slides[currentSlide].align === "center" && "lg:mx-auto"}`}
         >
-          <h1 className="text-4xl font-semibold uppercase text-white">
+          <h1 className="text-center text-4xl font-semibold uppercase text-white lg:w-4/5">
             {slides[currentSlide].message}
           </h1>
           <Link
@@ -124,7 +124,7 @@ const Hero = () => {
         {slides.map((_, index) => (
           <button
             key={index}
-            className={`h-3 w-3 rounded-full border transition-all duration-300 ${
+            className={`h-3 w-3 border transition-all duration-300 ${
               currentSlide === index
                 ? "bg-primary"
                 : "bg-transparent hover:bg-white"
