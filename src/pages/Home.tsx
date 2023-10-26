@@ -1,11 +1,10 @@
-import { Footer, Hero, Navbar, ServicePreview } from "../components";
+import { Footer, Hero, Navbar } from "../components";
 
 const Home = () => {
   return (
     <>
       <Navbar />
       <Hero />
-      <ServicePreview />
       <Footer />
     </>
   );

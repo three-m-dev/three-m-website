@@ -3,30 +3,41 @@ import { Link } from "react-router-dom";
 
 interface Slide {
   image: string;
+  alt: string;
   message: string;
   ctaLink: string;
   ctaText: string;
+  align: string;
 }
 
 const Hero = () => {
   const slides: Slide[] = [
     {
-      image: "/path/to/image1.jpg",
+      image:
+        "https://st3.depositphotos.com/1594308/35318/i/450/depositphotos_353185344-stock-photo-content-young-multi-ethnic-coworkers.jpg",
+      alt: "Slide Image",
       message: "Your First Message Here",
       ctaLink: "/first-link",
       ctaText: "Learn More",
+      align: "left",
     },
     {
-      image: "/path/to/image2.jpg",
+      image:
+        "https://three-m.com/wp-content/uploads/2014/09/MikeZeiss-960x360.jpg",
+      alt: "Slide Image",
       message: "Your Second Message Here",
       ctaLink: "/second-link",
       ctaText: "Learn More",
+      align: "right",
     },
     {
-      image: "/path/to/image2.jpg",
+      image:
+        "https://static6.depositphotos.com/1003697/539/i/450/depositphotos_5392705-stock-photo-industry-workers-in-factory.jpg",
+      alt: "Slide Image",
       message: "Your Third Message Here",
       ctaLink: "/third-link",
       ctaText: "Learn More",
+      align: "left",
     },
   ];
 
@@ -36,25 +47,25 @@ const Hero = () => {
     <div className="relative flex h-[65vh] items-center justify-center">
       <img
         src={slides[currentSlide].image}
-        alt="Slide Image"
+        alt={slides[currentSlide].alt}
         className="absolute z-0 h-full w-full object-cover"
       />
       <div className="absolute z-10 h-full w-full bg-black opacity-60"></div>
 
       <div className="relative z-20 flex flex-col items-center gap-8">
-        <h1 className="text-center text-4xl font-semibold text-white md:text-6xl">
+        <h1 className="text-center text-4xl font-semibold uppercase text-white">
           {slides[currentSlide].message}
         </h1>
         <Link
           to={slides[currentSlide].ctaLink}
-          className="text-md rounded-md border-2 border-white px-4 py-2 font-bold uppercase text-white hover:bg-white hover:text-black"
+          className="text-md border-2 border-white px-4 py-2 font-bold uppercase text-white transition-all duration-300 hover:border-primary hover:bg-primary tracking-wider"
         >
           {slides[currentSlide].ctaText}
         </Link>
       </div>
 
       <button
-        className="absolute left-4 top-1/2 z-30 rounded-md bg-white p-2.5 text-primary transition-all duration-300 hover:bg-primary hover:text-white"
+        className="absolute left-0 top-1/2 z-30 bg-white p-2.5 text-primary opacity-25 transition-all duration-300 hover:opacity-100"
         onClick={() =>
           setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)
         }
@@ -75,7 +86,7 @@ const Hero = () => {
         </svg>
       </button>
       <button
-        className="absolute right-4 top-1/2 z-30 rounded-md bg-white p-2.5 text-primary transition-all duration-300 hover:bg-primary hover:text-white"
+        className="absolute right-0 top-1/2 z-30 bg-white p-2.5 text-primary opacity-25 transition-all duration-300 hover:opacity-100"
         onClick={() => setCurrentSlide((prev) => (prev + 1) % slides.length)}
       >
         <svg
@@ -98,10 +109,10 @@ const Hero = () => {
         {slides.map((_, index) => (
           <button
             key={index}
-            className={`h-4 w-4 rounded-full border ${
+            className={`h-3 w-3 rounded-full border transition-all duration-300 ${
               currentSlide === index
                 ? "bg-primary"
-                : "bg-transparent transition-all duration-300 hover:bg-white"
+                : "bg-transparent hover:bg-white"
             }`}
             onClick={() => setCurrentSlide(index)}
           ></button>

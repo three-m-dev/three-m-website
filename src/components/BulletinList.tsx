@@ -40,9 +40,9 @@ const BulletinList = () => {
           <span className="mb-4 inline-block rounded-md bg-blue-200 px-2 py-1 text-sm uppercase leading-5 tracking-wider text-primary shadow-sm">
             News & Insights
           </span>
-          <h3 className="mb-4 text-3xl font-bold leading-tight tracking-tighter text-gray-800 md:text-5xl">
+          <h1 className="mb-4 text-3xl font-bold leading-tight tracking-tighter text-gray-800 md:text-5xl">
             The Latest Developments from Three M
-          </h3>
+          </h1>
           <p className="mb-10 text-lg font-medium text-gray-500 md:text-xl">
             Stay ahead of the curve. Explore our latest projects, innovations,
             and milestones, all in one place.

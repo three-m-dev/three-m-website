@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Link, useMatch } from "react-router-dom";
+import LogoFull from "../assets/images/logo horizontal.png";
+// import LogoIcon from "../assets/images/logo icon.png";
 import Button from "./Button";
 
 const Navbar = () => {
@@ -12,9 +14,9 @@ const Navbar = () => {
   const bulletinMatch = useMatch("/bulletin/*");
 
   const activeLink =
-    "h-[2px] w-full transform scale-x-100 rounded-lg bg-primary transition-all duration-300 ease-in-out]";
+    "h-[2px] w-full transform scale-x-100 rounded-md bg-primary transition-all duration-300 ease-in-out";
   const inactiveLink =
-    "h-[2px] w-full transform scale-x-0 rounded-lg bg-primary transition-all duration-300 ease-in-out group-hover:scale-x-100";
+    "h-[2px] w-full transform scale-x-0 rounded-md bg-primary transition-all duration-300 ease-in-out group-hover:scale-x-100";
 
   const toggleMobileNavbar = () => {
     setMobileNavOpen(!isMobileNavOpen);
@@ -64,23 +66,20 @@ const Navbar = () => {
       <nav className="sticky left-0 top-0 z-50 border-b border-gray-200 bg-white">
         <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
           <Link to="/" className="flex items-center">
-            {/* <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            className="h-8 mr-3"
-            alt="Three M Tool & Machine Logo"
-          /> */}
-            <span className="self-center whitespace-nowrap text-2xl font-semibold">
-              Three M
-            </span>
+            <img
+              src={LogoFull}
+              className="h-10"
+              alt="Three M Tool & Machine Logo"
+            />
           </Link>
           <div className="flex gap-2 md:order-2">
             <div className="hidden lg:flex">
-              <Button type="link" text="Contact Us" to="/contact" />
+              <Button type="link" text="Contact" to="/contact" />
             </div>
             <button
               type="button"
               onClick={toggleMobileNavbar}
-              className="inline-flex items-center justify-center rounded-lg border-2 border-primary p-2 text-primary transition-all duration-300 hover:bg-primary hover:text-white focus:outline-none lg:hidden"
+              className="inline-flex items-center justify-center border-2 border-primary p-2 text-primary transition-all duration-300 hover:bg-primary hover:text-white focus:outline-none lg:hidden"
             >
               <span className="sr-only">Open main menu</span>
               <svg
