@@ -1,10 +1,10 @@
-import { ContactForm, Footer, Navbar } from "../components";
+import { Footer, Navbar } from "../components";
 
 const Contact = () => {
   return (
     <>
       <Navbar />
-      <ContactForm />
+      {/* <ContactForm /> */}
       <Footer />
     </>
   );
