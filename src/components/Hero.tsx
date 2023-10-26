@@ -53,7 +53,7 @@ const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState<number>(0);
 
   return (
-    <div className="relative flex h-[65vh] items-center justify-center lg:justify-start">
+    <div className="relative flex h-[65vh] items-center justify-center">
       <img
         src={slides[currentSlide].image}
         alt={slides[currentSlide].alt}
@@ -61,25 +61,22 @@ const Hero = () => {
       />
       <div className="absolute z-10 h-full w-full bg-black opacity-60"></div>
 
-      <div
-        className={`relative z-20 flex flex-col items-center gap-8 px-4 
-                        ${
-                          slides[currentSlide].align === "right" && "lg:ml-auto"
-                        } 
-                        ${
-                          slides[currentSlide].align === "center" &&
-                          "lg:mx-auto"
-                        }`}
-      >
-        <h1 className="text-center text-4xl font-semibold uppercase text-white">
-          {slides[currentSlide].message}
-        </h1>
-        <Link
-          to={slides[currentSlide].ctaLink}
-          className="text-md border-2 border-white px-4 py-2 font-bold uppercase tracking-wider text-white transition-all duration-300 hover:border-primary hover:bg-primary"
+      <div className="relative z-20 mx-auto flex w-full max-w-screen-xl px-4 justify-center lg:justify-start">
+        <div
+          className={`flex flex-col items-center gap-8 ${
+            slides[currentSlide].align === "right" && "lg:ml-auto"
+          } ${slides[currentSlide].align === "center" && "lg:mx-auto"}`}
         >
-          {slides[currentSlide].ctaText}
-        </Link>
+          <h1 className="text-4xl font-semibold uppercase text-white">
+            {slides[currentSlide].message}
+          </h1>
+          <Link
+            to={slides[currentSlide].ctaLink}
+            className="text-md border-2 border-white px-4 py-2 font-bold uppercase tracking-wider text-white transition-all duration-300 hover:border-primary hover:bg-primary"
+          >
+            {slides[currentSlide].ctaText}
+          </Link>
+        </div>
       </div>
 
       <button
