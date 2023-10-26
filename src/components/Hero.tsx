@@ -39,12 +39,21 @@ const Hero = () => {
       ctaText: "Learn More",
       align: "left",
     },
+    {
+      image:
+        "https://static6.depositphotos.com/1003697/539/i/450/depositphotos_5392705-stock-photo-industry-workers-in-factory.jpg",
+      alt: "Slide Image",
+      message: "Your Third Message Here",
+      ctaLink: "/third-link",
+      ctaText: "Learn More",
+      align: "right",
+    },
   ];
 
   const [currentSlide, setCurrentSlide] = useState<number>(0);
 
   return (
-    <div className="relative flex h-[65vh] items-center justify-center">
+    <div className="relative flex h-[65vh] items-center justify-center lg:justify-start">
       <img
         src={slides[currentSlide].image}
         alt={slides[currentSlide].alt}
@@ -52,13 +61,22 @@ const Hero = () => {
       />
       <div className="absolute z-10 h-full w-full bg-black opacity-60"></div>
 
-      <div className="relative z-20 flex flex-col items-center gap-8">
+      <div
+        className={`relative z-20 flex flex-col items-center gap-8 px-4 
+                        ${
+                          slides[currentSlide].align === "right" && "lg:ml-auto"
+                        } 
+                        ${
+                          slides[currentSlide].align === "center" &&
+                          "lg:mx-auto"
+                        }`}
+      >
         <h1 className="text-center text-4xl font-semibold uppercase text-white">
           {slides[currentSlide].message}
         </h1>
         <Link
           to={slides[currentSlide].ctaLink}
-          className="text-md border-2 border-white px-4 py-2 font-bold uppercase text-white transition-all duration-300 hover:border-primary hover:bg-primary tracking-wider"
+          className="text-md border-2 border-white px-4 py-2 font-bold uppercase tracking-wider text-white transition-all duration-300 hover:border-primary hover:bg-primary"
         >
           {slides[currentSlide].ctaText}
         </Link>
