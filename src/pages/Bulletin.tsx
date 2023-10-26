@@ -1,12 +1,11 @@
-import { BulletinList, Footer, Navbar } from "../components";
-import NewsletterCTA from "../components/NewsletterCTA";
+import { BulletinList, Footer, Navbar, NewsletterCTA } from "../components";
 
 const Bulletin = () => {
   return (
     <>
       <Navbar />
       <BulletinList />
-      {/* <NewsletterCTA /> */}
+      <NewsletterCTA />
       <Footer />
     </>
   );
