@@ -1,148 +1,198 @@
 const ServicePreview = () => {
   return (
-    <section className="py-8 md:py-16">
-      <div className="mx-auto mb-16 max-w-screen-xl px-4">
-        <div className="-mx-4 flex flex-wrap">
-          <div className="mb-6 w-full px-4 sm:mb-0 sm:w-1/2 xl:w-3/5">
-            <h1 className="font-heading text-4xl font-bold text-gray-800">
-              Services
-            </h1>
-          </div>
-          <div className="ml-auto w-full px-4 sm:w-1/2 xl:w-auto">
-            <div className="flex items-center sm:justify-end">
-              <a
-                className="mr-4 inline-flex h-8 w-20 items-center justify-center rounded-md border-2 border-primary hover:border-gray-700"
-                href="#"
-              >
-                <svg
-                  width="10"
-                  height="9"
-                  viewBox="0 0 10 9"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.06245 8.2123L1.28774 8.2123M1.28774 8.2123L1.28774 2.4376M1.28774 8.2123L8.71236 0.787683"
-                    stroke="#84878A"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                </svg>
-              </a>
-              <a
-                className="inline-flex h-8 w-20 items-center justify-center rounded-md bg-primary text-white transition duration-200 hover:bg-blue-200"
-                href="#"
-              >
-                <svg
-                  width="10"
-                  height="9"
-                  viewBox="0 0 10 9"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2.93766 0.787683L8.71236 0.787683M8.71236 0.787683L8.71236 6.56239M8.71236 0.787683L1.28774 8.2123"
-                    stroke="black"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                </svg>
-              </a>
-            </div>
-          </div>
+    <section className="bg-gray-50 text-gray-800">
+      <div className="mx-auto max-w-screen-xl px-4 py-8 md:py-16">
+        <div className="mx-auto max-w-lg text-center">
+          <h2 className="text-3xl font-bold sm:text-4xl">What We Do</h2>
+
+          <p className="mt-4 text-gray-400">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Consequuntur aliquam doloribus nesciunt eos fugiat. Vitae aperiam
+            fugit consequuntur saepe laborum.
+          </p>
         </div>
-      </div>
-      <div className="overflow-hidden px-4">
-        <div className="-mx-4 flex flex-nowrap justify-center">
-          <div className="hidden flex-shrink-0 px-4 sm:block sm:w-2/5 lg:w-1/4">
-            <a className="group relative block" href="#">
-              <div className="absolute left-0 top-0 h-full w-full bg-black bg-opacity-75"></div>
-              <img
-                className="mb-6 block h-80 w-full object-cover"
-                src="vendia-assets/images/category/category-2-items1.png"
-                alt=""
+
+        <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <a
+            className="block border-2 border-primary p-8 transition hover:border-blue-500/10 hover:shadow-blue-500/10"
+            href="/services/digital-campaigns"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-10 w-10 text-primary"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path d="M12 14l9-5-9-5-9 5 9 5z" />
+              <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
               />
-              <div>
-                <span className="text-sm font-medium text-gray-500">
-                  Desk and Office
-                </span>
-                <h5 className="mt-2 text-xl font-bold text-white group-hover:text-primary">
-                  Work from home accessories
-                </h5>
-              </div>
-            </a>
-          </div>
-          <div className="hidden w-1/4 flex-shrink-0 px-4 lg:block">
-            <a className="group relative block" href="#">
-              <img
-                className="mb-6 block h-80 w-full object-cover"
-                src="vendia-assets/images/category/category-2-items3.png"
-                alt=""
+            </svg>
+
+            <h2 className="mt-4 text-xl font-bold text-primary">Milling</h2>
+
+            <p className="mt-1 text-sm text-gray-400">
+              Harness the power of our state-of-the-art milling machines for
+              precise cuts and exact specifications.
+            </p>
+          </a>
+
+          <a
+            className="block border-2 border-primary p-8 transition hover:border-blue-500/10 hover:shadow-blue-500/10"
+            href="/services/digital-campaigns"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-10 w-10 text-primary"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path d="M12 14l9-5-9-5-9 5 9 5z" />
+              <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
               />
-              <div>
-                <span className="text-sm font-medium text-gray-500">
-                  Desk and Office
-                </span>
-                <h5 className="mt-2 text-xl font-bold text-white group-hover:text-primary">
-                  Work from home accessories
-                </h5>
-              </div>
-            </a>
-          </div>
-          <div className="xs:w-1/2 w-full flex-shrink-0 px-4 sm:w-2/5 lg:w-1/4">
-            <a className="group relative block" href="#">
-              <img
-                className="mb-6 block h-80 w-full object-cover"
-                src="vendia-assets/images/category/category-2-items2.png"
-                alt=""
+            </svg>
+
+            <h2 className="mt-4 text-xl font-bold text-primary">Lathing</h2>
+
+            <p className="mt-1 text-sm text-gray-400">
+              Experience the precision of our lathing services, where we sculpt
+              materials to your exact needs.
+            </p>
+          </a>
+
+          <a
+            className="block border-2 border-primary p-8 transition hover:border-blue-500/10 hover:shadow-blue-500/10"
+            href="/services/digital-campaigns"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-10 w-10 text-primary"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path d="M12 14l9-5-9-5-9 5 9 5z" />
+              <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
               />
-              <div>
-                <span className="text-sm font-medium text-gray-500">
-                  Self-Improvement
-                </span>
-                <h5 className="mt-2 text-xl font-bold text-white group-hover:text-primary">
-                  Book that really helps
-                </h5>
-              </div>
-            </a>
-          </div>
-          <div className="xs:block xs:w-1/2 hidden flex-shrink-0 px-4 sm:w-2/5 lg:w-1/4">
-            <a className="group relative block" href="#">
-              <img
-                className="mb-6 block h-80 w-full object-cover"
-                src="vendia-assets/images/category/category-2-items1.png"
-                alt=""
+            </svg>
+
+            <h2 className="mt-4 text-xl font-bold text-primary">Grinding</h2>
+
+            <p className="mt-1 text-sm text-gray-400">
+              Achieve the perfect finish and exact dimensions with our dedicated
+              grinding services.
+            </p>
+          </a>
+
+          <a
+            className="block border-2 border-primary p-8 transition hover:border-blue-500/10 hover:shadow-blue-500/10"
+            href="/services/digital-campaigns"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-10 w-10 text-primary"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path d="M12 14l9-5-9-5-9 5 9 5z" />
+              <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
               />
-              <div>
-                <span className="text-sm font-medium text-gray-500">
-                  Fitness
-                </span>
-                <h5 className="mt-2 text-xl font-bold text-white group-hover:text-primary">
-                  Daily exercise essentials
-                </h5>
-              </div>
-            </a>
-          </div>
-          <div className="hidden flex-shrink-0 px-4 sm:block sm:w-2/5 lg:w-1/4">
-            <a className="group relative block" href="#">
-              <div className="absolute left-0 top-0 h-full w-full bg-black bg-opacity-75"></div>
-              <img
-                className="mb-6 block h-80 w-full object-cover"
-                src="vendia-assets/images/category/category-2-items2.png"
-                alt=""
+            </svg>
+
+            <h2 className="mt-4 text-xl font-bold text-primary">Bench</h2>
+
+            <p className="mt-1 text-sm text-gray-400">
+              Our skilled artisans provide detailed benchwork, ensuring every
+              component meets our high standards.
+            </p>
+          </a>
+
+          <a
+            className="block border-2 border-primary p-8 transition hover:border-blue-500/10 hover:shadow-blue-500/10"
+            href="/services/digital-campaigns"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-10 w-10 text-primary"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path d="M12 14l9-5-9-5-9 5 9 5z" />
+              <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
               />
-              <div>
-                <span className="text-sm font-medium text-gray-500">
-                  Desk and Office
-                </span>
-                <h5 className="mt-2 text-xl font-bold text-white group-hover:text-primary">
-                  Work from home accessories
-                </h5>
-              </div>
-            </a>
-          </div>
+            </svg>
+
+            <h2 className="mt-4 text-xl font-bold text-primary">Assembly</h2>
+
+            <p className="mt-1 text-sm text-gray-400">
+              From components to the final product, our assembly process ensures
+              a perfect fit every time.
+            </p>
+          </a>
+
+          <a
+            className="block border-2 border-primary p-8 transition hover:border-blue-500/10 hover:shadow-blue-500/10"
+            href="/services/digital-campaigns"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="h-6 w-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg>
+
+            <h2 className="mt-4 text-xl font-bold text-primary">Inspection</h2>
+
+            <p className="mt-1 text-sm text-gray-400">
+              Quality assurance is our promise. Every product undergoes a
+              rigorous inspection for unmatched reliability.
+            </p>
+          </a>
+        </div>
+
+        <div className="mt-12 flex h-max text-center">
+          <a
+            href="#"
+            className="text-md border-2 border-primary px-4 py-2 font-bold uppercase text-primary transition-all duration-500 hover:bg-primary hover:text-white"
+          >
+            Get Started Today
+          </a>
         </div>
       </div>
     </section>

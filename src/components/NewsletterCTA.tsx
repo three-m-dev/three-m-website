@@ -4,13 +4,13 @@ const NewsletterCTA = () => {
       <div className="px-8 md:px-12 lg:px-16">
         <div className="mx-auto max-w-lg text-center">
           <h2 className="text-2xl font-bold text-white md:text-3xl">
-            Stay in the Loop
+            Subscribe to Our Newsletter!
           </h2>
 
           <p className="hidden text-white sm:mt-4 sm:block">
-            Subscribe to our newsletter for the latest updates, exclusive
-            insights, and expert tips from the heart of the manufacturing world.
-            Don't miss out on the innovations of Three M.
+            Get the latest updates, exclusive insights, and expert tips from the
+            heart of the manufacturing world. Don't miss out on the innovations
+            of Three M.
           </p>
         </div>
 

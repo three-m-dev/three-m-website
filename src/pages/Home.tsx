@@ -4,6 +4,7 @@ import {
   ImageMenu,
   Navbar,
   NewsletterCTA,
+  ServicePreview,
   Testimonials,
 } from "../components";
 
@@ -12,6 +13,7 @@ const Home = () => {
     <>
       <Navbar />
       <Hero />
+      <ServicePreview />
       <Testimonials />
       <ImageMenu />
       <NewsletterCTA />
