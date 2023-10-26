@@ -63,11 +63,11 @@ const Hero = () => {
 
       <div className="relative z-20 mx-auto flex w-full max-w-screen-xl justify-center px-4 lg:justify-start">
         <div
-          className={`flex flex-col items-center gap-8 ${
+          className={`flex flex-col items-center gap-8 lg:w-1/2 ${
             slides[currentSlide].align === "right" && "lg:ml-auto"
           } ${slides[currentSlide].align === "center" && "lg:mx-auto"}`}
         >
-          <h1 className="text-center text-4xl font-semibold uppercase text-white lg:w-4/5">
+          <h1 className="text-center text-4xl font-semibold uppercase text-white">
             {slides[currentSlide].message}
           </h1>
           <Link
