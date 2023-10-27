@@ -86,11 +86,8 @@ const CareerList = () => {
           </div>
         </div>
         {openPositions.map((position, index) => (
-          <div
-            key={index}
-            className="mb-4 flex flex-col bg-gray-50 py-4 md:flex-row"
-          >
-            <div className="mb-6 w-full md:mb-0 md:mr-auto md:w-auto">
+          <div key={index} className="mb-4 flex flex-col py-4 md:flex-row">
+            <div className="mb-6 flex w-full items-center md:mb-0 md:mr-auto md:w-auto">
               <h3 className="text-lg font-semibold md:text-xl">
                 {position.title}
               </h3>
