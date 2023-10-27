@@ -32,7 +32,7 @@ const Hero = () => {
     },
     {
       image:
-        "https://three-m.com/wp-content/uploads/2014/09/MikeZeiss-960x360.jpg",
+        "https://st5.depositphotos.com/37291724/67160/i/450/depositphotos_671608494-stock-photo-staff-technicians-checking-operation-old.jpg",
       alt: "Slide Image",
       message: "Quality Inspection Guaranteed",
       ctaLink: "/third-link",
@@ -124,10 +124,10 @@ const Hero = () => {
         {slides.map((_, index) => (
           <button
             key={index}
-            className={`h-3 w-3 border transition-all duration-300 ${
+            className={`h-3 w-3 border border-white transition-all duration-300 ${
               currentSlide === index
-                ? "bg-primary"
-                : "bg-transparent hover:bg-white"
+                ? "bg-white"
+                : "bg-transparent hover:border-primary hover:bg-primary"
             }`}
             onClick={() => setCurrentSlide(index)}
           ></button>

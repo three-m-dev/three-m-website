@@ -2,13 +2,13 @@ const Testimonials = () => {
   return (
     <section className="bg-gray-50">
       <div className="mx-auto max-w-screen-xl px-4 py-8 md:py-16">
-        <div className="md:flex md:items-end md:justify-between">
+        <div className="flex flex-col items-start md:flex-row md:items-end md:justify-between">
           <div className="max-w-xl">
-            <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+            <h2 className="mb-4 text-3xl font-bold leading-tight tracking-tighter text-gray-800 md:text-5xl">
               Real Feedback from Our Valued Clients
             </h2>
 
-            <p className="mb-6 mt-6 max-w-lg leading-relaxed text-gray-700 lg:mb-0">
+            <p className="mt-4 text-lg font-medium text-gray-500 md:text-xl">
               Discover the stories and feedback from businesses and individuals
               who've entrusted their projects with Three M. Our commitment is
               reflected in their words.

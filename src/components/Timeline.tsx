@@ -29,7 +29,7 @@ const Timeline = () => {
                   </div>
                 </div>
               </div>
-              <div className="absolute left-1/2 flex h-8 w-8 -translate-x-1/2 -translate-y-4 transform items-center justify-center bg-primary text-white sm:translate-y-0">
+              <div className="absolute left-1/2 flex p-2 -translate-x-1/2 -translate-y-4 transform items-center justify-center bg-primary text-white sm:translate-y-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -57,7 +57,7 @@ const Timeline = () => {
                   </div>
                 </div>
               </div>
-              <div className="absolute left-1/2 flex h-8 w-8 -translate-x-1/2 -translate-y-4 transform items-center justify-center bg-primary text-white sm:translate-y-0">
+              <div className="absolute left-1/2 flex p-2 -translate-x-1/2 -translate-y-4 transform items-center justify-center bg-primary text-white sm:translate-y-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -85,7 +85,7 @@ const Timeline = () => {
                   </div>
                 </div>
               </div>
-              <div className="absolute left-1/2 flex h-8 w-8 -translate-x-1/2 -translate-y-4 transform items-center justify-center bg-primary text-white sm:translate-y-0">
+              <div className="absolute left-1/2 flex p-2 -translate-x-1/2 -translate-y-4 transform items-center justify-center bg-primary text-white sm:translate-y-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -113,7 +113,7 @@ const Timeline = () => {
                   </div>
                 </div>
               </div>
-              <div className="absolute left-1/2 flex h-8 w-8 -translate-x-1/2 -translate-y-4 transform items-center justify-center bg-primary text-white sm:translate-y-0">
+              <div className="absolute left-1/2 flex p-2 -translate-x-1/2 -translate-y-4 transform items-center justify-center bg-primary text-white sm:translate-y-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"

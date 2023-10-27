@@ -64,7 +64,7 @@ const ResumeBucket = () => {
                 />
               </div>
 
-              <div className="mt-4">
+              <div className="mt-8 w-full flex justify-center md:justify-start">
                 <button
                   type="submit"
                   className="text-md border-2 border-white px-4 py-2 font-bold uppercase text-white transition-all duration-500 hover:bg-white hover:text-primary"
