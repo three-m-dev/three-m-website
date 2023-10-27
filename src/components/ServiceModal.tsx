@@ -5,7 +5,7 @@ type Props = {
 const ServiceModal = (props: Props) => {
   return (
     <div className="fixed left-0 top-0 z-50 flex h-full w-full items-center overflow-y-hidden bg-gray-900 bg-opacity-50 px-4">
-      <div className="mx-auto max-w-3xl overflow-hidden rounded-lg bg-gray-100">
+      <div className="mx-auto max-w-3xl overflow-hidden bg-white">
         <div className="relative">
           <img
             className="h-40 w-full object-cover md:h-auto"
@@ -14,7 +14,7 @@ const ServiceModal = (props: Props) => {
           />
           <button
             onClick={props.toggle}
-            className="absolute right-0 top-0 m-2 rounded-md bg-white p-2 text-primary hover:bg-gray-200"
+            className="absolute right-0 top-0 m-2 bg-white p-2 text-primary hover:bg-gray-200"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -33,17 +33,11 @@ const ServiceModal = (props: Props) => {
           </button>
           <div className="absolute bottom-0 left-1/2 mb-6 -translate-x-1/2 transform">
             <a
-              className="bg-coolGray-100 mr-3 inline-block h-3 w-3 rounded-full"
+              className="bg-coolGray-100 mr-3 inline-block h-3 w-3"
               href="#"
             ></a>
-            <a
-              className="mr-3 inline-block h-3 w-3 rounded-full bg-primary"
-              href="#"
-            ></a>
-            <a
-              className="bg-coolGray-100 inline-block h-3 w-3 rounded-full"
-              href="#"
-            ></a>
+            <a className="mr-3 inline-block h-3 w-3 bg-primary" href="#"></a>
+            <a className="bg-coolGray-100 inline-block h-3 w-3" href="#"></a>
           </div>
         </div>
         <div className="flex flex-wrap">
@@ -58,7 +52,7 @@ const ServiceModal = (props: Props) => {
                 massa.
               </p>
               <a
-                className="inline-flex items-center font-medium text-primary hover:text-green-600"
+                className="inline-flex items-center font-medium text-primary hover:text-gray-400"
                 href="#"
               >
                 <span className="mr-2">Learn More</span>
@@ -82,34 +76,34 @@ const ServiceModal = (props: Props) => {
               <div className="mb-10">
                 <div className="mb-3 flex items-center justify-between">
                   <span className="text-coolGray-500 text-sm font-medium">
-                    Size
+                    Max Weight
                   </span>
                   <span className="text-coolGray-900 text-sm font-medium">
-                    2.5 MB
+                    30 Tons
                   </span>
                 </div>
                 <div className="mb-3 flex items-center justify-between">
                   <span className="text-coolGray-500 text-sm font-medium">
-                    Lenght
+                    Max Length
                   </span>
                   <span className="text-coolGray-900 text-sm font-medium">
-                    88 Pages
+                    4 Meters
                   </span>
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-coolGray-500 text-sm font-medium">
-                    Last Update
+                    Max Height
                   </span>
                   <span className="text-coolGray-900 text-sm font-medium">
-                    12 Days ago
+                    4 Meters
                   </span>
                 </div>
               </div>
               <a
-                className="inline-block w-full rounded-md bg-primary px-7 py-3 text-center text-base font-medium leading-6 text-green-50 shadow-sm hover:bg-green-600 focus:ring-2 focus:ring-primary focus:ring-opacity-50"
+                className="text-md border-2 border-primary px-4 py-2 font-bold uppercase text-primary transition-all duration-500 hover:bg-primary hover:text-white"
                 href="#"
               >
-                Download PDF
+                Documentation
               </a>
             </div>
           </div>

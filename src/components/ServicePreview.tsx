@@ -38,11 +38,11 @@ const ServicePreview = () => {
               />
             </svg>
 
-            <h2 className="mt-4 text-xl font-bold text-primary">Milling</h2>
+            <h2 className="mt-4 text-xl font-bold text-primary">Inspection</h2>
 
             <p className="mt-1 text-sm text-gray-400">
-              Harness the power of our state-of-the-art milling machines for
-              precise cuts and exact specifications.
+            Quality assurance is our promise. Every product undergoes a
+              rigorous inspection for unmatched reliability.
             </p>
           </a>
 
@@ -65,7 +65,9 @@ const ServicePreview = () => {
               />
             </svg>
 
-            <h2 className="mt-4 text-xl font-bold text-primary">Lathing</h2>
+            <h2 className="mt-4 text-xl font-bold text-primary">
+              Machining Centers
+            </h2>
 
             <p className="mt-1 text-sm text-gray-400">
               Experience the precision of our lathing services, where we sculpt
@@ -92,7 +94,9 @@ const ServicePreview = () => {
               />
             </svg>
 
-            <h2 className="mt-4 text-xl font-bold text-primary">Grinding</h2>
+            <h2 className="mt-4 text-xl font-bold text-primary">
+              Horizontal Turning
+            </h2>
 
             <p className="mt-1 text-sm text-gray-400">
               Achieve the perfect finish and exact dimensions with our dedicated
@@ -119,7 +123,9 @@ const ServicePreview = () => {
               />
             </svg>
 
-            <h2 className="mt-4 text-xl font-bold text-primary">Bench</h2>
+            <h2 className="mt-4 text-xl font-bold text-primary">
+              Vertical Turning
+            </h2>
 
             <p className="mt-1 text-sm text-gray-400">
               Our skilled artisans provide detailed benchwork, ensuring every
@@ -146,11 +152,11 @@ const ServicePreview = () => {
               />
             </svg>
 
-            <h2 className="mt-4 text-xl font-bold text-primary">Assembly</h2>
+            <h2 className="mt-4 text-xl font-bold text-primary">Grinding</h2>
 
             <p className="mt-1 text-sm text-gray-400">
-              From components to the final product, our assembly process ensures
-              a perfect fit every time.
+            Achieve the perfect finish and exact dimensions with our dedicated
+              grinding services.
             </p>
           </a>
 
@@ -173,11 +179,13 @@ const ServicePreview = () => {
               />
             </svg>
 
-            <h2 className="mt-4 text-xl font-bold text-primary">Inspection</h2>
+            <h2 className="mt-4 text-xl font-bold text-primary">
+              Bench & Assembly
+            </h2>
 
             <p className="mt-1 text-sm text-gray-400">
-              Quality assurance is our promise. Every product undergoes a
-              rigorous inspection for unmatched reliability.
+            From components to the final product, our assembly process ensures
+              a perfect fit every time.
             </p>
           </a>
         </div>
