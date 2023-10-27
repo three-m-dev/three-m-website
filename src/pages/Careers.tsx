@@ -1,10 +1,11 @@
-import { CareerList, Footer, Navbar } from "../components";
+import { CareerList, Footer, Navbar, ResumeBucket } from "../components";
 
 const Careers = () => {
   return (
     <>
       <Navbar />
       <CareerList />
+      <ResumeBucket />
       <Footer />
     </>
   );
