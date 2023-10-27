@@ -34,7 +34,7 @@ const CareerList = () => {
         <div className="mx-auto max-w-6xl">
           <div className="-mx-3 mb-10 flex flex-wrap items-center justify-center">
             <div className="mb-3 w-full px-3 md:mb-0 md:w-1/3">
-              <div className="border-coolGray-200 relative rounded-lg border bg-white shadow-md">
+              <div className="border-coolGray-200 relative border bg-white shadow-md">
                 <svg
                   className="absolute right-0 top-1/2 mr-5 -translate-y-1/2 transform"
                   width="12"
@@ -48,18 +48,16 @@ const CareerList = () => {
                     fill="#556987"
                   ></path>
                 </svg>
-                <select
-                  className="text-coolGray-500 w-full appearance-none rounded-lg border-0 bg-transparent px-4 py-3 leading-6 outline-none hover:cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
-                  name=""
-                >
-                  <option value="1">Location</option>
-                  <option value="2">Country</option>
-                  <option value="3">City</option>
+                <select className="text-coolGray-500 w-full appearance-none border-0 bg-transparent px-4 py-3 leading-6 outline-none hover:cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50">
+                  <option value="0">Location</option>
+                  <option value="1">On Site</option>
+                  <option value="2">Remote</option>
+                  <option value="3">Hybrid</option>
                 </select>
               </div>
             </div>
             <div className="w-full px-3 md:w-1/3">
-              <div className="border-coolGray-200 relative rounded-lg border bg-white shadow-md">
+              <div className="border-coolGray-200 relative border bg-white shadow-md">
                 <svg
                   className="absolute right-0 top-1/2 mr-5 -translate-y-1/2 transform"
                   width="12"
@@ -74,12 +72,13 @@ const CareerList = () => {
                   ></path>
                 </svg>
                 <select
-                  className="text-coolGray-500 w-full appearance-none rounded-lg border-0 bg-transparent px-4 py-3 leading-6 outline-none hover:cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
+                  className="text-coolGray-500 w-full appearance-none border-0 bg-transparent px-4 py-3 leading-6 outline-none hover:cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
                   name=""
                 >
-                  <option value="1">Type</option>
-                  <option value="2">Country</option>
-                  <option value="3">City</option>
+                  <option value="0">Type</option>
+                  <option value="1">Full Time</option>
+                  <option value="2">Part Time</option>
+                  <option value="3">Internship</option>
                 </select>
               </div>
             </div>
