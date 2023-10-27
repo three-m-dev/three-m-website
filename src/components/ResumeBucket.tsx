@@ -54,7 +54,7 @@ const ResumeBucket = () => {
                 </div>
               </div>
 
-              <div className="flex w-full flex-col gap-2">
+              <div className="flex w-full flex-col gap-4 md:flex-row">
                 <label className="sr-only">Resume</label>
 
                 <input
@@ -62,9 +62,7 @@ const ResumeBucket = () => {
                   type="file"
                   accept=".pdf,.doc,.docx"
                 />
-              </div>
 
-              <div className="mt-8 w-full flex justify-center md:justify-start">
                 <button
                   type="submit"
                   className="text-md border-2 border-white px-4 py-2 font-bold uppercase text-white transition-all duration-500 hover:bg-white hover:text-primary"

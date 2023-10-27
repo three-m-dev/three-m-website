@@ -14,7 +14,7 @@ const ImageMenu = () => {
           backgroundPosition: "center",
         }}
       >
-        <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-3xl font-bold uppercase tracking-wider text-white">
+        <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform border-2 border-white bg-primary px-4 py-2 text-2xl font-bold uppercase tracking-wider text-white">
           Services
         </span>
       </Link>
@@ -29,7 +29,7 @@ const ImageMenu = () => {
           backgroundPosition: "center",
         }}
       >
-        <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-3xl font-bold uppercase tracking-wider text-white">
+        <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform border-2 border-white bg-primary px-4 py-2 text-2xl font-bold uppercase tracking-wider text-white">
           Careers
         </span>
       </Link>
@@ -44,7 +44,7 @@ const ImageMenu = () => {
           backgroundPosition: "center",
         }}
       >
-        <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-3xl font-bold uppercase tracking-wider text-white">
+        <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform border-2 border-white bg-primary px-4 py-2 text-2xl font-bold uppercase tracking-wider text-white">
           Contact
         </span>
       </Link>
