@@ -1,18 +1,32 @@
 import { Link } from "react-router-dom";
-import LogoIcon from "../assets/images/logo icon.png";
+import ThreeM from "../assets/images/three-m-logo.png";
+import UltraGrip from "../assets/images/ultra-grip-logo.png";
 
 const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white">
       <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-8 md:py-16 lg:space-y-16">
         <div className="sm:flex sm:items-center sm:justify-between">
-          <Link to="/" className="flex items-center">
-            <img
-              src={LogoIcon}
-              className="h-10"
-              alt="Three M Tool & Machine Logo"
-            />
-          </Link>
+          <div className="flex gap-4">
+            <Link to="/" className="flex items-center">
+              <img
+                src={ThreeM}
+                className="h-10"
+                alt="Three M Tool & Machine Logo"
+              />
+            </Link>
+            <Link
+              to="https://www.ultra-grip.com/"
+              target="blank"
+              className="flex items-center"
+            >
+              <img
+                src={UltraGrip}
+                className="h-10"
+                alt="Three M Tool & Machine Logo"
+              />
+            </Link>
+          </div>
 
           <ul className="mt-8 flex justify-start gap-6 sm:mt-0 sm:justify-end">
             <li>
@@ -194,6 +208,15 @@ const Footer = () => {
             <ul className="mt-6 space-y-4 text-sm">
               <li>
                 <Link
+                  to="/iso-9001-2015-certificate-of-registration.pdf"
+                  target="blank"
+                  className="text-gray-400 transition hover:opacity-75"
+                >
+                  ISO 9001:2015
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/terms-and-conditions"
                   className="text-gray-400 transition hover:opacity-75"
                 >
@@ -207,15 +230,6 @@ const Footer = () => {
                   className="text-gray-400 transition hover:opacity-75"
                 >
                   Privacy Policy
-                </Link>
-              </li>
-
-              <li>
-                <Link
-                  to="/iso-cert"
-                  className="text-gray-400 transition hover:opacity-75"
-                >
-                  ISO 9001:2015
                 </Link>
               </li>
             </ul>
