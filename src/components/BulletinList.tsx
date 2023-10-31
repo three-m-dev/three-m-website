@@ -29,12 +29,8 @@ const BulletinList = () => {
       .finally(() => setLoading(false));
   }, [filter]);
 
-  const loadMore = () => {
-    console.log("Loading more");
-  };
-
   return (
-    <section className="bg-white py-8 md:py-16">
+    <section className="min-h-[65vh] bg-white py-8 md:py-16">
       <div className="mx-auto max-w-screen-xl px-4">
         <div className="mx-auto mb-8 text-center md:mb-8 md:max-w-5xl">
           <span className="mb-4 inline-block bg-blue-200 px-2 py-1 text-sm uppercase leading-5 tracking-wider text-primary shadow-sm">
@@ -116,16 +112,6 @@ const BulletinList = () => {
             ))
           )}
         </div>
-        {filteredPosts.length > 6 && !loading && (
-          <div className="flex flex-col items-center">
-            <button
-              onClick={loadMore}
-              className="border-2 border-primary bg-primary px-4 py-2 font-bold uppercase text-white hover:bg-white hover:text-primary"
-            >
-              <span>View More</span>
-            </button>
-          </div>
-        )}
       </div>
     </section>
   );
