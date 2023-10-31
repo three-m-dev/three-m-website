@@ -14,38 +14,38 @@ const Hero = () => {
   const slides: Slide[] = [
     {
       image:
-        "https://st3.depositphotos.com/1594308/35318/i/450/depositphotos_353185344-stock-photo-content-young-multi-ethnic-coworkers.jpg",
+        "https://as1.ftcdn.net/v2/jpg/03/26/28/70/1000_F_326287003_HLZJZhT7l4v76OaqfMd1rjQDHldb0Wm8.jpg",
       alt: "Slide Image",
-      message: "In-House CAD Design",
+      message: "Innovation in Manufacturing",
       ctaLink: "/first-link",
-      ctaText: "Learn More",
+      ctaText: "Discover More",
       align: "left",
     },
     {
       image:
-        "https://static6.depositphotos.com/1003697/539/i/450/depositphotos_5392705-stock-photo-industry-workers-in-factory.jpg",
+        "https://as2.ftcdn.net/v2/jpg/02/76/46/27/1000_F_276462792_C2d0t1ajrCdoBLG8jqXmqS9kqNqrbEbe.jpg",
       alt: "Slide Image",
-      message: "Manufacturing Excellence",
+      message: "Precision Engineered Solutions",
       ctaLink: "/second-link",
-      ctaText: "Learn More",
+      ctaText: "View Products",
       align: "right",
     },
     {
       image:
-        "https://st5.depositphotos.com/37291724/67160/i/450/depositphotos_671608494-stock-photo-staff-technicians-checking-operation-old.jpg",
+        "https://as2.ftcdn.net/v2/jpg/06/26/65/95/1000_F_626659516_xvAkYPVrVfBD4YeMEQvZIt1LBMizpy77.jpg",
       alt: "Slide Image",
-      message: "Quality Inspection Guaranteed",
+      message: "Quality Assurance in Every Build",
       ctaLink: "/third-link",
-      ctaText: "Learn More",
+      ctaText: "Our Process",
       align: "left",
     },
     {
       image:
-        "https://st5.depositphotos.com/7247698/66216/i/450/depositphotos_662161590-stock-photo-senior-male-worker-engineer-working.jpg",
+        "https://as2.ftcdn.net/v2/jpg/06/31/61/85/1000_F_631618521_zvoEsu1dKchziL8URpbab4jJPFQ22e4v.jpg",
       alt: "Slide Image",
-      message: "Tailored Manufacturing Solutions",
+      message: "Dedicated to Your Success",
       ctaLink: "/fourth-link",
-      ctaText: "Learn More",
+      ctaText: "Contact Today",
       align: "right",
     },
   ];
