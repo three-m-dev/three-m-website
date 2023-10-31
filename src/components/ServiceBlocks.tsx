@@ -49,7 +49,7 @@ const ServiceBlocks = () => {
                     alt=""
                   />
                   <div className="relative flex h-full w-full items-end justify-start bg-transparent p-2 transition-all duration-300 hover:bg-white/50">
-                    <span className="font-heading border-2 border-white bg-primary px-4 py-2 text-xl text-white shadow-xl">
+                    <span className="font-heading border-2 border-white bg-primary px-4 py-2 text-lg uppercase tracking-wider text-white">
                       Inspection
                     </span>
                   </div>
@@ -68,7 +68,7 @@ const ServiceBlocks = () => {
                     alt=""
                   />
                   <div className="relative flex h-full w-full items-end justify-start bg-transparent p-2 transition-all duration-300 hover:bg-white/50">
-                    <span className="font-heading border-2 border-white bg-primary px-4 py-2 text-xl text-white">
+                    <span className="font-heading border-2 border-white bg-primary px-4 py-2 text-lg uppercase tracking-wider text-white">
                       Machining Centers
                     </span>
                   </div>
@@ -87,7 +87,7 @@ const ServiceBlocks = () => {
                     alt=""
                   />
                   <div className="relative flex h-full w-full items-end justify-start bg-transparent p-2 transition-all duration-300 hover:bg-white/50">
-                    <span className="font-heading border-2 border-white bg-primary px-4 py-2 text-xl text-white shadow">
+                    <span className="font-heading border-2 border-white bg-primary px-4 py-2 text-lg uppercase tracking-wider text-white">
                       Vertical Turning
                     </span>
                   </div>
@@ -110,7 +110,7 @@ const ServiceBlocks = () => {
                     alt=""
                   />
                   <div className="relative flex h-full w-full items-end justify-start bg-transparent p-2 transition-all duration-300 hover:bg-white/50">
-                    <span className="font-heading border-2 border-white bg-primary px-4 py-2 text-xl text-white">
+                    <span className="font-heading border-2 border-white bg-primary px-4 py-2 text-lg uppercase tracking-wider text-white">
                       Horizontal Turning
                     </span>
                   </div>
@@ -129,7 +129,7 @@ const ServiceBlocks = () => {
                     alt=""
                   />
                   <div className="relative flex h-full w-full items-end justify-start bg-transparent p-2 transition-all duration-300 hover:bg-white/50">
-                    <span className="font-heading border-2 border-white bg-primary px-4 py-2 text-xl text-white">
+                    <span className="font-heading border-2 border-white bg-primary px-4 py-2 text-lg uppercase tracking-wider text-white">
                       Grinding
                     </span>
                   </div>
@@ -148,7 +148,7 @@ const ServiceBlocks = () => {
                     alt=""
                   />
                   <div className="relative flex h-full w-full items-end justify-start bg-transparent p-2 transition-all duration-300 hover:bg-white/50">
-                    <span className="font-heading border-2 border-white bg-primary px-4 py-2 text-xl text-white">
+                    <span className="font-heading border-2 border-white bg-primary px-4 py-2 text-lg uppercase tracking-wider text-white">
                       Assembly
                     </span>
                   </div>
