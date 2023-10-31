@@ -42,6 +42,8 @@ const Carousel = () => {
     },
   ];
 
+  const totalItems = items.length;
+
   const handlePrevClick = () => {
     if (itemIndex === 0) {
       setItemIndex(items.length - 1);
