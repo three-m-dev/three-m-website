@@ -41,20 +41,17 @@ const ServiceBlocks = () => {
                   onClick={() => {
                     toggleModal();
                   }}
-                  className="relative flex h-72 w-full items-end overflow-hidden p-6"
+                  className="relative flex h-72 w-full items-end overflow-hidden"
                 >
                   <img
                     className="absolute left-0 top-0 h-full w-full object-cover"
                     src="https://www.pretool.com/uploads/3/7/8/6/37861209/header_images/1687817843.jpg"
                     alt=""
                   />
-                  <div className="relative">
-                    <a
-                      className="font-heading text-lg text-white hover:underline"
-                      href="#"
-                    >
+                  <div className="relative flex h-full w-full items-end justify-start bg-transparent p-2 transition-all duration-300 hover:bg-white/50">
+                    <span className="font-heading border-2 border-white bg-primary px-4 py-2 text-xl text-white shadow-xl">
                       Inspection
-                    </a>
+                    </span>
                   </div>
                 </button>
               </div>
@@ -63,20 +60,17 @@ const ServiceBlocks = () => {
                   onClick={() => {
                     toggleModal();
                   }}
-                  className="relative flex h-72 w-full items-end overflow-hidden p-6"
+                  className="relative flex h-72 w-full items-end overflow-hidden"
                 >
                   <img
                     className="absolute left-0 top-0 h-full w-full object-cover"
                     src="https://www.mantool.com/wp-content/uploads/2020/01/3-Axis-CNC-machining3.jpg"
                     alt=""
                   />
-                  <div className="relative">
-                    <a
-                      className="font-heading text-lg text-white hover:underline"
-                      href="#"
-                    >
+                  <div className="relative flex h-full w-full items-end justify-start bg-transparent p-2 transition-all duration-300 hover:bg-white/50">
+                    <span className="font-heading border-2 border-white bg-primary px-4 py-2 text-xl text-white">
                       Machining Centers
-                    </a>
+                    </span>
                   </div>
                 </button>
               </div>
@@ -85,20 +79,17 @@ const ServiceBlocks = () => {
                   onClick={() => {
                     toggleModal();
                   }}
-                  className="relative flex h-140 w-full items-end overflow-hidden p-6"
+                  className="relative flex h-72 w-full items-end overflow-hidden sm:h-140"
                 >
                   <img
-                    className="absolute left-0 top-0 h-full w-full object-cover"
+                    className="absolute left-0 top-0 h-full w-full object-cover hover:opacity-50"
                     src="https://www.fictiv.com/wp-content/uploads/2022/08/metalworking-cnc-milling-machine-cutting-metal-shutterstock_1020591757-scaled.jpeg"
                     alt=""
                   />
-                  <div className="relative">
-                    <a
-                      className="font-heading text-3xl text-white hover:underline"
-                      href="#"
-                    >
+                  <div className="relative flex h-full w-full items-end justify-start bg-transparent p-2 transition-all duration-300 hover:bg-white/50">
+                    <span className="font-heading border-2 border-white bg-primary px-4 py-2 text-xl text-white shadow">
                       Vertical Turning
-                    </a>
+                    </span>
                   </div>
                 </button>
               </div>
@@ -111,20 +102,17 @@ const ServiceBlocks = () => {
                   onClick={() => {
                     toggleModal();
                   }}
-                  className="relative flex h-140 w-full items-end overflow-hidden p-6"
+                  className="relative flex h-72 w-full items-end overflow-hidden sm:h-140"
                 >
                   <img
                     className="absolute left-0 top-0 h-full w-full object-cover"
                     src="https://cdn.thomasnet.com/insights-images/embedded-images/995dbbb4-8673-4b23-aa7f-dadb502d6463/46a74a51-dd51-4254-b28e-378e65cbbd0d/FullHD/A-horizontal-CNC-milling-machine-performing-a-milling-operation-on-a-metal-part.jpg"
                     alt=""
                   />
-                  <div className="relative">
-                    <a
-                      className="font-heading text-3xl text-white hover:underline"
-                      href="#"
-                    >
+                  <div className="relative flex h-full w-full items-end justify-start bg-transparent p-2 transition-all duration-300 hover:bg-white/50">
+                    <span className="font-heading border-2 border-white bg-primary px-4 py-2 text-xl text-white">
                       Horizontal Turning
-                    </a>
+                    </span>
                   </div>
                 </button>
               </div>
@@ -133,20 +121,17 @@ const ServiceBlocks = () => {
                   onClick={() => {
                     toggleModal();
                   }}
-                  className="relative flex h-72 w-full items-end overflow-hidden p-6"
+                  className="relative flex h-72 w-full items-end overflow-hidden"
                 >
                   <img
                     className="absolute left-0 top-0 h-full w-full object-cover"
                     src="https://cdn.emag.com/fileadmin/_processed_/f/2/csm_grinding-machines_1120x800_bcdd32a477.jpg"
                     alt=""
                   />
-                  <div className="relative">
-                    <a
-                      className="font-heading text-lg text-white hover:underline"
-                      href="#"
-                    >
+                  <div className="relative flex h-full w-full items-end justify-start bg-transparent p-2 transition-all duration-300 hover:bg-white/50">
+                    <span className="font-heading border-2 border-white bg-primary px-4 py-2 text-xl text-white">
                       Grinding
-                    </a>
+                    </span>
                   </div>
                 </button>
               </div>
@@ -155,20 +140,17 @@ const ServiceBlocks = () => {
                   onClick={() => {
                     toggleModal();
                   }}
-                  className="relative flex h-72 w-full items-end overflow-hidden p-6"
+                  className="relative flex h-72 w-full items-end overflow-hidden"
                 >
                   <img
                     className="absolute left-0 top-0 h-full w-full object-cover"
                     src="https://envato-shoebox-0.imgix.net/d030/20fc-319e-4b3a-aa63-0a2207abcc60/48676.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=800&s=d3640ba5e0e684ca99e6acc95b6b4618"
                     alt=""
                   />
-                  <div className="relative">
-                    <a
-                      className="font-heading text-lg text-white hover:underline"
-                      href="#"
-                    >
+                  <div className="relative flex h-full w-full items-end justify-start bg-transparent p-2 transition-all duration-300 hover:bg-white/50">
+                    <span className="font-heading border-2 border-white bg-primary px-4 py-2 text-xl text-white">
                       Assembly
-                    </a>
+                    </span>
                   </div>
                 </button>
               </div>
