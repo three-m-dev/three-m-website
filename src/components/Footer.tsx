@@ -11,7 +11,7 @@ const Footer = () => {
             <Link to="/" className="flex items-center">
               <img
                 src={ThreeM}
-                className="h-10"
+                className="h-8"
                 alt="Three M Tool & Machine Logo"
               />
             </Link>
@@ -22,7 +22,7 @@ const Footer = () => {
             >
               <img
                 src={UltraGrip}
-                className="h-10"
+                className="h-8"
                 alt="Three M Tool & Machine Logo"
               />
             </Link>
@@ -102,7 +102,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 border-t border-gray-400 pt-8 sm:grid-cols-2 lg:grid-cols-4 lg:pt-16">
+        <div className="grid grid-cols-1 gap-8 border-t-2 border-gray-400 pt-8 sm:grid-cols-2 lg:grid-cols-4 lg:pt-16">
           <div>
             <p className="font-medium text-gray-200">Services</p>
 
