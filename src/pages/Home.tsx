@@ -1,6 +1,6 @@
 import {
+  Carousel,
   Footer,
-  Hero,
   ImageMenu,
   Navbar,
   NewsletterCTA,
@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <Hero />
+      <Carousel />
       <ServicePreview />
       <Testimonials />
       <ImageMenu />
