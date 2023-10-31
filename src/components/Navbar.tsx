@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useMatch } from "react-router-dom";
-import LogoFull from "../assets/images/logo horizontal.png";
+import LogoText from "../assets/images/three-m-logo-with-text.png";
 import Button from "./Button";
 import MobileMenu from "./MobileMenu";
 
@@ -45,7 +45,7 @@ const Navbar = () => {
         <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
           <Link to="/" className="flex items-center">
             <img
-              src={LogoFull}
+              src={LogoText}
               className="h-8"
               alt="Three M Tool & Machine Logo"
             />
