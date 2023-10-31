@@ -1,6 +1,6 @@
 const Testimonials = () => {
   return (
-    <section className="bg-gray-50">
+    <section className="bg-white">
       <div className="mx-auto max-w-screen-xl px-4 py-8 md:py-16">
         <div className="flex flex-col items-start md:flex-row md:items-end md:justify-between">
           <div className="max-w-xl">

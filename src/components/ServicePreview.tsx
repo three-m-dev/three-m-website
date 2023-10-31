@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const ServicePreview = () => {
   return (
-    <section className="bg-gray-50 text-gray-800">
+    <section className="bg-white text-gray-800">
       <div className="mx-auto max-w-screen-xl px-4 py-8 md:py-16">
         <div className="mx-auto mb-8 text-center md:mb-8 md:max-w-5xl">
           <span className="mb-4 inline-block bg-blue-200 px-2 py-1 text-sm uppercase leading-5 tracking-wider text-primary shadow-sm">
@@ -41,7 +41,7 @@ const ServicePreview = () => {
             <h2 className="mt-4 text-xl font-bold text-primary">Inspection</h2>
 
             <p className="mt-1 text-sm text-gray-400">
-            Quality assurance is our promise. Every product undergoes a
+              Quality assurance is our promise. Every product undergoes a
               rigorous inspection for unmatched reliability.
             </p>
           </a>
@@ -155,7 +155,7 @@ const ServicePreview = () => {
             <h2 className="mt-4 text-xl font-bold text-primary">Grinding</h2>
 
             <p className="mt-1 text-sm text-gray-400">
-            Achieve the perfect finish and exact dimensions with our dedicated
+              Achieve the perfect finish and exact dimensions with our dedicated
               grinding services.
             </p>
           </a>
@@ -184,7 +184,7 @@ const ServicePreview = () => {
             </h2>
 
             <p className="mt-1 text-sm text-gray-400">
-            From components to the final product, our assembly process ensures
+              From components to the final product, our assembly process ensures
               a perfect fit every time.
             </p>
           </a>
