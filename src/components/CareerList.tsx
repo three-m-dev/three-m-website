@@ -37,20 +37,24 @@ const CareerList = () => {
 
         if (locationFilter !== "all") {
           filteredData = filteredData.filter(
-            (career) => career.location === locationFilter,
+            (career) => career.location.toLowerCase() === locationFilter,
           );
         }
-
         if (typeFilter !== "all") {
           filteredData = filteredData.filter(
-            (career) => career.type === typeFilter,
+            (career) => career.type.toLowerCase() === typeFilter,
           );
         }
 
-        setFilteredCareers(filteredData);
+        setTimeout(() => {
+          setFilteredCareers(filteredData);
+          setLoading(false);
+        }, 800);
       })
-      .catch((error) => console.error("Error fetching the careers:", error))
-      .finally(() => setLoading(false));
+      .catch((error) => {
+        console.error("Error fetching the careers:", error);
+        setLoading(false);
+      });
   }, [locationFilter, typeFilter]);
 
   const handleLocationChange = (
@@ -59,7 +63,6 @@ const CareerList = () => {
     const value = event.target.value as "all" | "on-site" | "remote" | "hybrid";
     setLocationFilter(value);
   };
-
   const handleTypeChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const value = event.target.value as
       | "all"
@@ -68,10 +71,6 @@ const CareerList = () => {
       | "internship";
     setTypeFilter(value);
   };
-
-  if (loading) {
-    return <Loading />;
-  }
 
   return (
     <section className="bg-white py-8 md:py-16">
@@ -146,6 +145,9 @@ const CareerList = () => {
             </div>
           </div>
         </div>
+
+        {loading && <Loading />}
+
         {filteredCareers.map((career, index) => (
           <div
             key={index}

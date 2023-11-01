@@ -20,14 +20,18 @@ const CareerContent = () => {
   const [career, setCareer] = useState<Career | null>(null);
 
   useEffect(() => {
-    fetch("../data/careers.json")
-      .then((response) => response.json())
-      .then((data) => {
-        const foundCareer = data.find((c: Career) => c.id === careerId);
+    const fetchCareer = async () => {
+      const response = await fetch("../data/careers.json");
+      const data = await response.json();
+      const foundCareer = data.find((c: Career) => c.id === careerId);
+      setTimeout(() => {
         if (foundCareer) {
           setCareer(foundCareer);
         }
-      });
+      }, 800);
+    };
+
+    fetchCareer();
   }, [careerId]);
 
   if (!career) {
