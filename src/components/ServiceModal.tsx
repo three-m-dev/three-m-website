@@ -5,16 +5,16 @@ type Props = {
 const ServiceModal = (props: Props) => {
   return (
     <div className="fixed left-0 top-0 z-50 flex h-full w-full items-center overflow-y-hidden bg-gray-900 bg-opacity-50 px-4">
-      <div className="mx-auto max-w-3xl overflow-hidden bg-white">
+      <div className="mx-auto max-w-3xl overflow-hidden rounded bg-white">
         <div className="relative">
           <img
-            className="h-40 w-full object-cover md:h-auto"
+            className="h-40 w-full rounded-t object-cover md:h-auto"
             src="https://www.pretool.com/uploads/3/7/8/6/37861209/header_images/1687817843.jpg"
             alt=""
           />
           <button
             onClick={props.toggle}
-            className="absolute right-0 top-0 m-2 bg-white p-2 text-primary hover:bg-gray-200"
+            className="absolute right-0 top-0 m-2 rounded bg-white p-2 text-primary hover:bg-gray-200"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +100,7 @@ const ServiceModal = (props: Props) => {
                 </div>
               </div>
               <a
-                className="text-md border-2 border-primary px-4 py-2 font-bold uppercase text-primary transition-all duration-500 hover:bg-primary hover:text-white"
+                className="text-md rounded border-2 border-primary px-4 py-2 font-bold uppercase text-primary transition-all duration-500 hover:bg-primary hover:text-white"
                 href="#"
               >
                 Documentation
