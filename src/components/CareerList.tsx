@@ -49,7 +49,7 @@ const CareerList = () => {
         setTimeout(() => {
           setFilteredCareers(filteredData);
           setLoading(false);
-        }, 800);
+        }, 500);
       })
       .catch((error) => {
         console.error("Error fetching the careers:", error);

@@ -28,14 +28,18 @@ const CareerContent = () => {
         if (foundCareer) {
           setCareer(foundCareer);
         }
-      }, 800);
+      }, 500);
     };
 
     fetchCareer();
   }, [careerId]);
 
   if (!career) {
-    return <Loading />;
+    return (
+      <div className="min-h-[90vh] flex justify-center">
+        <Loading />
+      </div>
+    );
   }
 
   return (
