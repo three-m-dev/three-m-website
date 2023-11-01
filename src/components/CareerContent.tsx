@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Loading from "./Loading";
 
@@ -33,6 +33,7 @@ const CareerContent = () => {
   if (!career) {
     return <Loading />;
   }
+
   return (
     <section className="bg-white py-8 md:py-16">
       <div className="mx-auto max-w-screen-xl px-4">

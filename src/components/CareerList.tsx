@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Loading from "./Loading";
 
 type Career = {
   id: string;
@@ -67,6 +68,10 @@ const CareerList = () => {
       | "internship";
     setTypeFilter(value);
   };
+
+  if (loading) {
+    return <Loading />;
+  }
 
   return (
     <section className="bg-white py-8 md:py-16">
