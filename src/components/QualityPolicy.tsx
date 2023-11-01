@@ -3,7 +3,7 @@ const QualityPolicy = () => {
     <section className=" bg-white py-8 md:py-16">
       <div className="mx-auto max-w-screen-xl px-4">
         <div className="mx-auto mb-8 text-center md:mb-8 md:max-w-5xl">
-          <span className="mb-4 inline-block bg-blue-200 px-2 py-1 text-sm uppercase leading-5 tracking-wider text-primary shadow-sm">
+          <span className="mb-4 inline-block rounded bg-blue-200 px-2 py-1 text-sm uppercase leading-5 text-primary">
             Dedication to Excellence
           </span>
           <h2 className="mb-4 text-3xl font-bold leading-tight tracking-tighter text-gray-800 md:text-5xl">
@@ -21,7 +21,7 @@ const QualityPolicy = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 md:w-1/3">
             <div className="h-full p-8 text-center">
-              <div className="mx-auto mb-7 inline-flex items-center justify-center border-2 border-primary bg-white p-2 text-primary">
+              <div className="mx-auto mb-7 inline-flex items-center justify-center rounded border-2 border-primary bg-white p-2 text-primary">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -48,7 +48,7 @@ const QualityPolicy = () => {
           </div>
           <div className="w-full px-4 md:w-1/3">
             <div className="h-full p-8 text-center">
-              <div className="mx-auto mb-7 inline-flex items-center justify-center border-2 border-primary bg-white p-2 text-primary">
+              <div className="mx-auto mb-7 inline-flex items-center justify-center rounded border-2 border-primary bg-white p-2 text-primary">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -75,7 +75,7 @@ const QualityPolicy = () => {
           </div>
           <div className="w-full px-4 md:w-1/3">
             <div className="h-full p-8 text-center">
-              <div className="mx-auto mb-7 inline-flex items-center justify-center border-2 border-primary bg-white p-2 text-primary">
+              <div className="mx-auto mb-7 inline-flex items-center justify-center rounded border-2 border-primary bg-white p-2 text-primary">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
