@@ -6,7 +6,7 @@ const Carousel = () => {
   const items = [
     {
       title: "Innovation in Manufacturing",
-      cta: "Discover More",
+      cta: "Learn More",
       url: "/link",
       image:
         "https://as1.ftcdn.net/v2/jpg/03/26/28/70/1000_F_326287003_HLZJZhT7l4v76OaqfMd1rjQDHldb0Wm8.jpg",
@@ -15,7 +15,7 @@ const Carousel = () => {
     },
     {
       title: "Seamless Production Flow",
-      cta: "View Products",
+      cta: "Learn More",
       url: "/link",
       image:
         "https://as2.ftcdn.net/v2/jpg/02/76/46/27/1000_F_276462792_C2d0t1ajrCdoBLG8jqXmqS9kqNqrbEbe.jpg",
@@ -24,25 +24,14 @@ const Carousel = () => {
     },
     {
       title: "Quality Assurance in Every Build",
-      cta: "Our Process",
+      cta: "Learn More",
       url: "/link",
       image:
         "https://as2.ftcdn.net/v2/jpg/06/26/65/95/1000_F_626659516_xvAkYPVrVfBD4YeMEQvZIt1LBMizpy77.jpg",
       alt: "",
       align: "left",
     },
-    {
-      title: "Dedicated to Your Success",
-      cta: "Contact Today",
-      url: "/link",
-      image:
-        "https://as2.ftcdn.net/v2/jpg/06/31/61/85/1000_F_631618521_zvoEsu1dKchziL8URpbab4jJPFQ22e4v.jpg",
-      alt: "",
-      align: "right",
-    },
   ];
-
-  const totalItems = items.length;
 
   const handlePrevClick = () => {
     if (itemIndex === 0) {
