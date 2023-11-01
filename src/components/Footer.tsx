@@ -22,7 +22,7 @@ const Footer = () => {
             >
               <img
                 src={UltraGrip}
-                className="h-8"
+                className="h-10"
                 alt="Three M Tool & Machine Logo"
               />
             </Link>
