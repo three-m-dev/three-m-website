@@ -22,11 +22,11 @@ const NewsletterCTA = () => {
               <input
                 type="email"
                 placeholder="Email address"
-                className="mb-4 w-full border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none sm:mb-0"
+                className="mb-4 w-full rounded border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none sm:mb-0"
               />
             </div>
 
-            <button className="text-md border-2 border-white px-4 py-2 font-bold uppercase tracking-wider text-white transition-all duration-300 hover:bg-white hover:text-primary">
+            <button className="text-md rounded border-2 border-white px-4 py-2 font-bold uppercase tracking-wider text-white transition-all duration-300 hover:bg-white hover:text-primary">
               <span> Sign Up </span>
             </button>
           </form>

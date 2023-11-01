@@ -69,7 +69,7 @@ const Carousel = () => {
           </h1>
           <Link
             to={items[itemIndex].url}
-            className="text-md border-2 border-white px-4 py-2 font-bold uppercase tracking-wider text-white transition-all duration-300 hover:border-primary hover:bg-primary"
+            className="text-md border-2 border-white px-4 py-2 font-bold uppercase tracking-wider text-white transition-all duration-300 hover:border-primary hover:bg-primary rounded"
           >
             {items[itemIndex].cta}
           </Link>
@@ -77,7 +77,7 @@ const Carousel = () => {
       </div>
 
       <button
-        className="absolute left-0 top-1/2 z-30 -translate-y-1/2 bg-white p-2.5 text-primary opacity-25 transition-all duration-300 hover:opacity-100"
+        className="absolute left-2 top-1/2 z-30 -translate-y-1/2 rounded bg-white p-2.5 text-primary opacity-25 transition-all duration-300 hover:opacity-100"
         onClick={handlePrevClick}
       >
         <svg
@@ -96,7 +96,7 @@ const Carousel = () => {
         </svg>
       </button>
       <button
-        className="absolute right-0 top-1/2 z-30 -translate-y-1/2 bg-white p-2.5 text-primary opacity-25 transition-all duration-300 hover:opacity-100"
+        className="absolute right-2 top-1/2 z-30 -translate-y-1/2 rounded bg-white p-2.5 text-primary opacity-25 transition-all duration-300 hover:opacity-100"
         onClick={handleNextClick}
       >
         <svg
@@ -119,7 +119,7 @@ const Carousel = () => {
         {items.map((_, index) => (
           <button
             key={index}
-            className={`h-3 w-3 border border-white transition-all duration-300 ${
+            className={`h-3 w-3 rounded border border-white transition-all duration-300 ${
               itemIndex === index
                 ? "bg-white"
                 : "bg-transparent hover:border-primary hover:bg-primary"

@@ -33,7 +33,7 @@ const BulletinList = () => {
     <section className="min-h-[65vh] bg-white py-8 md:py-16">
       <div className="mx-auto max-w-screen-xl px-4">
         <div className="mx-auto mb-8 text-center md:mb-8 md:max-w-5xl">
-          <span className="mb-4 inline-block bg-blue-200 px-2 py-1 text-sm uppercase leading-5 tracking-wider text-primary shadow-sm">
+          <span className="mb-4 inline-block rounded bg-blue-200 px-2 py-1 text-sm uppercase leading-5 tracking-wider text-primary">
             News & Insights
           </span>
           <h1 className="mb-4 text-3xl font-bold leading-tight tracking-tighter text-gray-800 md:text-5xl">
@@ -49,7 +49,7 @@ const BulletinList = () => {
           <li>
             <button
               onClick={() => setFilter("all")}
-              className={`px-4 py-2 text-gray-800 transition-all duration-300 ${
+              className={`rounded px-4 py-2 text-gray-800 transition-all duration-300 ${
                 filter === "all" ? "bg-gray-300" : "bg-gray-200"
               }`}
             >
@@ -59,7 +59,7 @@ const BulletinList = () => {
           <li>
             <button
               onClick={() => setFilter("article")}
-              className={`px-4 py-2 text-gray-800 transition-all duration-300 ${
+              className={`rounded px-4 py-2 text-gray-800 transition-all duration-300 ${
                 filter === "article" ? "bg-gray-300" : "bg-gray-200"
               }`}
             >
@@ -69,7 +69,7 @@ const BulletinList = () => {
           <li>
             <button
               onClick={() => setFilter("update")}
-              className={`px-4 py-2 text-gray-800 transition-all duration-300 ${
+              className={`rounded px-4 py-2 text-gray-800 transition-all duration-300 ${
                 filter === "update" ? "bg-gray-300" : "bg-gray-200"
               }`}
             >

@@ -2,6 +2,7 @@ export { default as BulletinContent } from "./BulletinContent";
 export { default as BulletinList } from "./BulletinList";
 export { default as BulletinPreview } from "./BulletinPreview";
 export { default as Button } from "./Button";
+export { default as CareerContent } from "./CareerContent";
 export { default as CareerList } from "./CareerList";
 export { default as Carousel } from "./Carousel";
 export { default as ContactForm } from "./ContactForm";

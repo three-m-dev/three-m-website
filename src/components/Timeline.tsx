@@ -5,7 +5,7 @@ const Timeline = () => {
     <section className="py-8 md:py-16">
       <div className="relative mx-auto max-w-screen-xl px-4">
         <div className="mb-16 text-center">
-          <span className="mb-4 inline-block bg-blue-200 px-2 py-1 text-sm uppercase leading-5 text-primary shadow-sm">
+          <span className="mb-4 inline-block bg-blue-200 px-2 py-1 text-sm uppercase leading-5 text-primary rounded">
             Timeline & History
           </span>
           <h3 className="mb-4 text-3xl font-bold leading-tight tracking-tighter text-gray-800 md:text-5xl">
@@ -18,18 +18,18 @@ const Timeline = () => {
         </div>
 
         <div className="relative text-sm font-semibold text-gray-700 antialiased">
-          <div className="absolute left-1/2 hidden h-full w-1 -translate-x-1/2 transform bg-blue-200 sm:block"></div>
+          <div className="absolute left-1/2 hidden h-full w-1 -translate-x-1/2 transform bg-blue-200 sm:block rounded"></div>
 
           <div className="mt-6 sm:mb-12 sm:mt-0">
             <div className="flex flex-col items-center sm:flex-row">
               <div className="mx-auto flex w-full items-center justify-start">
                 <div className="w-full sm:w-1/2 sm:pr-8">
-                  <div className="border-2 border-primary bg-white p-4 shadow">
+                  <div className="border-2 border-primary bg-white p-4 rounded">
                     2000 - Founded with a vision.
                   </div>
                 </div>
               </div>
-              <div className="absolute left-1/2 flex p-2 -translate-x-1/2 -translate-y-4 transform items-center justify-center bg-primary text-white sm:translate-y-0">
+              <div className="absolute left-1/2 flex -translate-x-1/2 -translate-y-4 transform items-center justify-center rounded bg-primary p-2 text-white sm:translate-y-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -52,12 +52,12 @@ const Timeline = () => {
             <div className="flex flex-col items-center sm:flex-row">
               <div className="mx-auto flex w-full items-center justify-end">
                 <div className="w-full sm:w-1/2 sm:pl-8">
-                  <div className="border-2 border-primary bg-white p-4 shadow">
+                  <div className="border-2 border-primary bg-white p-4 rounded">
                     2005 - Launched our first product.
                   </div>
                 </div>
               </div>
-              <div className="absolute left-1/2 flex p-2 -translate-x-1/2 -translate-y-4 transform items-center justify-center bg-primary text-white sm:translate-y-0">
+              <div className="absolute left-1/2 flex -translate-x-1/2 -translate-y-4 transform items-center justify-center rounded bg-primary p-2 text-white sm:translate-y-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -80,12 +80,12 @@ const Timeline = () => {
             <div className="flex flex-col items-center sm:flex-row">
               <div className="mx-auto flex w-full items-center justify-start">
                 <div className="w-full sm:w-1/2 sm:pr-8">
-                  <div className="border-2 border-primary bg-white p-4 shadow">
+                  <div className="border-2 border-primary bg-white p-4 rounded">
                     2015 - Focused on innovation.
                   </div>
                 </div>
               </div>
-              <div className="absolute left-1/2 flex p-2 -translate-x-1/2 -translate-y-4 transform items-center justify-center bg-primary text-white sm:translate-y-0">
+              <div className="absolute left-1/2 flex -translate-x-1/2 -translate-y-4 transform items-center justify-center rounded bg-primary p-2 text-white sm:translate-y-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -108,12 +108,12 @@ const Timeline = () => {
             <div className="flex flex-col items-center sm:flex-row">
               <div className="mx-auto flex w-full items-center justify-end">
                 <div className="w-full sm:w-1/2 sm:pl-8">
-                  <div className="border-2 border-primary bg-white p-4 shadow">
+                  <div className="border-2 border-primary bg-white p-4 rounded">
                     2020 - Committed to sustainability.
                   </div>
                 </div>
               </div>
-              <div className="absolute left-1/2 flex p-2 -translate-x-1/2 -translate-y-4 transform items-center justify-center bg-primary text-white sm:translate-y-0">
+              <div className="absolute left-1/2 flex -translate-x-1/2 -translate-y-4 transform items-center justify-center rounded bg-primary p-2 text-white sm:translate-y-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"

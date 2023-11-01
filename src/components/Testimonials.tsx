@@ -47,7 +47,7 @@ const Testimonials = () => {
           <Link
             to="https://www.google.com/search?sca_esv=578460548&rlz=1C1YTUH_enUS1072US1072&q=Three+m+tool+and+machine+reviews&uds=H4sIAAAAAAAA_-Ny52IPSi3LTC0vFpIoyShKTVXIVSjJz89RSMxLUchNTM7IzEs1ECpSCMEhp1AE0W2EUzcAb0YnP2MAAAA&sa=X&ved=2ahUKEwj80e2N1aKCAxUOODQIHd61CEQQxKsJegQIaxAB&ictx=0&biw=1920&bih=931&dpr=1#lrd=0x8824a4ea968cf125:0x8e4c1d7fddc834d6,1,,,,"
             target="blank"
-            className="text-md mt-4 border-2 border-primary px-4 py-2 font-bold uppercase text-primary transition-all duration-500 hover:bg-primary hover:text-white lg:mt-0"
+            className="text-md mt-4 rounded border-2 border-primary px-4 py-2 font-bold uppercase text-primary transition-all duration-500 hover:bg-primary hover:text-white lg:mt-0"
           >
             <span>More Reviews</span>
           </Link>
@@ -57,7 +57,7 @@ const Testimonials = () => {
           {reviewItems.map((review, index) => (
             <blockquote
               key={index}
-              className="relative flex h-full flex-col justify-between bg-primary p-6 shadow-sm sm:p-8"
+              className="relative flex h-full flex-col justify-between rounded bg-primary p-6 shadow-sm sm:p-8"
             >
               <div className="mb-4">
                 <div className="flex gap-0.5 text-secondary">

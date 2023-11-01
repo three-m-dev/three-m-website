@@ -5,7 +5,7 @@ const ServicePreview = () => {
     <section className="bg-white text-gray-800">
       <div className="mx-auto max-w-screen-xl px-4 py-8 md:py-16">
         <div className="mx-auto mb-8 text-center md:mb-8 md:max-w-5xl">
-          <span className="mb-4 inline-block bg-blue-200 px-2 py-1 text-sm uppercase leading-5 tracking-wider text-primary shadow-sm">
+          <span className="mb-4 inline-block rounded bg-blue-200 px-2 py-1 text-sm uppercase leading-5 text-primary">
             Precision & Expertise
           </span>
           <h2 className="mb-4 text-3xl font-bold leading-tight tracking-tighter text-gray-800 md:text-5xl">
@@ -20,7 +20,7 @@ const ServicePreview = () => {
 
         <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           <a
-            className="block border-2 border-primary p-8 transition hover:border-blue-500/10 hover:shadow-blue-500/10"
+            className="block rounded border-2 border-primary p-8 transition hover:border-blue-500/10 hover:shadow-blue-500/10"
             href="/services/digital-campaigns"
           >
             <svg
@@ -47,7 +47,7 @@ const ServicePreview = () => {
           </a>
 
           <a
-            className="block border-2 border-primary p-8 transition hover:border-blue-500/10 hover:shadow-blue-500/10"
+            className="block rounded border-2 border-primary p-8 transition hover:border-blue-500/10 hover:shadow-blue-500/10"
             href="/services/digital-campaigns"
           >
             <svg
@@ -76,7 +76,7 @@ const ServicePreview = () => {
           </a>
 
           <a
-            className="block border-2 border-primary p-8 transition hover:border-blue-500/10 hover:shadow-blue-500/10"
+            className="block rounded border-2 border-primary p-8 transition hover:border-blue-500/10 hover:shadow-blue-500/10"
             href="/services/digital-campaigns"
           >
             <svg
@@ -105,7 +105,7 @@ const ServicePreview = () => {
           </a>
 
           <a
-            className="block border-2 border-primary p-8 transition hover:border-blue-500/10 hover:shadow-blue-500/10"
+            className="block rounded border-2 border-primary p-8 transition hover:border-blue-500/10 hover:shadow-blue-500/10"
             href="/services/digital-campaigns"
           >
             <svg
@@ -134,7 +134,7 @@ const ServicePreview = () => {
           </a>
 
           <a
-            className="block border-2 border-primary p-8 transition hover:border-blue-500/10 hover:shadow-blue-500/10"
+            className="block rounded border-2 border-primary p-8 transition hover:border-blue-500/10 hover:shadow-blue-500/10"
             href="/services/digital-campaigns"
           >
             <svg
@@ -161,7 +161,7 @@ const ServicePreview = () => {
           </a>
 
           <a
-            className="block border-2 border-primary p-8 transition hover:border-blue-500/10 hover:shadow-blue-500/10"
+            className="block rounded border-2 border-primary p-8 transition hover:border-blue-500/10 hover:shadow-blue-500/10"
             href="/services/digital-campaigns"
           >
             <svg
@@ -193,9 +193,9 @@ const ServicePreview = () => {
         <div className="mt-8 flex h-max text-center">
           <Link
             to="/services"
-            className="text-md border-2 border-primary px-4 py-2 font-bold uppercase text-primary transition-all duration-500 hover:bg-primary hover:text-white"
+            className="text-md rounded border-2 border-primary px-4 py-2 font-bold uppercase text-primary transition-all duration-500 hover:bg-primary hover:text-white"
           >
-            Showcase
+            Learn More
           </Link>
         </div>
       </div>
