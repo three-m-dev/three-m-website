@@ -36,7 +36,7 @@ const CareerContent = () => {
 
   if (!career) {
     return (
-      <div className="min-h-[90vh] flex justify-center">
+      <div className="flex min-h-[90vh] justify-center">
         <Loading />
       </div>
     );
@@ -44,7 +44,7 @@ const CareerContent = () => {
 
   return (
     <section className="bg-white py-8 md:py-16">
-      <div className="mx-auto max-w-screen-xl px-4">
+      <div className="mx-auto max-w-screen-lg px-4">
         <h2 className="mb-4 text-2xl font-bold">{career.title}</h2>
         <div className="mb-4">
           <h3 className="text-lg font-semibold">Description</h3>

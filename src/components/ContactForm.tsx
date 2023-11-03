@@ -16,10 +16,13 @@ const ContactForm = () => {
   return (
     <section className="bg-white">
       <div className="mx-auto max-w-screen-xl px-4 py-8 lg:py-16">
-        <div className="flex flex-col gap-16 md:flex-row">
+        <h1 className="font-bebas mb-4 text-center text-4xl font-bold tracking-wider text-gray-800 md:hidden">
+          Contact Us
+        </h1>
+        <div className="flex flex-col-reverse gap-8 md:flex-row md:gap-16">
           <div className="flex w-full flex-col lg:w-1/2">
             <div>
-              <h1 className="font-bebas mb-4 text-4xl font-bold tracking-wider text-gray-800 md:text-5xl">
+              <h1 className="font-bebas mb-4 hidden text-5xl font-bold tracking-wider text-gray-800 md:block">
                 Contact Us
               </h1>
 
@@ -27,17 +30,15 @@ const ContactForm = () => {
                 Three M Tool & Machine Inc.
               </h2>
 
-              <p className="text-lg text-gray-800">
-                8155 Richardson Road
-              </p>
+              <p className="text-lg text-gray-800">8155 Richardson Road</p>
               <p className="mb-4 text-lg text-gray-800">
-                Commerce Charter Twp, MI 48390
+                Commerce Township, MI 48390
               </p>
               <p className="text-lg text-gray-800">
                 Email:
                 <a
                   href="mailto:sales@three-m.com"
-                  className="lowercase text-primary ml-1"
+                  className="ml-1 lowercase text-primary"
                 >
                   sales@three-m.com
                 </a>
@@ -49,7 +50,7 @@ const ContactForm = () => {
                 </a>
               </p>
             </div>
-            <div className="h-full w-full rounded bg-gray-400"></div>
+            <div className="h-44 w-full rounded bg-gray-400 md:h-full"></div>
           </div>
           <div className="w-full lg:w-1/2">
             <form
@@ -62,7 +63,7 @@ const ContactForm = () => {
 
               <div className="flex w-full flex-col gap-4 sm:flex-row">
                 <input
-                  className="mb-4 w-full rounded border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none sm:mb-0"
+                  className="w-full rounded border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none sm:mb-0"
                   type="text"
                   placeholder="First Name"
                   value={firstName}
@@ -70,7 +71,7 @@ const ContactForm = () => {
                 />
 
                 <input
-                  className="mb-4 w-full rounded border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none sm:mb-0"
+                  className="w-full rounded border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none sm:mb-0"
                   type="text"
                   placeholder="Last Name"
                   value={lastName}

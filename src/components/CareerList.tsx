@@ -79,19 +79,22 @@ const CareerList = () => {
       return <div className="w-full">No Openings Found</div>;
     } else if (!loading && filteredCareers.length > 0) {
       return (
-        <div className="w-full px-4">
+        <div className="flex w-full flex-col">
           {filteredCareers.map((career, index) => (
             <div
               key={index}
               className="flex flex-col border-b-2 border-gray-200 py-4 md:flex-row md:items-center"
             >
               <div className="flex-grow">
-                <h3 className="mb-4 text-lg font-semibold md:mb-0 md:text-xl">
+                <Link
+                  to={`/careers/` + career.id}
+                  className="mb-4 text-lg font-semibold hover:underline md:mb-0 md:text-xl"
+                >
                   {career.title}
-                </h3>
+                </Link>
               </div>
               <div className="flex w-full items-center justify-between md:w-auto">
-                <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+                <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
                   <div className="inline-flex items-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -154,7 +157,7 @@ const CareerList = () => {
 
   return (
     <section className="bg-white py-8 md:py-16">
-      <div className="mx-auto max-w-screen-xl px-4">
+      <div className="mx-auto max-w-screen-lg px-4">
         <div className="mx-auto mb-8 max-w-4xl text-center">
           <span className="mb-4 inline-block rounded bg-blue-200 px-2 py-1 text-sm uppercase leading-5 text-primary shadow-sm">
             Growth & Opportunities
@@ -167,9 +170,9 @@ const CareerList = () => {
             collaboration, and excellence.
           </p>
         </div>
-        <div className="mx-auto max-w-6xl">
-          <div className="-mx-3 flex flex-wrap items-center justify-center">
-            <div className="mb-3 w-full px-3 md:mb-0 md:w-1/3">
+        <div className="mx-auto">
+          <div className="flex flex-wrap items-center justify-center">
+            <div className="mb-4 w-full md:mb-8 md:w-1/3 md:pr-2">
               <div className="relative rounded border border-gray-200 bg-white shadow">
                 <svg
                   className="absolute right-0 top-1/2 mr-5 -translate-y-1/2 transform"
@@ -198,7 +201,7 @@ const CareerList = () => {
                 </select>
               </div>
             </div>
-            <div className="w-full px-3 md:w-1/3">
+            <div className="mb-0 w-full md:mb-8 md:w-1/3 md:pl-2">
               <div className="relative rounded border border-gray-200 bg-white shadow">
                 <svg
                   className="absolute right-0 top-1/2 mr-5 -translate-y-1/2 transform"
