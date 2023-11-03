@@ -19,30 +19,37 @@ const ContactForm = () => {
         <div className="flex flex-col gap-16 md:flex-row">
           <div className="flex w-full flex-col lg:w-1/2">
             <div>
-              <h1 className="font-bebas mb-4 text-4xl font-bold tracking-wide text-gray-800 md:text-5xl">
+              <h1 className="font-bebas mb-4 text-4xl font-bold tracking-wider text-gray-800 md:text-5xl">
                 Contact Us
               </h1>
 
-              <h2 className="mb-4 text-xl md:text-3xl">
+              <h2 className="font-bebas text-xl font-bold uppercase text-gray-800 md:text-2xl">
                 Three M Tool & Machine Inc.
               </h2>
 
-              <p className="text-lg md:text-2xl">8155 Richardson Road</p>
-              <p className="mb-4 text-2xl">Commerce Charter Twp, MI 48390</p>
-              <p>
+              <p className="text-lg text-gray-800">
+                8155 Richardson Road
+              </p>
+              <p className="mb-4 text-lg text-gray-800">
+                Commerce Charter Twp, MI 48390
+              </p>
+              <p className="text-lg text-gray-800">
                 Email:
-                <a href="mailto:sales@three-m.com" className="text-primary">
+                <a
+                  href="mailto:sales@three-m.com"
+                  className="lowercase text-primary ml-1"
+                >
                   sales@three-m.com
                 </a>
               </p>
-              <p>
+              <p className="mb-4 text-lg text-gray-800">
                 Phone:
-                <a href="tel:2483631555" className="text-primary">
+                <a href="tel:2483631555" className="ml-1 text-primary">
                   248-363-1555
                 </a>
               </p>
             </div>
-            <div className="h-96 w-full bg-gray-400"></div>
+            <div className="h-full w-full rounded bg-gray-400"></div>
           </div>
           <div className="w-full lg:w-1/2">
             <form
