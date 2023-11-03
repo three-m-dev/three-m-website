@@ -25,9 +25,9 @@ const ServiceBlocks = () => {
           <span className="mb-4 inline-block rounded bg-blue-200 px-2 py-1 text-sm uppercase leading-5 text-primary">
             Innovative Manufacturing
           </span>
-          <h3 className="mb-4 text-3xl font-bold leading-tight tracking-tighter text-gray-800 md:text-5xl">
-            Modern Precision Manufacturing
-          </h3>
+          <h1 className="font-bebas mb-4 text-3xl font-bold leading-tight tracking-wide text-gray-800 md:text-5xl">
+            Precision Manufacturing
+          </h1>
           <p className="mb-10 text-lg font-medium text-gray-500 md:text-xl">
             Discover the blend of classic craftsmanship and today's technology.
             Together, we reshape industry standards.

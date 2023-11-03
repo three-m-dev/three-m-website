@@ -10,7 +10,6 @@ const ContactForm = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
     console.log("Form submitted");
   };
 
@@ -20,7 +19,7 @@ const ContactForm = () => {
         <div className="flex flex-col gap-16 md:flex-row">
           <div className="flex w-full flex-col lg:w-1/2">
             <div>
-              <h1 className="font-bebas mb-4 text-3xl font-bold tracking-wide text-gray-800 md:text-5xl">
+              <h1 className="font-bebas mb-4 text-4xl font-bold tracking-wide text-gray-800 md:text-5xl">
                 Contact Us
               </h1>
 
@@ -47,72 +46,68 @@ const ContactForm = () => {
           </div>
           <div className="w-full lg:w-1/2">
             <form
-              className="flex flex-col items-center gap-4 rounded bg-gray-200 p-8"
+              className="flex flex-col items-center gap-4 rounded bg-primary p-8"
               onSubmit={handleSubmit}
             >
-              <label className="block w-full">
-                <span className="text-gray-700">First name</span>
+              <h2 className="font-bebas text-3xl font-bold leading-tight tracking-wide text-white md:text-4xl">
+                Send us a message
+              </h2>
+
+              <div className="flex w-full flex-col gap-4 sm:flex-row">
                 <input
-                  className="form-input mt-1 block w-full rounded px-1 py-2 caret-gray-400 focus:outline-none"
+                  className="mb-4 w-full rounded border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none sm:mb-0"
                   type="text"
+                  placeholder="First Name"
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
                 />
-              </label>
 
-              <label className="block w-full">
-                <span className="text-gray-700">Last name</span>
                 <input
-                  className="form-input mt-1 block w-full rounded px-1 py-2 caret-gray-400 focus:outline-none"
+                  className="mb-4 w-full rounded border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none sm:mb-0"
                   type="text"
+                  placeholder="Last Name"
                   value={lastName}
                   onChange={(e) => setLastName(e.target.value)}
                 />
-              </label>
+              </div>
 
-              <label className="block w-full">
-                <span className="text-gray-700">Company</span>
+              <div className="flex w-full flex-col gap-4 sm:flex-row">
                 <input
-                  className="form-input mt-1 block w-full rounded px-1 py-2 caret-gray-400 focus:outline-none"
+                  className="w-full rounded border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none sm:mb-0"
                   type="text"
+                  placeholder="Company"
                   value={company}
                   onChange={(e) => setCompany(e.target.value)}
                 />
-              </label>
 
-              <label className="block w-full">
-                <span className="text-gray-700">Email</span>
                 <input
-                  className="form-input mt-1 block w-full rounded px-1 py-2 caret-gray-400 focus:outline-none"
+                  className="w-full rounded border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none sm:mb-0"
                   type="text"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-              </label>
-
-              <label className="block w-full">
-                <span className="text-gray-700">Phone</span>
-                <input
-                  className="form-input mt-1 block w-full rounded px-1 py-2 caret-gray-400 focus:outline-none"
-                  type="text"
+                  placeholder="Phone"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                 />
-              </label>
+              </div>
 
-              <label className="block w-full">
-                <span className="text-gray-700">Message</span>
-                <textarea
-                  rows={5}
-                  className="form-input mt-1 block w-full rounded px-1 py-2 caret-gray-400 focus:outline-none"
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                />
-              </label>
+              <input
+                className="w-full rounded border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none sm:mb-0"
+                type="text"
+                placeholder="Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+
+              <textarea
+                className="w-full rounded border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none sm:mb-0"
+                rows={4}
+                placeholder="Message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+              />
 
               <div className="flex w-full justify-end">
                 <button
-                  className="text-md rounded border-2 border-primary px-4 py-2 font-bold uppercase text-primary transition-all duration-300 hover:bg-primary hover:text-white"
+                  className="text-md -rounded border-2 border-white px-4 py-2 font-bold uppercase text-white transition-all duration-300 hover:bg-white hover:text-primary"
                   type="submit"
                 >
                   Submit

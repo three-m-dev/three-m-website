@@ -3,11 +3,11 @@ const ResumeBucket = () => {
     <section className="bg-white">
       <div className="mx-auto max-w-screen-xl px-4 py-8 md:py-16">
         <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
-          <div className="lg:col-span-2">
-            <h1 className="mb-4 text-3xl font-bold leading-tight tracking-tighter text-gray-800 md:text-5xl">
+          <div className="flex flex-col items-center justify-center px-4 lg:col-span-2">
+            <h1 className="font-bebas mb-4 text-center text-4xl font-bold leading-tight tracking-wider text-gray-800 md:text-5xl">
               Don't see a position that fits?
             </h1>
-            <p className="mb-10 text-lg font-medium text-gray-500 md:text-xl">
+            <p className="text-center text-lg font-medium text-gray-500 md:text-xl">
               Send us your resume and we'll keep you in mind for future
               opportunities.
             </p>

@@ -6,9 +6,9 @@ const QualityPolicy = () => {
           <span className="mb-4 inline-block rounded bg-blue-200 px-2 py-1 text-sm uppercase leading-5 text-primary">
             Dedication to Excellence
           </span>
-          <h2 className="mb-4 text-3xl font-bold leading-tight tracking-tighter text-gray-800 md:text-5xl">
-            Our Pledge: Quality, Efficiency, and Timeliness
-          </h2>
+          <h1 className="font-bebas mb-4 text-3xl font-bold leading-tight tracking-wider text-gray-800 md:text-5xl">
+            Our Pledge
+          </h1>
           <p className="mb-10 text-lg font-medium text-gray-500 md:text-xl">
             Three M Tool & Machine is committed to delivering high-value
             products and services. We ensure defect-free products, drive cost
