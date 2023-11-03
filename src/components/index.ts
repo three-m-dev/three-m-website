@@ -19,4 +19,3 @@ export { default as ServiceModal } from "./ServiceModal";
 export { default as ServicePreview } from "./ServicePreview";
 export { default as Team } from "./Team";
 export { default as Testimonials } from "./Testimonials";
-export { default as Timeline } from "./Timeline";

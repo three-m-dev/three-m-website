@@ -13,6 +13,7 @@ export default {
     },
     fontFamily: {
       nunito: ["Nunito", "sans-serif"],
+      bebas: ["Bebas Neue", "sans-serif"],
     },
   },
   plugins: [],

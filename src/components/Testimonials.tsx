@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 const Testimonials = () => {
   const reviewItems = [
     {
@@ -33,7 +31,7 @@ const Testimonials = () => {
       <div className="mx-auto max-w-screen-xl px-4 py-8 md:py-16">
         <div className="flex flex-col items-start md:flex-row md:items-end md:justify-between">
           <div className="max-w-xl">
-            <h2 className="mb-4 text-3xl font-bold leading-tight tracking-tighter text-gray-800 md:text-5xl">
+            <h2 className="font-bebas mb-4 text-3xl font-bold leading-tight tracking-wider text-gray-800 md:text-5xl">
               Real Feedback from Our Valued Clients
             </h2>
 
@@ -43,14 +41,6 @@ const Testimonials = () => {
               reflected in their words.
             </p>
           </div>
-
-          <Link
-            to="https://www.google.com/search?sca_esv=578460548&rlz=1C1YTUH_enUS1072US1072&q=Three+m+tool+and+machine+reviews&uds=H4sIAAAAAAAA_-Ny52IPSi3LTC0vFpIoyShKTVXIVSjJz89RSMxLUchNTM7IzEs1ECpSCMEhp1AE0W2EUzcAb0YnP2MAAAA&sa=X&ved=2ahUKEwj80e2N1aKCAxUOODQIHd61CEQQxKsJegQIaxAB&ictx=0&biw=1920&bih=931&dpr=1#lrd=0x8824a4ea968cf125:0x8e4c1d7fddc834d6,1,,,,"
-            target="blank"
-            className="text-md mt-4 rounded border-2 border-primary px-4 py-2 font-bold uppercase text-primary transition-all duration-500 hover:bg-primary hover:text-white lg:mt-0"
-          >
-            <span>More Reviews</span>
-          </Link>
         </div>
 
         <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3">

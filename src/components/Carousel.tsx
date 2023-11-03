@@ -64,12 +64,12 @@ const Carousel = () => {
             items[itemIndex].align === "right" && "lg:ml-auto"
           } ${items[itemIndex].align === "center" && "lg:mx-auto"}`}
         >
-          <h1 className="text-center text-4xl font-semibold uppercase text-white">
+          <h1 className="font-bebas text-center text-5xl font-bold uppercase tracking-wider text-white">
             {items[itemIndex].title}
           </h1>
           <Link
             to={items[itemIndex].url}
-            className="text-md border-2 border-white px-4 py-2 font-bold uppercase tracking-wider text-white transition-all duration-300 hover:border-primary hover:bg-primary rounded"
+            className="text-md rounded border-2 border-white px-4 py-2 font-bold uppercase tracking-wider text-white transition-all duration-300 hover:border-primary hover:bg-primary"
           >
             {items[itemIndex].cta}
           </Link>
