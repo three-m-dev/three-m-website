@@ -16,13 +16,13 @@ const ContactForm = () => {
   return (
     <section className="bg-white">
       <div className="mx-auto max-w-screen-xl px-4 py-8 lg:py-16">
-        <h1 className="font-bebas mb-4 text-center text-4xl font-bold tracking-wider text-gray-800 md:hidden">
+        <h1 className="mb-4 text-center font-bebas text-4xl font-bold tracking-wider text-gray-800 md:hidden">
           Contact Us
         </h1>
         <div className="flex flex-col-reverse gap-8 md:flex-row md:gap-16">
           <div className="flex w-full flex-col lg:w-1/2">
             <div>
-              <h1 className="font-bebas mb-4 hidden text-5xl font-bold tracking-wider text-gray-800 md:block">
+              <h1 className="mb-4 hidden font-bebas text-5xl font-bold tracking-wider text-gray-800 md:block">
                 Contact Us
               </h1>
 
@@ -115,7 +115,7 @@ const ContactForm = () => {
 
               <div className="flex w-full justify-end">
                 <button
-                  className="text-md -rounded border-2 border-white px-4 py-2 font-bold uppercase text-white transition-all duration-300 hover:bg-white hover:text-primary"
+                  className="text-md rounded border-2 border-white px-4 py-2 font-bold uppercase text-white transition-all duration-300 hover:bg-white hover:text-primary"
                   type="submit"
                 >
                   Submit

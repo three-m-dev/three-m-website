@@ -40,6 +40,7 @@ const CareerList = () => {
             (career) => career.location.toLowerCase() === locationFilter,
           );
         }
+
         if (typeFilter !== "all") {
           filteredData = filteredData.filter(
             (career) => career.type.toLowerCase() === typeFilter,
@@ -94,7 +95,7 @@ const CareerList = () => {
                 </Link>
               </div>
               <div className="flex w-full items-center justify-between md:w-auto">
-                <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
+                <div className="mt-2 flex flex-col gap-4 sm:mt-0 sm:flex-row sm:items-center">
                   <div className="inline-flex items-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -157,12 +158,12 @@ const CareerList = () => {
 
   return (
     <section className="bg-white py-8 md:py-16">
-      <div className="mx-auto max-w-screen-lg px-4">
+      <div className="mx-auto max-w-screen-xl px-4">
         <div className="mx-auto mb-8 max-w-4xl text-center">
           <span className="mb-4 inline-block rounded bg-blue-200 px-2 py-1 text-sm uppercase leading-5 text-primary shadow-sm">
             Growth & Opportunities
           </span>
-          <h1 className="font-bebas mb-4 text-4xl font-bold leading-tight tracking-wide text-gray-800 md:text-5xl">
+          <h1 className="mb-4 font-bebas text-4xl font-bold leading-tight tracking-wide text-gray-800 md:text-5xl">
             Join the Future
           </h1>
           <p className="mb-10 text-lg font-medium text-gray-500 md:text-xl">
