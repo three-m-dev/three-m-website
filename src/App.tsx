@@ -3,6 +3,7 @@ import {
   About,
   Bulletin,
   BulletinPost,
+  CareerApplication,
   CareerDetails,
   Careers,
   Contact,
@@ -25,6 +26,10 @@ const App = () => {
 
         <Route path="/careers" element={<Careers />} />
         <Route path="/careers/:careerId" element={<CareerDetails />} />
+        <Route
+          path="/careers/:careerId/application"
+          element={<CareerApplication />}
+        />
 
         <Route path="/bulletin" element={<Bulletin />} />
         <Route path="/bulletin/:postId" element={<BulletinPost />} />

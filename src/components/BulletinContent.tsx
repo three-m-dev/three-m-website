@@ -66,7 +66,7 @@ const BulletinContent = () => {
         );
       case "paragraph":
         return (
-          <p key={index} className="text-base text-gray-500 md:text-lg">
+          <p key={index} className="mb-4 text-base text-gray-500 md:text-lg">
             {section.content}
           </p>
         );
@@ -91,7 +91,7 @@ const BulletinContent = () => {
         );
       case "list":
         return (
-          <ul key={index} className="ml-5 list-disc">
+          <ul key={index} className="mb-4 ml-5 list-disc">
             {(section.content as string[]).map((item, itemIndex) => (
               <li key={itemIndex}>{item}</li>
             ))}
@@ -108,10 +108,7 @@ const BulletinContent = () => {
         <div className="-mx-4 mb-12 flex flex-wrap lg:items-center">
           <div className="mb-8 w-full px-4 md:mb-0 md:w-1/2 2xl:w-5/12">
             <div className="mx-auto max-w-max overflow-hidden rounded-lg md:ml-0">
-              <img
-                src="https://images.unsplash.com/photo-1624841970647-87dce8628d72?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y25jfGVufDB8fDB8fHww"
-                alt=""
-              />
+              <img src={post.imageUrl} alt={post.imageAlt} />
             </div>
           </div>
           <div className="w-full px-4 md:w-1/2">
@@ -123,7 +120,7 @@ const BulletinContent = () => {
                 {post.date}
               </span>
             </p>
-            <h2 className="mb-4 text-3xl font-bold leading-tight tracking-tighter text-gray-900 md:text-4xl lg:text-5xl">
+            <h2 className="mb-4 text-3xl font-bold leading-tight tracking-tighter text-gray-900 md:text-4xl">
               {post.title}
             </h2>
           </div>

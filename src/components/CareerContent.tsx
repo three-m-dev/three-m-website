@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Loading from "./Loading";
 
 type Career = {
@@ -92,9 +92,12 @@ const CareerContent = () => {
             ))}
           </ul>
         </div>
-        <button className="text-md rounded border-2 border-primary px-4 py-2 font-bold uppercase text-primary transition-all duration-500 hover:bg-primary hover:text-white">
+        <Link
+          to={`/careers/` + career.id + `/application`}
+          className="text-md rounded border-2 border-primary px-4 py-2 font-bold uppercase text-primary transition-all duration-500 hover:bg-primary hover:text-white"
+        >
           Apply Now
-        </button>
+        </Link>
       </div>
     </section>
   );
