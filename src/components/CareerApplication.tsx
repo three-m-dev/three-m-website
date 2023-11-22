@@ -2,6 +2,10 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 
+interface Props {
+  onFileChange: (file: File | null) => void;
+}
+
 const CareerApplication = () => {
   const { careerId } = useParams();
 
@@ -86,7 +90,7 @@ const CareerApplication = () => {
                 required
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
-                className="mb-4 w-full rounded border-2 border-gray-300 bg-white p-3 text-gray-700 shadow-sm transition focus:border-primary focus:outline-none"
+                className="mb-4 w-full rounded border-2 border-gray-200 bg-white p-2 text-gray-700 shadow-sm transition focus:border-primary focus:outline-none"
               />
             </div>
             <div className="w-full">
@@ -104,7 +108,7 @@ const CareerApplication = () => {
                 required
                 value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
-                className="mb-4 w-full rounded border-2 border-gray-300 bg-white p-3 text-gray-700 shadow-sm transition focus:border-primary focus:outline-none"
+                className="mb-4 w-full rounded border-2 border-gray-200 bg-white p-2 text-gray-700 shadow-sm transition focus:border-primary focus:outline-none"
               />
             </div>
           </div>
@@ -125,7 +129,7 @@ const CareerApplication = () => {
                 required
                 value={emailAddress}
                 onChange={(e) => setEmailAddress(e.target.value)}
-                className="mb-4 w-full rounded border-2 border-gray-300 bg-white p-3 text-gray-700 shadow-sm transition focus:border-primary focus:outline-none"
+                className="mb-4 w-full rounded border-2 border-gray-200 bg-white p-2 text-gray-700 shadow-sm transition focus:border-primary focus:outline-none"
               />
             </div>
 
@@ -144,40 +148,39 @@ const CareerApplication = () => {
                 required
                 value={phoneNumber}
                 onChange={(e) => setPhoneNumber(e.target.value)}
-                className="mb-4 w-full rounded border-2 border-gray-300 bg-white p-3 text-gray-700 shadow-sm transition focus:border-primary focus:outline-none"
+                className="mb-4 w-full rounded border-2 border-gray-200 bg-white p-2 text-gray-700 shadow-sm transition focus:border-primary focus:outline-none"
               />
             </div>
           </div>
 
           <div className="mb-4">
             <label
-              htmlFor="resume-input"
+              htmlFor="file-upload"
               className="mb-2 block text-sm font-bold text-gray-700"
             >
-              Resume
+              Resume / Coverletter
             </label>
-            <div className="flex items-center gap-2">
-              <button
-                type="button"
-                onClick={() =>
-                  document.getElementById("upload-resume")?.click()
-                }
-                className="rounded border-2 border-gray-300 bg-white px-4 py-2 text-left text-gray-700 shadow-sm transition focus:border-primary focus:outline-none focus:ring-0"
+            <div className="flex items-center justify-center">
+              <label
+                htmlFor="file-upload"
+                className="flex cursor-pointer items-center space-x-2 rounded-l border-2 border-primary bg-primary px-4 py-2.5 text-sm font-bold uppercase text-white hover:bg-white hover:text-primary focus:outline-none"
               >
-                Upload File
-              </button>
-
-              {resume && (
-                <span className="text-sm text-gray-700">{resume.name}</span>
-              )}
-              <input
-                id="upload-resume"
-                type="file"
-                accept=".pdf,.doc,.docx"
-                required
-                onChange={handleFileChange}
-                className="hidden"
-              />
+                <span>Upload</span>
+                <input
+                  id="file-upload"
+                  type="file"
+                  accept=".pdf,.doc,.docx"
+                  required
+                  className="sr-only"
+                  onChange={handleFileChange}
+                />
+              </label>
+              <div
+                id="file-upload-name"
+                className="flex-1 rounded-r border-2 border-l-0 border-gray-200 bg-white p-2 text-gray-900"
+              >
+                {resume ? resume.name : "No files chosen"}
+              </div>
             </div>
           </div>
 
@@ -191,14 +194,25 @@ const CareerApplication = () => {
               </label>
               <textarea
                 id={`question-${index}`}
-                placeholder="Your answer"
+                placeholder="Answer here"
                 required
                 value={qa.answer}
                 onChange={(e) => handleInputChange(index, e.target.value)}
-                className="mb-2.5 w-full rounded border-2 border-gray-300 bg-white p-3 text-gray-700 shadow-sm transition focus:border-primary focus:outline-none"
+                className="mb-2.5 w-full rounded border-2 border-gray-200 bg-white p-2 text-gray-700 shadow-sm transition focus:border-primary focus:outline-none"
               ></textarea>
             </div>
           ))}
+
+          <div>
+            <label className="mb-2 block text-sm font-bold text-gray-700">
+              Additional Information
+            </label>
+            <textarea
+              placeholder="Please provide any additional information about yourself!"
+              required
+              className="mb-2.5 w-full rounded border-2 border-gray-200 bg-white p-2 text-gray-700 shadow-sm transition focus:border-primary focus:outline-none"
+            ></textarea>
+          </div>
 
           <div className="flex justify-end">
             <button

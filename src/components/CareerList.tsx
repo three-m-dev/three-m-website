@@ -187,7 +187,7 @@ const CareerList = (props: Props) => {
                 </svg>
 
                 <select
-                  className="w-full appearance-none rounded border-0 bg-transparent px-4 py-3 leading-6 text-gray-500 outline-none hover:cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
+                  className="w-full appearance-none rounded border-0 bg-transparent px-4 py-2.5 leading-6 text-gray-500 outline-none hover:cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
                   value={locationFilter}
                   onChange={handleLocationChange}
                 >
@@ -215,7 +215,7 @@ const CareerList = (props: Props) => {
                   />
                 </svg>
                 <select
-                  className="w-full appearance-none rounded border-0 bg-transparent px-4 py-3 leading-6 text-gray-500 outline-none hover:cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
+                  className="w-full appearance-none rounded border-0 bg-transparent px-4 py-2.5 leading-6 text-gray-500 outline-none hover:cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
                   value={typeFilter}
                   onChange={handleTypeChange}
                 >

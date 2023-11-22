@@ -12,8 +12,8 @@ const CareerDetails = (props: Props) => {
 
   return (
     <section className="bg-white py-8 md:py-16">
-      <div className="mx-auto max-w-screen-xl px-4">
-        <nav className="mb-2 flex">
+      <div className="mx-auto flex max-w-screen-xl flex-col items-start px-4">
+        {/* <nav className="mb-2 flex">
           <ol className="inline-flex items-center space-x-1 rtl:space-x-reverse md:space-x-2">
             <li>
               <div className="flex items-center">
@@ -48,54 +48,59 @@ const CareerDetails = (props: Props) => {
               </div>
             </li>
           </ol>
-        </nav>
+        </nav> */}
 
         <h2 className="mb-4 w-full text-center text-2xl font-bold">
           {props.careerDetails.title}
         </h2>
-        <div className="mb-4">
-          <h3 className="text-lg font-semibold">Description</h3>
-          <p>{props.careerDetails.description}</p>
-        </div>
-        <div className="mb-4">
-          <h3 className="text-lg font-semibold">Location</h3>
-          <p className="capitalize">
-            {props.careerDetails.location.replace(/-/g, " ")}
-          </p>
-        </div>
-        <div className="mb-4">
-          <h3 className="text-lg font-semibold">Starting At</h3>
-          <p>{props.careerDetails.startingAt}</p>
-        </div>
-        <div className="mb-4">
-          <h3 className="text-lg font-semibold">Type</h3>
-          <p className="capitalize">
-            {props.careerDetails.employmentType.replace(/-/g, " ")}
-          </p>
-        </div>
-        <div className="mb-4">
-          <h3 className="text-lg font-semibold">Benefits</h3>
-          <ul>
-            {props.careerDetails.benefits.map((req, index) => (
-              <li key={index}>{req}</li>
-            ))}
-          </ul>
-        </div>
-        <div className="mb-4">
-          <h3 className="text-lg font-semibold">Requirements</h3>
-          <ul>
-            {props.careerDetails.requirements.map((req, index) => (
-              <li key={index}>{req}</li>
-            ))}
-          </ul>
-        </div>
-        <div className="mb-4">
-          <h3 className="text-lg font-semibold">Qualifications</h3>
-          <ul>
-            {props.careerDetails.qualifications.map((qual, index) => (
-              <li key={index}>{qual}</li>
-            ))}
-          </ul>
+
+        <div className="grid w-full grid-cols-5 gap-4">
+          <div className="col-span-3">
+            <div className="mb-4">
+              <h3 className="text-lg font-semibold">Description</h3>
+              <p>{props.careerDetails.description}</p>
+            </div>
+
+            <div className="flex gap-4">
+              <div className="mb-4 w-full">
+                <h3 className="text-lg font-semibold">Location</h3>
+                <p className="capitalize">
+                  {props.careerDetails.location.replace(/-/g, " ")}
+                </p>
+              </div>
+              <div className="mb-4 w-full">
+                <h3 className="text-lg font-semibold">Starting At</h3>
+                <p>{props.careerDetails.startingAt}</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-span-2">
+            <div className="mb-4">
+              <h3 className="text-lg font-semibold">Benefits</h3>
+              <ul className="list-inside list-disc pl-2">
+                {props.careerDetails.benefits.map((benefit, index) => (
+                  <li key={index}>{benefit}</li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="mb-4">
+              <h3 className="text-lg font-semibold">Requirements</h3>
+              <ul className="list-inside list-disc pl-2">
+                {props.careerDetails.requirements.map((req, index) => (
+                  <li key={index}>{req}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="mb-4">
+              <h3 className="text-lg font-semibold">Qualifications</h3>
+              <ul className="list-inside list-disc pl-2">
+                {props.careerDetails.qualifications.map((qual, index) => (
+                  <li key={index}>{qual}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
         <Link
           to={`/careers/` + props.careerDetails.id + `/apply`}
