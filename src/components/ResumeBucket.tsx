@@ -96,7 +96,7 @@ const ResumeBucket = () => {
                 </div>
               </div>
 
-              <div className="flex w-full flex-col justify-between gap-4 md:flex-row">
+              <div className="flex w-full flex-col justify-end gap-4 md:flex-row">
                 <label className="sr-only">Resume</label>
                 <input
                   className="hidden w-full border-gray-200 text-sm text-white"
@@ -106,20 +106,20 @@ const ResumeBucket = () => {
                   onChange={handleFileChange}
                 />
                 <div className="flex flex-col-reverse gap-4 sm:flex-row">
-                  <button
-                    onClick={(event) => {
-                      event.preventDefault();
-                      document.getElementById("upload-file")?.click();
-                    }}
-                    className="text-md rounded border-2 border-white px-4 py-2 font-bold uppercase text-white transition-all duration-500 hover:bg-white hover:text-primary"
-                  >
-                    Upload
-                  </button>
                   {resume !== null && (
                     <div className="flex w-full items-center justify-center sm:justify-start">
                       <p className="text-white">{resume.name}</p>
                     </div>
                   )}
+                  <button
+                    onClick={(event) => {
+                      event.preventDefault();
+                      document.getElementById("upload-file")?.click();
+                    }}
+                    className="text-md whitespace-nowrap rounded border-2 border-white px-4 py-2 font-bold uppercase text-white transition-all duration-500 hover:bg-white hover:text-primary"
+                  >
+                    Upload Resume
+                  </button>
                 </div>
 
                 <button

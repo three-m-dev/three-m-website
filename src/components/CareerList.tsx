@@ -1,75 +1,61 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Loading from "./Loading";
+import { ICareerListing } from "../interfaces/ICommon";
 
-type Career = {
-  id: string;
-  title: string;
-  description: string;
-  location: string;
-  salary: string;
-  type: string;
-  experienceLevel: string;
-  requirements: string[];
-  responsibilities: string[];
-  qualifications: string[];
+type Props = {
+  careerListings: ICareerListing[];
 };
 
-const CareerList = () => {
+const CareerList = (props: Props) => {
   const [locationFilter, setLocationFilter] = useState<
-    "all" | "on-site" | "remote" | "hybrid"
-  >("all");
+    "All" | "On Site" | "Remote" | "Hybrid"
+  >("All");
 
   const [typeFilter, setTypeFilter] = useState<
-    "all" | "full-time" | "part-time" | "internship"
-  >("all");
+    "All" | "Full Time" | "Part Time" | "Contract" | "Internship"
+  >("All");
 
-  const [filteredCareers, setFilteredCareers] = useState<Career[]>([]);
-
+  const [filteredCareers, setFilteredCareers] = useState<ICareerListing[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setLoading(true);
-    fetch("../data/careers.json")
-      .then((response) => response.json())
-      .then((data: Career[]) => {
-        let filteredData = data;
 
-        if (locationFilter !== "all") {
-          filteredData = filteredData.filter(
-            (career) => career.location.toLowerCase() === locationFilter,
-          );
-        }
+    let filteredData = props.careerListings;
 
-        if (typeFilter !== "all") {
-          filteredData = filteredData.filter(
-            (career) => career.type.toLowerCase() === typeFilter,
-          );
-        }
+    if (locationFilter !== "All") {
+      filteredData = filteredData.filter(
+        (career) => career.location === locationFilter,
+      );
+    }
 
-        setTimeout(() => {
-          setFilteredCareers(filteredData);
-          setLoading(false);
-        }, 500);
-      })
-      .catch((error) => {
-        console.error("Error fetching the careers:", error);
-        setLoading(false);
-      });
-  }, [locationFilter, typeFilter]);
+    if (typeFilter !== "All") {
+      filteredData = filteredData.filter(
+        (career) => career.employmentType === typeFilter,
+      );
+    }
+
+    setTimeout(() => {
+      setFilteredCareers(filteredData);
+      setLoading(false);
+    }, 500);
+  }, [locationFilter, typeFilter, props.careerListings]);
 
   const handleLocationChange = (
     event: React.ChangeEvent<HTMLSelectElement>,
   ) => {
-    const value = event.target.value as "all" | "on-site" | "remote" | "hybrid";
+    const value = event.target.value as "All" | "On Site" | "Remote" | "Hybrid";
     setLocationFilter(value);
   };
+
   const handleTypeChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const value = event.target.value as
-      | "all"
-      | "full-time"
-      | "part-time"
-      | "internship";
+      | "All"
+      | "Full Time"
+      | "Part Time"
+      | "Contract"
+      | "Internship";
     setTypeFilter(value);
   };
 
@@ -77,7 +63,17 @@ const CareerList = () => {
     if (loading) {
       return <Loading />;
     } else if (!loading && filteredCareers.length === 0) {
-      return <div className="w-full">No Openings Found</div>;
+      return (
+        <div className="mt-8 w-full text-center">
+          <div className="text-3xl font-semibold text-gray-600">
+            No Openings Found 😞
+          </div>
+          <p className="mt-4 text-lg text-gray-500">
+            We couldn't find any job openings matching your criteria. Please try
+            adjusting your filters or check back later.
+          </p>
+        </div>
+      );
     } else if (!loading && filteredCareers.length > 0) {
       return (
         <div className="flex w-full flex-col">
@@ -138,7 +134,7 @@ const CareerList = () => {
                     </svg>
 
                     <span className="ml-2 font-medium capitalize text-gray-400">
-                      {career.type.replace(/-/g, " ")}
+                      {career.employmentType.replace(/-/g, " ")}
                     </span>
                   </div>
                 </div>
@@ -195,10 +191,10 @@ const CareerList = () => {
                   value={locationFilter}
                   onChange={handleLocationChange}
                 >
-                  <option value="all">Location</option>
-                  <option value="on-site">On Site</option>
-                  <option value="remote">Remote</option>
-                  <option value="hybrid">Hybrid</option>
+                  <option value="All">Location</option>
+                  <option value="On Site">On Site</option>
+                  <option value="Remote">Remote</option>
+                  <option value="Hybrid">Hybrid</option>
                 </select>
               </div>
             </div>
@@ -223,10 +219,10 @@ const CareerList = () => {
                   value={typeFilter}
                   onChange={handleTypeChange}
                 >
-                  <option value="all">Type</option>
-                  <option value="full-time">Full Time</option>
-                  <option value="part-time">Part Time</option>
-                  <option value="internship">Internship</option>
+                  <option value="All">Type</option>
+                  <option value="Full Time">Full Time</option>
+                  <option value="Part Time">Part Time</option>
+                  <option value="Internship">Internship</option>
                 </select>
               </div>
             </div>

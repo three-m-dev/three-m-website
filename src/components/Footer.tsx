@@ -4,7 +4,7 @@ import UltraGrip from "../assets/images/ultra-grip-logo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white">
+    <footer className="bg-gray-700 text-white">
       <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-8 md:py-16 lg:space-y-16">
         <div className="sm:flex sm:items-center sm:justify-between">
           <div className="flex gap-4">
@@ -34,7 +34,7 @@ const Footer = () => {
                 to="https://www.facebook.com/threemtoolandmachineinc"
                 rel="noreferrer"
                 target="_blank"
-                className="text-gray-400 transition hover:opacity-75"
+                className="text-gray-200 transition hover:opacity-75"
               >
                 <span className="sr-only">Facebook</span>
 
@@ -58,7 +58,7 @@ const Footer = () => {
                 to="https://www.linkedin.com/company/three-m-tool-&-machine-inc"
                 rel="noreferrer"
                 target="_blank"
-                className="text-gray-400 transition hover:opacity-75"
+                className="text-gray-200 transition hover:opacity-75"
               >
                 <span className="sr-only">Linkedin</span>
 
@@ -82,7 +82,7 @@ const Footer = () => {
                 to="https://www.indeed.com/cmp/Three-M-Tool-&-Machine"
                 rel="noreferrer"
                 target="_blank"
-                className="text-gray-400 transition hover:opacity-75"
+                className="text-gray-200 transition hover:opacity-75"
               >
                 <span className="sr-only">Indeed</span>
 
@@ -102,7 +102,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 border-t-2 border-gray-400 pt-8 sm:grid-cols-2 lg:grid-cols-4 lg:pt-16">
+        <div className="grid grid-cols-1 gap-8 border-t-2 border-gray-200 pt-8 sm:grid-cols-2 lg:grid-cols-4 lg:pt-16">
           <div>
             <p className="font-medium text-gray-200">Services</p>
 
@@ -110,7 +110,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/services/inspection"
-                  className="text-gray-400 transition hover:opacity-75"
+                  className="text-gray-200 transition hover:opacity-75"
                 >
                   Inspection
                 </Link>
@@ -119,7 +119,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/services/machining"
-                  className="text-gray-400 transition hover:opacity-75"
+                  className="text-gray-200 transition hover:opacity-75"
                 >
                   Machining Centers
                 </Link>
@@ -128,7 +128,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/services/horizontal-milling"
-                  className="text-gray-400 transition hover:opacity-75"
+                  className="text-gray-200 transition hover:opacity-75"
                 >
                   Horizontal Milling
                 </Link>
@@ -137,7 +137,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/services/vertical-milling"
-                  className="text-gray-400 transition hover:opacity-75"
+                  className="text-gray-200 transition hover:opacity-75"
                 >
                   Vertical Milling
                 </Link>
@@ -146,7 +146,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/services/all"
-                  className="text-gray-400 transition hover:opacity-75"
+                  className="text-gray-200 transition hover:opacity-75"
                 >
                   View All
                 </Link>
@@ -161,7 +161,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/about"
-                  className="text-gray-400 transition hover:opacity-75"
+                  className="text-gray-200 transition hover:opacity-75"
                 >
                   About
                 </Link>
@@ -170,7 +170,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/bulletin"
-                  className="text-gray-400 transition hover:opacity-75"
+                  className="text-gray-200 transition hover:opacity-75"
                 >
                   Bulletin
                 </Link>
@@ -185,7 +185,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/contact"
-                  className="text-gray-400 transition hover:opacity-75"
+                  className="text-gray-200 transition hover:opacity-75"
                 >
                   Contact
                 </Link>
@@ -194,7 +194,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/careers"
-                  className="text-gray-400 transition hover:opacity-75"
+                  className="text-gray-200 transition hover:opacity-75"
                 >
                   Careers
                 </Link>
@@ -210,7 +210,7 @@ const Footer = () => {
                 <Link
                   to="/iso-9001-2015-certificate-of-registration.pdf"
                   target="blank"
-                  className="text-gray-400 transition hover:opacity-75"
+                  className="text-gray-200 transition hover:opacity-75"
                 >
                   ISO 9001:2015
                 </Link>
@@ -218,7 +218,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/terms-and-conditions"
-                  className="text-gray-400 transition hover:opacity-75"
+                  className="text-gray-200 transition hover:opacity-75"
                 >
                   Terms & Conditions
                 </Link>
@@ -227,7 +227,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/privacy-policy"
-                  className="text-gray-400 transition hover:opacity-75"
+                  className="text-gray-200 transition hover:opacity-75"
                 >
                   Privacy Policy
                 </Link>
@@ -236,7 +236,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <p className="text-xs text-gray-400">
+        <p className="text-xs text-gray-200">
           &copy; 2023. Three M Tool & Machine Inc. All rights reserved.
         </p>
       </div>

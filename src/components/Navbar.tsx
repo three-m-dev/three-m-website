@@ -46,7 +46,7 @@ const Navbar = () => {
           <Link to="/" className="flex items-center">
             <img
               src={LogoText}
-              className="h-20"
+              className="h-8"
               alt="Three M Tool & Machine Logo"
             />
           </Link>

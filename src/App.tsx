@@ -3,8 +3,6 @@ import {
   About,
   Bulletin,
   BulletinPost,
-  CareerApplication,
-  CareerDetails,
   Careers,
   Contact,
   Home,
@@ -22,16 +20,11 @@ const App = () => {
 
         <Route path="/about" element={<About />} />
 
-        <Route path="/services" element={<Services />} />
+        <Route path="/services/*" element={<Services />} />
 
-        <Route path="/careers" element={<Careers />} />
-        <Route path="/careers/:careerId" element={<CareerDetails />} />
-        <Route
-          path="/careers/:careerId/application"
-          element={<CareerApplication />}
-        />
+        <Route path="/careers/*" element={<Careers />} />
 
-        <Route path="/bulletin" element={<Bulletin />} />
+        <Route path="/bulletin/" element={<Bulletin />} />
         <Route path="/bulletin/:postId" element={<BulletinPost />} />
 
         <Route path="/contact" element={<Contact />} />
