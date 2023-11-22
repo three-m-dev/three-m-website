@@ -36,9 +36,9 @@ const CareerDetails = (props: Props) => {
                 >
                   <path
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="m1 9 4-4-4-4"
                   />
                 </svg>
@@ -72,6 +72,14 @@ const CareerDetails = (props: Props) => {
           <p className="capitalize">
             {props.careerDetails.employmentType.replace(/-/g, " ")}
           </p>
+        </div>
+        <div className="mb-4">
+          <h3 className="text-lg font-semibold">Benefits</h3>
+          <ul>
+            {props.careerDetails.benefits.map((req, index) => (
+              <li key={index}>{req}</li>
+            ))}
+          </ul>
         </div>
         <div className="mb-4">
           <h3 className="text-lg font-semibold">Requirements</h3>

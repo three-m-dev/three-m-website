@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import {
+  CareerApplication,
   CareerDetails,
   CareerList,
   Footer,
@@ -36,6 +37,8 @@ const Careers = () => {
           path="/:careerId"
           element={<CareerDetailsWrapper careerListings={careerListings} />}
         />
+
+        <Route path="/:careerId/apply" element={<CareerApplication />} />
       </Routes>
 
       <Footer />

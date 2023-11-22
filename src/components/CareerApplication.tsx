@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 
-const Application = () => {
+const CareerApplication = () => {
   const { careerId } = useParams();
 
   const [firstName, setFirstName] = useState("");
@@ -214,4 +214,4 @@ const Application = () => {
   );
 };
 
-export default Application;
+export default CareerApplication;
