@@ -12,9 +12,7 @@ export const useGetCareerListings = () => {
     setError(null);
 
     try {
-      const response = await axios.get(
-        "http://localhost:3000/api/v1/careers/",
-      );
+      const response = await axios.get("http://localhost:3000/api/v1/careers/");
       setCareerListings(response.data.careerListings);
     } catch (error: any) {
       setError(error.response ? error.response.data.message : error.message);

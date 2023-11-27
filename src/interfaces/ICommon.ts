@@ -45,3 +45,25 @@ export interface IApplication {
   createdAt: string;
   updatedAt: string;
 }
+
+export interface IMessage {
+  firstName: string;
+  lastName: string;
+  company: string;
+  phoneNumber: string;
+  email: string;
+  body: string;
+}
+
+export interface IInquiry {
+  id: string;
+  status: string;
+  company: string;
+  message: IMessage;
+  submittedAt: string;
+}
+
+export interface IInquiryDirectory {
+  inquiries: IInquiry[];
+  count: number;
+}
