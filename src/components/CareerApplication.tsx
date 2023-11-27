@@ -15,7 +15,7 @@ const CareerApplication = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [resume, setResume] = useState<File | null>(null);
 
-  const [questionaire, setQuestionaire] = useState([
+  const [answers, setAnswers] = useState([
     { question: "Do you give a shit?", answer: "" },
     { question: "Are you versatile?", answer: "" },
     { question: "Do you create solutions?", answer: "" },
@@ -48,7 +48,7 @@ const CareerApplication = () => {
   };
 
   const handleInputChange = (index: number, newValue: string) => {
-    setQuestionaire((prevQandA) =>
+    setAnswers((prevQandA) =>
       prevQandA.map((qa, idx) =>
         idx === index ? { ...qa, answer: newValue } : qa,
       ),
@@ -64,7 +64,7 @@ const CareerApplication = () => {
         email,
         phoneNumber,
         resume: resume ? resume.name : null,
-        answers: questionaire,
+        answers,
       },
     };
 
@@ -189,7 +189,7 @@ const CareerApplication = () => {
             </div>
           </div>
 
-          {questionaire.map((qa, index) => (
+          {answers.map((qa, index) => (
             <div key={index}>
               <label
                 htmlFor={`question-${index}`}
