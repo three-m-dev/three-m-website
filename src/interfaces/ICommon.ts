@@ -67,3 +67,13 @@ export interface IInquiryDirectory {
   inquiries: IInquiry[];
   count: number;
 }
+
+export interface ISubscriber {
+  id: string;
+  email: string;
+  isSubscribed: boolean;
+  unsubscribeToken: string;
+  subscribedAt: string;
+  createdAt: string;
+  updatedAt: string;
+}
