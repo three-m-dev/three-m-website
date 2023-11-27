@@ -18,3 +18,30 @@ export interface ICareerListing {
   createdAt: string;
   updatedAt: string;
 }
+
+export interface IAnswers {
+  question: string;
+  answer: string;
+}
+
+export interface IApplicant {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phoneNumber: string;
+  resumeRef: string;
+  answers: IAnswers[];
+}
+
+export interface IApplication {
+  id: string;
+  careerListingId: string;
+  careerListing: ICareerListing;
+  status: string;
+  source: string;
+  applicant: IApplicant;
+  submittedAt: string;
+  processedAt: string;
+  createdAt: string;
+  updatedAt: string;
+}

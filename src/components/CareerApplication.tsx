@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { useParams } from "react-router-dom";
-import { v4 as uuidv4 } from "uuid";
+import { useNavigate, useParams } from "react-router-dom";
+import { useCreateApplication } from "../hooks/useCreateApplication";
 
 interface Props {
   onFileChange: (file: File | null) => void;
@@ -11,7 +11,7 @@ const CareerApplication = () => {
 
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
-  const [emailAddress, setEmailAddress] = useState("");
+  const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [resume, setResume] = useState<File | null>(null);
 
@@ -21,6 +21,11 @@ const CareerApplication = () => {
     { question: "Do you create solutions?", answer: "" },
     { question: "Do you like to have fun?", answer: "" },
   ]);
+
+  const { createApplication, createdApplication, isLoading, error } =
+    useCreateApplication();
+
+  const navigate = useNavigate();
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFile = e.target.files && e.target.files[0];
@@ -50,24 +55,24 @@ const CareerApplication = () => {
     );
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const applicationData = {
-      id: uuidv4(),
-      position: careerId,
-      status: "new",
-      date: new Date(),
-      source: "website",
       applicant: {
         firstName,
         lastName,
-        emailAddress,
+        email,
         phoneNumber,
         resume: resume ? resume.name : null,
-        questionaire,
+        answers: questionaire,
       },
     };
-    console.log(JSON.stringify(applicationData, null, 2));
+
+    await createApplication(careerId!, applicationData);
+
+    if (!error) {
+      navigate("/careers");
+    }
   };
 
   return (
@@ -127,8 +132,8 @@ const CareerApplication = () => {
                 placeholder="Email"
                 autoComplete="off"
                 required
-                value={emailAddress}
-                onChange={(e) => setEmailAddress(e.target.value)}
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="mb-4 w-full rounded border-2 border-gray-200 bg-white p-2 text-gray-700 shadow-sm transition focus:border-primary focus:outline-none"
               />
             </div>
@@ -215,6 +220,7 @@ const CareerApplication = () => {
           </div>
 
           <div className="flex justify-end">
+            {error && <div>{error}</div>}
             <button
               type="submit"
               className="text-md rounded border-2 border-primary px-4 py-2 font-bold uppercase text-primary transition-all duration-300 hover:bg-primary hover:text-white"
