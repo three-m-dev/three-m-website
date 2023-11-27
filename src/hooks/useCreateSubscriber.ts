@@ -9,14 +9,14 @@ export const useCreateSubscriber = () => {
   const [createdSubscriber, setCreatedSubscriber] =
     useState<ISubscriber | null>(null);
 
-  const createSubscriber = async (subscriberEmail: string) => {
+  const createSubscriber = async (subscriberData: any) => {
     setIsLoading(true);
     setError(null);
 
     try {
       const response = await axios.post(
-        `http://localhost:3000/api/v1/content/subscriber/create`,
-        subscriberEmail,
+        `http://localhost:3000/api/v1/content/subscribers/create`,
+        subscriberData,
         { withCredentials: true },
       );
       setCreatedSubscriber(response.data);

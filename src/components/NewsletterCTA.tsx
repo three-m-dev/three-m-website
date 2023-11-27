@@ -1,18 +1,29 @@
 import { useState } from "react";
+import { useCreateSubscriber } from "../hooks/useCreateSubscriber";
 
 const NewsletterCTA = () => {
-  const [emailAddress, setEmailAddress] = useState("");
+  const [email, setEmail] = useState("");
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const [dataSubmitted, setDataSubmitted] = useState(false);
+
+  const { createSubscriber, createdSubscriber, isLoading, error } =
+    useCreateSubscriber();
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    console.log("Email address:", emailAddress);
+
+    const subscriberData = {
+      email: email,
+    };
+
+    await createSubscriber(subscriberData);
   };
 
   return (
     <section className="bg-primary py-8 md:py-16">
       <div className="px-8 md:px-12 lg:px-16">
         <div className="mx-auto max-w-lg text-center">
-          <h1 className="font-bebas mb-4 text-center text-3xl font-bold leading-tight tracking-wider text-white md:text-5xl">
+          <h1 className="mb-4 text-center font-bebas text-3xl font-bold leading-tight tracking-wider text-white md:text-5xl">
             Join our Newsletter
           </h1>
 
@@ -31,8 +42,8 @@ const NewsletterCTA = () => {
               <input
                 type="email"
                 placeholder="Email address"
-                value={emailAddress}
-                onChange={(e) => setEmailAddress(e.target.value)}
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="mb-4 w-full rounded border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none sm:mb-0"
               />
             </div>
@@ -45,6 +56,7 @@ const NewsletterCTA = () => {
             </button>
           </form>
         </div>
+        {error && <div className="mt-2 text-center text-white">{error}</div>}
       </div>
     </section>
   );
