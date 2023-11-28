@@ -83,7 +83,7 @@ const CareerApplication = () => {
             <div className="w-full">
               <label
                 htmlFor="first-name"
-                className="mb-2 block text-sm font-bold text-gray-700"
+                className="mb-2 block font-bold text-gray-800"
               >
                 First Name
               </label>
@@ -95,13 +95,13 @@ const CareerApplication = () => {
                 required
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
-                className="mb-4 w-full rounded border-2 border-gray-200 bg-white p-2 text-gray-700 shadow-sm transition focus:border-primary focus:outline-none"
+                className="mb-4 w-full rounded border-2 border-gray-200 bg-white p-2 text-sm text-gray-700 shadow-sm transition focus:border-primary focus:outline-none"
               />
             </div>
             <div className="w-full">
               <label
                 htmlFor="last-name"
-                className="mb-2 block text-sm font-bold text-gray-700"
+                className="mb-2 block font-bold text-gray-800"
               >
                 Last Name
               </label>
@@ -113,7 +113,7 @@ const CareerApplication = () => {
                 required
                 value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
-                className="mb-4 w-full rounded border-2 border-gray-200 bg-white p-2 text-gray-700 shadow-sm transition focus:border-primary focus:outline-none"
+                className="mb-4 w-full rounded border-2 border-gray-200 bg-white p-2 text-sm text-gray-700 shadow-sm transition focus:border-primary focus:outline-none"
               />
             </div>
           </div>
@@ -122,7 +122,7 @@ const CareerApplication = () => {
             <div className="w-full">
               <label
                 htmlFor="email"
-                className="mb-2 block text-sm font-bold text-gray-700"
+                className="mb-2 block font-bold text-gray-800"
               >
                 Email
               </label>
@@ -134,14 +134,14 @@ const CareerApplication = () => {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="mb-4 w-full rounded border-2 border-gray-200 bg-white p-2 text-gray-700 shadow-sm transition focus:border-primary focus:outline-none"
+                className="mb-4 w-full rounded border-2 border-gray-200 bg-white p-2 text-sm text-gray-700 shadow-sm transition focus:border-primary focus:outline-none"
               />
             </div>
 
             <div className="w-full">
               <label
                 htmlFor="phone"
-                className="mb-2 block text-sm font-bold text-gray-700"
+                className="mb-2 block font-bold text-gray-800"
               >
                 Phone
               </label>
@@ -153,7 +153,7 @@ const CareerApplication = () => {
                 required
                 value={phoneNumber}
                 onChange={(e) => setPhoneNumber(e.target.value)}
-                className="mb-4 w-full rounded border-2 border-gray-200 bg-white p-2 text-gray-700 shadow-sm transition focus:border-primary focus:outline-none"
+                className="mb-4 w-full rounded border-2 border-gray-200 bg-white p-2 text-sm text-gray-700 shadow-sm transition focus:border-primary focus:outline-none"
               />
             </div>
           </div>
@@ -168,7 +168,7 @@ const CareerApplication = () => {
             <div className="flex items-center justify-center">
               <label
                 htmlFor="file-upload"
-                className="flex cursor-pointer items-center space-x-2 rounded-l border-2 border-primary bg-primary px-4 py-2.5 text-sm font-bold uppercase text-white hover:bg-white hover:text-primary focus:outline-none"
+                className="flex cursor-pointer items-center space-x-2 rounded-l border-2 border-primary bg-primary px-4 py-2 text-sm font-bold text-white hover:bg-white hover:text-primary focus:outline-none"
               >
                 <span>Upload</span>
                 <input
@@ -182,7 +182,7 @@ const CareerApplication = () => {
               </label>
               <div
                 id="file-upload-name"
-                className="flex-1 rounded-r border-2 border-l-0 border-gray-200 bg-white p-2 text-gray-900"
+                className="flex-1 rounded-r border-2 border-l-0 border-gray-200 bg-white p-2 text-gray-900 text-sm"
               >
                 {resume ? resume.name : "No files chosen"}
               </div>
@@ -193,7 +193,7 @@ const CareerApplication = () => {
             <div key={index}>
               <label
                 htmlFor={`question-${index}`}
-                className="mb-2 block text-sm font-bold text-gray-700"
+                className="mb-2 block font-bold text-gray-800"
               >
                 {qa.question}
               </label>
