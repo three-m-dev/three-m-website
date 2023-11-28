@@ -92,7 +92,7 @@ const ContactForm = () => {
 
                   <div className="flex w-full flex-col gap-4 sm:flex-row">
                     <input
-                      className="w-full rounded border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none sm:mb-0"
+                      className="text-md w-full rounded border-white bg-white px-4 py-2 text-gray-700 shadow-sm transition focus:border-white focus:outline-none sm:mb-0"
                       type="text"
                       placeholder="First Name"
                       value={firstName}
@@ -100,7 +100,7 @@ const ContactForm = () => {
                     />
 
                     <input
-                      className="w-full rounded border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none sm:mb-0"
+                      className="text-md w-full rounded border-white bg-white px-4 py-2 text-gray-700 shadow-sm transition focus:border-white focus:outline-none sm:mb-0"
                       type="text"
                       placeholder="Last Name"
                       value={lastName}
@@ -110,7 +110,7 @@ const ContactForm = () => {
 
                   <div className="flex w-full flex-col gap-4 sm:flex-row">
                     <input
-                      className="w-full rounded border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none sm:mb-0"
+                      className="text-md w-full rounded border-white bg-white px-4 py-2 text-gray-700 shadow-sm transition focus:border-white focus:outline-none sm:mb-0"
                       type="text"
                       placeholder="Company"
                       value={company}
@@ -118,7 +118,7 @@ const ContactForm = () => {
                     />
 
                     <input
-                      className="w-full rounded border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none sm:mb-0"
+                      className="text-md w-full rounded border-white bg-white px-4 py-2 text-gray-700 shadow-sm transition focus:border-white focus:outline-none sm:mb-0"
                       type="text"
                       placeholder="Phone"
                       value={phoneNumber}
@@ -127,7 +127,7 @@ const ContactForm = () => {
                   </div>
 
                   <input
-                    className="w-full rounded border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none sm:mb-0"
+                    className="text-md w-full rounded border-white bg-white px-4 py-2 text-gray-700 shadow-sm transition focus:border-white focus:outline-none sm:mb-0"
                     type="text"
                     placeholder="Email"
                     value={email}
@@ -135,7 +135,7 @@ const ContactForm = () => {
                   />
 
                   <textarea
-                    className="w-full rounded border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none sm:mb-0"
+                    className="text-md w-full rounded border-white bg-white px-4 py-2 text-gray-700 shadow-sm transition focus:border-white focus:outline-none sm:mb-0"
                     rows={4}
                     placeholder="Message"
                     value={body}
@@ -144,7 +144,7 @@ const ContactForm = () => {
 
                   <div className="flex w-full justify-end">
                     <button
-                      className="text-md rounded border-2 border-white px-4 py-2 font-bold uppercase text-white transition-all duration-300 hover:bg-white hover:text-primary"
+                      className="text-sm rounded border-2 border-white px-4 py-2 font-bold uppercase text-white transition-all duration-300 hover:bg-white hover:text-primary"
                       type="submit"
                     >
                       Submit

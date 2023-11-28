@@ -11,7 +11,7 @@ const MobileMenu = (props: Props) => {
       <div className="flex w-full justify-end p-4">
         <button
           onClick={props.toggleMenu}
-          className="inline-flex items-center justify-center border-2 border-primary p-2 text-primary transition-all duration-300 hover:bg-primary hover:text-white focus:outline-none"
+          className="inline-flex items-center justify-center rounded border-2 border-primary p-2 text-primary transition-all duration-300 hover:bg-primary hover:text-white focus:outline-none"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -19,7 +19,7 @@ const MobileMenu = (props: Props) => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="h-6 w-6"
+            className="h-5 w-5"
           >
             <path
               strokeLinecap="round"

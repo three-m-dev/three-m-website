@@ -55,7 +55,10 @@ const Careers = () => {
           element={<CareerDetailsWrapper careerListings={careerListings} />}
         />
 
-        <Route path="/:careerId/apply" element={<CareerApplication />} />
+        <Route
+          path="/:careerId/apply"
+          element={<CareerApplication careerListings={careerListings} />}
+        />
       </Routes>
 
       <Footer />

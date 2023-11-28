@@ -18,7 +18,7 @@ const ServicePreview = () => {
           </p>
         </div>
 
-        <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           <a
             className="block rounded border-2 border-primary p-8 transition hover:border-blue-500/10 hover:shadow-blue-500/10"
             href="/services/digital-campaigns"
@@ -190,10 +190,10 @@ const ServicePreview = () => {
           </a>
         </div>
 
-        <div className="mt-8 flex h-max text-center">
+        <div className="mt-4 flex h-max text-center">
           <Link
             to="/services"
-            className="text-md rounded border-2 border-primary px-4 py-2 font-bold uppercase text-primary transition-all duration-500 hover:bg-primary hover:text-white"
+            className="text-sm rounded border-2 border-primary px-4 py-2 font-bold uppercase text-primary transition-all duration-500 hover:bg-primary hover:text-white"
           >
             Learn More
           </Link>

@@ -70,7 +70,7 @@ const CareerDetails = (props: Props) => {
               <div className="relative">
                 <button
                   onClick={() => handleCopyToClipboard(pageUrl)}
-                  className="rounded border-2 border-primary px-4 py-2 text-sm font-bold uppercase text-primary transition-all duration-300 hover:bg-primary hover:text-white"
+                  className="rounded border-2 border-primary p-2 text-sm font-bold uppercase text-primary transition-all duration-300 hover:bg-primary hover:text-white"
                   data-tip={copied ? "Copied" : "Copy URL"}
                 >
                   <svg
@@ -107,10 +107,10 @@ const CareerDetails = (props: Props) => {
                 </span>
               </p>
               <div className="flex gap-2">
-                <span className="rounded-md bg-blue-200 px-2 py-1 text-sm tracking-wider text-primary">
+                <span className="rounded bg-blue-200 px-2 py-1 text-xs tracking-wider text-primary">
                   {careerDetails.employmentType}
                 </span>
-                <span className="rounded-md bg-blue-200 px-2 py-1 text-sm tracking-wider text-gray-800">
+                <span className="rounded bg-blue-200 px-2 py-1 text-xs tracking-wider text-primary">
                   {careerDetails.location}
                 </span>
               </div>
@@ -171,10 +171,10 @@ const CareerDetails = (props: Props) => {
                   <p className="font-bold text-gray-800">{listing.company}</p>
                 </div>
                 <div className="mb-1 flex gap-2">
-                  <span className="rounded-md bg-blue-200 px-2 py-1 text-sm tracking-wider text-primary">
+                  <span className="rounded bg-blue-200 px-2 py-1 text-xs tracking-wider text-primary">
                     {listing.employmentType}
                   </span>
-                  <span className="rounded-md bg-blue-200 px-2 py-1 text-sm tracking-wider text-primary">
+                  <span className="rounded bg-blue-200 px-2 py-1 text-xs tracking-wider text-primary">
                     {listing.location}
                   </span>
                 </div>

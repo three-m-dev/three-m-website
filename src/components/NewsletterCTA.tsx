@@ -51,17 +51,15 @@ const NewsletterCTA = () => {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       className={
-                        `w-full rounded border-2 bg-white p-2 text-sm text-gray-700 shadow-sm transition focus:border-primary focus:outline-none ` +
-                        (error
-                          ? `border-red-500 placeholder-red-500`
-                          : `border-white`)
+                        `text-md w-full rounded bg-white px-4 py-2 text-gray-700 shadow-sm transition focus:border-white focus:outline-none sm:mb-0 ` +
+                        (error ? ` placeholder-red-500` : ``)
                       }
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="rounded border-2 border-white px-4 py-2 text-sm font-bold uppercase tracking-wider text-white transition-all duration-300 hover:bg-white hover:text-primary"
+                    className="mt-4 rounded border-2 border-white px-4 py-2 text-sm font-bold uppercase tracking-wider text-white transition-all duration-300 hover:bg-white hover:text-primary sm:mt-0"
                   >
                     Submit
                   </button>

@@ -1,13 +1,23 @@
 import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useCreateApplication } from "../hooks/useCreateApplication";
+import { ICareerListing } from "../interfaces/ICommon";
 
-// interface Props {
-//   onFileChange: (file: File | null) => void;
-// }
+interface Props {
+  careerListings: ICareerListing[];
+}
 
-const CareerApplication = () => {
+const CareerApplication = (props: Props) => {
   const { careerId } = useParams();
+  const { careerListings } = props;
+
+  const selectedCareer = careerListings.find(
+    (career) => career.id === careerId,
+  );
+
+  if (!selectedCareer) {
+    return <div>Career details not found.</div>;
+  }
 
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -47,8 +57,8 @@ const CareerApplication = () => {
   };
 
   const handleInputChange = (index: number, newValue: string) => {
-    setAnswers((prevQandA) =>
-      prevQandA.map((qa, idx) =>
+    setAnswers((prevQA) =>
+      prevQA.map((qa, idx) =>
         idx === index ? { ...qa, answer: newValue } : qa,
       ),
     );
@@ -81,7 +91,16 @@ const CareerApplication = () => {
   return (
     <section className="bg-white py-8 md:py-16">
       <div className="mx-auto max-w-screen-lg px-4">
-        <form onSubmit={handleSubmit} className="rounded px-8">
+        <div className="mx-auto mb-8 max-w-4xl text-center">
+          <h1 className="mb-4 font-bebas text-4xl font-bold leading-tight tracking-wide text-gray-800 md:text-5xl">
+            {selectedCareer.title}
+          </h1>
+          <p className="mb-10 text-lg font-medium text-gray-500 md:text-xl">
+            Join our team and advance your career in a dynamic and supportive
+            environment.
+          </p>
+        </div>
+        <form onSubmit={handleSubmit} className="rounded bg-gray-200 px-8 py-4">
           <div className="flex w-full flex-col gap-4 sm:flex-row">
             <div className="w-full">
               <label
@@ -98,7 +117,7 @@ const CareerApplication = () => {
                 required
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
-                className="mb-4 w-full rounded border-2 border-gray-200 bg-white p-2 text-sm text-gray-700 shadow-sm transition focus:border-primary focus:outline-none"
+                className="mb-4 w-full rounded bg-white p-2 text-gray-700 transition focus:border-primary focus:outline-none"
               />
             </div>
             <div className="w-full">
@@ -116,7 +135,7 @@ const CareerApplication = () => {
                 required
                 value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
-                className="mb-4 w-full rounded border-2 border-gray-200 bg-white p-2 text-sm text-gray-700 shadow-sm transition focus:border-primary focus:outline-none"
+                className="mb-4 w-full rounded bg-white p-2 text-gray-700 transition focus:border-primary focus:outline-none"
               />
             </div>
           </div>
@@ -137,7 +156,7 @@ const CareerApplication = () => {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="mb-4 w-full rounded border-2 border-gray-200 bg-white p-2 text-sm text-gray-700 shadow-sm transition focus:border-primary focus:outline-none"
+                className="mb-4 w-full rounded bg-white p-2 text-gray-700 transition focus:border-primary focus:outline-none"
               />
             </div>
 
@@ -156,7 +175,7 @@ const CareerApplication = () => {
                 required
                 value={phoneNumber}
                 onChange={(e) => setPhoneNumber(e.target.value)}
-                className="mb-4 w-full rounded border-2 border-gray-200 bg-white p-2 text-sm text-gray-700 shadow-sm transition focus:border-primary focus:outline-none"
+                className="mb-4 w-full rounded bg-white p-2 text-gray-700 transition focus:border-primary focus:outline-none"
               />
             </div>
           </div>
@@ -164,9 +183,9 @@ const CareerApplication = () => {
           <div className="mb-4">
             <label
               htmlFor="file-upload"
-              className="mb-2 block text-sm font-bold text-gray-700"
+              className="mb-2 block font-bold text-gray-800"
             >
-              Resume / Coverletter
+              First Name
             </label>
             <div className="flex items-center justify-center">
               <label
@@ -185,7 +204,7 @@ const CareerApplication = () => {
               </label>
               <div
                 id="file-upload-name"
-                className="flex-1 rounded-r border-2 border-l-0 border-gray-200 bg-white p-2 text-sm text-gray-900"
+                className="text-md flex-1 rounded-r bg-white p-2 text-gray-900"
               >
                 {resume ? resume.name : "No files chosen"}
               </div>
@@ -206,19 +225,19 @@ const CareerApplication = () => {
                 required
                 value={qa.answer}
                 onChange={(e) => handleInputChange(index, e.target.value)}
-                className="mb-2.5 w-full rounded border-2 border-gray-200 bg-white p-2 text-gray-700 shadow-sm transition focus:border-primary focus:outline-none"
+                className="mb-2.5 w-full rounded bg-white p-2 text-gray-700 transition focus:border-primary focus:outline-none"
               ></textarea>
             </div>
           ))}
 
           <div>
-            <label className="mb-2 block text-sm font-bold text-gray-700">
+            <label className="mb-2 block font-bold text-gray-800">
               Additional Information
             </label>
             <textarea
               placeholder="Please provide any additional information about yourself!"
               required
-              className="mb-2.5 w-full rounded border-2 border-gray-200 bg-white p-2 text-gray-700 shadow-sm transition focus:border-primary focus:outline-none"
+              className="mb-2.5 w-full rounded bg-white p-2 text-gray-700 transition focus:border-primary focus:outline-none"
             ></textarea>
           </div>
 
@@ -226,7 +245,7 @@ const CareerApplication = () => {
             {error && <div>{error}</div>}
             <button
               type="submit"
-              className="text-md rounded border-2 border-primary px-4 py-2 font-bold uppercase text-primary transition-all duration-300 hover:bg-primary hover:text-white"
+              className="rounded border-2 border-primary bg-primary px-4 py-2 text-sm font-bold uppercase text-white transition-all duration-300 hover:bg-transparent hover:text-primary"
             >
               Submit
             </button>

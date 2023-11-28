@@ -113,7 +113,7 @@ const BulletinContent = () => {
           </div>
           <div className="w-full px-4 md:w-1/2">
             <p className="mb-2 flex items-center gap-2 text-gray-500">
-              <span className="rounded-md bg-gray-200 px-2 py-1 text-xs uppercase tracking-wider text-gray-500">
+              <span className="rounded bg-blue-200 px-2 py-1 text-xs capitalize tracking-wider text-primary">
                 {post.type}
               </span>
               <span className="text-sm uppercase tracking-wider">

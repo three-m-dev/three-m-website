@@ -69,7 +69,7 @@ const Carousel = () => {
           </h1>
           <Link
             to={items[itemIndex].url}
-            className="text-md rounded border-2 border-white px-4 py-2 font-bold uppercase tracking-wider text-white transition-all duration-300 hover:border-primary hover:bg-primary"
+            className="text-sm rounded border-2 border-white px-4 py-2 font-bold uppercase tracking-wider text-white transition-all duration-300 hover:border-primary hover:bg-primary"
           >
             {items[itemIndex].cta}
           </Link>
@@ -86,7 +86,7 @@ const Carousel = () => {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="h-6 w-6"
+          className="h-5 w-5"
         >
           <path
             strokeLinecap="round"
@@ -105,7 +105,7 @@ const Carousel = () => {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="h-6 w-6"
+          className="h-5 w-5"
         >
           <path
             strokeLinecap="round"
