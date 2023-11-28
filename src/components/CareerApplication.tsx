@@ -2,9 +2,9 @@ import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useCreateApplication } from "../hooks/useCreateApplication";
 
-interface Props {
-  onFileChange: (file: File | null) => void;
-}
+// interface Props {
+//   onFileChange: (file: File | null) => void;
+// }
 
 const CareerApplication = () => {
   const { careerId } = useParams();
@@ -22,8 +22,7 @@ const CareerApplication = () => {
     { question: "Do you like to have fun?", answer: "" },
   ]);
 
-  const { createApplication, createdApplication, isLoading, error } =
-    useCreateApplication();
+  const { createApplication, isLoading, error } = useCreateApplication();
 
   const navigate = useNavigate();
 
@@ -74,6 +73,10 @@ const CareerApplication = () => {
       navigate("/careers");
     }
   };
+
+  if (isLoading) {
+    return <div>Loading</div>;
+  }
 
   return (
     <section className="bg-white py-8 md:py-16">
@@ -182,7 +185,7 @@ const CareerApplication = () => {
               </label>
               <div
                 id="file-upload-name"
-                className="flex-1 rounded-r border-2 border-l-0 border-gray-200 bg-white p-2 text-gray-900 text-sm"
+                className="flex-1 rounded-r border-2 border-l-0 border-gray-200 bg-white p-2 text-sm text-gray-900"
               >
                 {resume ? resume.name : "No files chosen"}
               </div>

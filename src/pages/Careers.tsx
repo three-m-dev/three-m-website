@@ -20,6 +20,10 @@ const Careers = () => {
     getCareerListings();
   }, []);
 
+  if (error) {
+    console.log(error);
+  }
+
   return (
     <>
       <Helmet>
