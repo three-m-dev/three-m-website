@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { Button, Footer, Navbar } from "../components";
 
 const NotFound = () => {

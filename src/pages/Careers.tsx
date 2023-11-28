@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import {
   CareerApplication,
   CareerDetails,
@@ -10,7 +11,6 @@ import {
 import { useGetCareerListings } from "../hooks/useGetCareerListings";
 import { Route, Routes, useParams } from "react-router";
 import { ICareerListing } from "../interfaces/ICommon"; // Import your ICareerListing type
-import { Helmet } from "react-helmet";
 
 const Careers = () => {
   const { getCareerListings, careerListings, isLoading, error } =

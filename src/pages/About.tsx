@@ -1,5 +1,5 @@
 import { Footer, Navbar, Team } from "../components";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const About = () => {
   return (
@@ -14,8 +14,6 @@ const About = () => {
           name="keywords"
           content="tool shop, machine shop, bench work, assembly services, lathe operations, precision grinding, milling services, CNC machining, precision machining, industrial machining, Michigan machine shop, quality machining, custom machining solutions"
         />
-        <meta name="robots" content="index, follow" />
-        <meta name="language" content="English" />
       </Helmet>
 
       <Navbar />
