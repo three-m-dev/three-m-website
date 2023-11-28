@@ -53,7 +53,7 @@ const ResumeBucket = () => {
                 <div>
                   <label className="sr-only">First Name</label>
                   <input
-                    className="w-full rounded border-gray-200 p-3 text-sm focus:outline-none"
+                    className="text-md w-full rounded border-gray-200 px-4 py-2 focus:outline-none"
                     placeholder="First Name"
                     type="text"
                     value={firstName}
@@ -64,7 +64,7 @@ const ResumeBucket = () => {
                 <div>
                   <label className="sr-only">Last Name</label>
                   <input
-                    className="w-full rounded border-gray-200 p-3 text-sm focus:outline-none"
+                    className="text-md w-full rounded border-gray-200 px-4 py-2 focus:outline-none"
                     placeholder="Last Name"
                     type="text"
                     value={lastName}
@@ -76,7 +76,7 @@ const ResumeBucket = () => {
                 <div>
                   <label className="sr-only">Email</label>
                   <input
-                    className="w-full rounded border-gray-200 p-3 text-sm focus:outline-none"
+                    className="text-md w-full rounded border-gray-200 px-4 py-2 focus:outline-none"
                     placeholder="Email Address"
                     type="email"
                     value={emailAddress}
@@ -87,7 +87,7 @@ const ResumeBucket = () => {
                 <div>
                   <label className="sr-only">Phone</label>
                   <input
-                    className="w-full rounded border-gray-200 p-3 text-sm focus:outline-none"
+                    className="text-md w-full rounded border-gray-200 px-4 py-2 focus:outline-none"
                     placeholder="Phone Number"
                     type="tel"
                     value={phoneNumber}
@@ -116,7 +116,7 @@ const ResumeBucket = () => {
                       event.preventDefault();
                       document.getElementById("upload-file")?.click();
                     }}
-                    className="text-md whitespace-nowrap rounded border-2 border-white px-4 py-2 font-bold uppercase text-white transition-all duration-500 hover:bg-white hover:text-primary"
+                    className="whitespace-nowrap rounded border-2 border-white px-4 py-2 text-sm font-bold uppercase text-white transition-all duration-500 hover:bg-white hover:text-primary"
                   >
                     Upload Resume
                   </button>
@@ -124,7 +124,7 @@ const ResumeBucket = () => {
 
                 <button
                   type="submit"
-                  className="text-md rounded border-2 border-white px-4 py-2 font-bold uppercase text-white transition-all duration-500 hover:bg-white hover:text-primary"
+                  className="rounded border-2 border-white px-4 py-2 text-sm font-bold uppercase text-white transition-all duration-500 hover:bg-white hover:text-primary"
                 >
                   Submit
                 </button>
