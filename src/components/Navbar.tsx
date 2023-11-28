@@ -46,7 +46,7 @@ const Navbar = () => {
           <Link to="/" className="flex items-center">
             <img
               src={LogoText}
-              className="h-8"
+              className="h-10"
               alt="Three M Tool & Machine Logo"
             />
           </Link>
@@ -57,7 +57,7 @@ const Navbar = () => {
             <button
               type="button"
               onClick={toggleMobileNavbar}
-              className="inline-flex items-center justify-center border-2 border-primary p-2 text-primary transition-all duration-300 hover:bg-primary hover:text-white focus:outline-none lg:hidden"
+              className="inline-flex items-center justify-center border-2 rounded border-primary p-2 text-primary transition-all duration-300 hover:bg-primary hover:text-white focus:outline-none lg:hidden"
             >
               <span className="sr-only">Open main menu</span>
               <svg
@@ -66,7 +66,7 @@ const Navbar = () => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="h-6 w-6"
+                className="h-5 w-5"
               >
                 <path
                   strokeLinecap="round"

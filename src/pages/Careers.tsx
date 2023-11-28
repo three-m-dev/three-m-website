@@ -76,7 +76,12 @@ const CareerDetailsWrapper = ({
     return <div>Career not found.</div>;
   }
 
-  return <CareerDetails careerDetails={selectedCareer} />;
+  return (
+    <CareerDetails
+      careerDetails={selectedCareer}
+      careerListings={careerListings}
+    />
+  );
 };
 
 export default Careers;

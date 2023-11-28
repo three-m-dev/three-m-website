@@ -62,96 +62,96 @@ const CareerList = (props: Props) => {
   };
 
   const renderCareers = () => {
-   if (loading) {
-     return <Loading />;
-   } else if (!loading && dataReady && filteredCareers.length === 0) {
-     return (
-       <div className="mt-8 w-full text-center">
-         <div className="text-3xl font-semibold text-gray-600">
-           No Openings Found 😞
-         </div>
-         <p className="mt-4 text-lg text-gray-500">
-           We couldn't find any job openings matching your criteria. Please try
-           adjusting your filters or check back later.
-         </p>
-       </div>
-     );
-   } else if (!loading && dataReady && filteredCareers.length > 0) {
-     return (
-       <div className="flex w-full flex-col">
-         {filteredCareers.map((career, index) => (
-           <div
-             key={index}
-             className="flex flex-col border-b-2 border-gray-200 py-4 md:flex-row md:items-center"
-           >
-             <div className="flex-grow">
-               <Link
-                 to={`/careers/` + career.id}
-                 className="mb-4 text-lg font-semibold hover:underline md:mb-0 md:text-xl"
-               >
-                 {career.title}
-               </Link>
-             </div>
-             <div className="flex w-full items-center justify-between md:w-auto">
-               <div className="mt-2 flex flex-col gap-4 sm:mt-0 sm:flex-row sm:items-center">
-                 <div className="inline-flex items-center">
-                   <svg
-                     xmlns="http://www.w3.org/2000/svg"
-                     fill="none"
-                     viewBox="0 0 24 24"
-                     strokeWidth={1.5}
-                     stroke="currentColor"
-                     className="h-6 w-6"
-                   >
-                     <path
-                       strokeLinecap="round"
-                       strokeLinejoin="round"
-                       d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-                     />
-                     <path
-                       strokeLinecap="round"
-                       strokeLinejoin="round"
-                       d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-                     />
-                   </svg>
+    if (loading) {
+      return <Loading />;
+    } else if (!loading && dataReady && filteredCareers.length === 0) {
+      return (
+        <div className="mt-8 w-full text-center">
+          <div className="text-3xl font-semibold text-gray-600">
+            No Openings Found 😞
+          </div>
+          <p className="mt-4 text-lg text-gray-500">
+            We couldn't find any job openings matching your criteria. Please try
+            adjusting your filters or check back later.
+          </p>
+        </div>
+      );
+    } else if (!loading && dataReady && filteredCareers.length > 0) {
+      return (
+        <div className="flex w-full flex-col">
+          {filteredCareers.map((career, index) => (
+            <div
+              key={index}
+              className="flex flex-col border-b-2 border-gray-200 py-4 md:flex-row md:items-center"
+            >
+              <div className="flex-grow">
+                <Link
+                  to={`/careers/` + career.id}
+                  className="mb-4 text-lg font-semibold hover:underline md:mb-0 md:text-xl"
+                >
+                  {career.title}
+                </Link>
+              </div>
+              <div className="flex w-full items-center justify-between md:w-auto">
+                <div className="mt-2 flex flex-col gap-4 sm:mt-0 sm:flex-row sm:items-center">
+                  <div className="inline-flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="h-6 w-6"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                      />
+                    </svg>
 
-                   <span className="ml-2 font-medium capitalize text-gray-400">
-                     {career.location.replace(/-/g, " ")}
-                   </span>
-                 </div>
-                 <div className="inline-flex items-center">
-                   <svg
-                     xmlns="http://www.w3.org/2000/svg"
-                     fill="none"
-                     viewBox="0 0 24 24"
-                     strokeWidth={1.5}
-                     stroke="currentColor"
-                     className="h-6 w-6"
-                   >
-                     <path
-                       strokeLinecap="round"
-                       strokeLinejoin="round"
-                       d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                     />
-                   </svg>
+                    <span className="ml-2 font-medium capitalize text-gray-400">
+                      {career.location.replace(/-/g, " ")}
+                    </span>
+                  </div>
+                  <div className="inline-flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="h-6 w-6"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
 
-                   <span className="ml-2 font-medium capitalize text-gray-400">
-                     {career.employmentType.replace(/-/g, " ")}
-                   </span>
-                 </div>
-               </div>
-               <Link
-                 className="text-md rounded border-2 border-primary px-4 py-2 font-bold uppercase text-primary transition-all duration-500 hover:bg-primary hover:text-white md:ml-4"
-                 to={`/careers/` + career.id}
-               >
-                 Learn More
-               </Link>
-             </div>
-           </div>
-         ))}
-       </div>
-     );
-   }
+                    <span className="ml-2 font-medium capitalize text-gray-400">
+                      {career.employmentType.replace(/-/g, " ")}
+                    </span>
+                  </div>
+                </div>
+                <Link
+                  className="rounded border-2 border-primary px-4 py-2 text-sm font-bold uppercase text-primary transition-all duration-500 hover:bg-primary hover:text-white md:ml-4"
+                  to={`/careers/` + career.id}
+                >
+                  Learn More
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+      );
+    }
   };
 
   return (
