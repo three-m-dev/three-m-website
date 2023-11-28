@@ -6,7 +6,7 @@ const NewsletterCTA = () => {
 
   const [dataSubmitted, setDataSubmitted] = useState(false);
 
-  const { createSubscriber, isLoading, error } = useCreateSubscriber();
+  const { createSubscriber, error } = useCreateSubscriber();
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();

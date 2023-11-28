@@ -10,8 +10,7 @@ const ContactForm = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [body, setBody] = useState("");
 
-  const { createInquiry, createdInquiry, isLoading, error } =
-    useCreateInquiry();
+  const { createInquiry, error } = useCreateInquiry();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();

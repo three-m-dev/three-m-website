@@ -13,8 +13,7 @@ import { Route, Routes, useParams } from "react-router";
 import { ICareerListing } from "../interfaces/ICommon"; // Import your ICareerListing type
 
 const Careers = () => {
-  const { getCareerListings, careerListings, isLoading, error } =
-    useGetCareerListings();
+  const { getCareerListings, careerListings, error } = useGetCareerListings();
 
   useEffect(() => {
     getCareerListings();
