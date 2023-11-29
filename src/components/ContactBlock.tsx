@@ -29,7 +29,11 @@ const ContactBlock = () => {
 
     console.log(inquiryData);
 
-    return;
+    setMessageSubmitted(true);
+
+    if (messageSubmitted) {
+      return;
+    }
 
     const result = await createInquiry(inquiryData);
 
