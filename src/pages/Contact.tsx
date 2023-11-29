@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { ContactForm, Footer, Navbar } from "../components";
+import { ContactBlock, Footer, Navbar } from "../components";
 
 const Contact = () => {
   return (
@@ -19,7 +19,7 @@ const Contact = () => {
       </Helmet>
 
       <Navbar />
-      <ContactForm />
+      <ContactBlock />
       <Footer />
     </>
   );

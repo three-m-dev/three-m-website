@@ -5,6 +5,7 @@ export { default as CareerApplication } from "./CareerApplication";
 export { default as CareerDetails } from "./CareerDetails";
 export { default as CareerList } from "./CareerList";
 export { default as Carousel } from "./Carousel";
+export { default as ContactBlock } from "./ContactBlock";
 export { default as ContactForm } from "./ContactForm";
 export { default as Footer } from "./Footer";
 export { default as FrequentQuestions } from "./FrequentQuestions";

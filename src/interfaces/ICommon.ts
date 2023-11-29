@@ -47,18 +47,17 @@ export interface IApplication {
 }
 
 export interface IMessage {
-  firstName: string;
-  lastName: string;
+  name: string;
   company: string;
-  phoneNumber: string;
   email: string;
+  subject: string;
   body: string;
 }
 
 export interface IInquiry {
   id: string;
   status: string;
-  company: string;
+  organization: string;
   message: IMessage;
   submittedAt: string;
 }
