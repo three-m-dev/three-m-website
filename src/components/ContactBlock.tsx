@@ -27,6 +27,10 @@ const ContactBlock = () => {
       },
     };
 
+    console.log(inquiryData);
+
+    return;
+
     const result = await createInquiry(inquiryData);
 
     if (result.success) {
@@ -65,14 +69,34 @@ const ContactBlock = () => {
 
           <div className="w-full rounded bg-primary">
             <form onSubmit={handleSubmit} className="flex flex-col p-4">
-              <div className="mb-2 w-full">
-                <label className="mb-2 block font-bold text-white">Name</label>
-                <input
-                  type="text"
-                  placeholder="Full Name"
-                  className="text-md w-full rounded border-white bg-white px-4 py-2 text-gray-600 shadow-sm transition focus:border-white focus:outline-none sm:mb-0"
-                  required
-                />
+              <div className="flex w-full gap-4">
+                <div className="mb-2 w-full">
+                  <label className="mb-2 block font-bold text-white">
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Full Name"
+                    className="text-md w-full rounded border-white bg-white px-4 py-2 text-gray-600 shadow-sm transition focus:border-white focus:outline-none sm:mb-0"
+                    required
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                  />
+                </div>
+
+                <div className="mb-2 w-full">
+                  <label className="mb-2 block font-bold text-white">
+                    Company
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Company Name"
+                    className="text-md w-full rounded border-white bg-white px-4 py-2 text-gray-600 shadow-sm transition focus:border-white focus:outline-none sm:mb-0"
+                    required
+                    value={company}
+                    onChange={(e) => setCompany(e.target.value)}
+                  />
+                </div>
               </div>
 
               <div className="mb-2 w-full">
@@ -82,6 +106,8 @@ const ContactBlock = () => {
                   placeholder="Email Address"
                   className="text-md w-full rounded border-white bg-white px-4 py-2 text-gray-600 shadow-sm transition focus:border-white focus:outline-none sm:mb-0"
                   required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
 
@@ -92,12 +118,13 @@ const ContactBlock = () => {
                 <select
                   className="text-md w-full rounded border-white bg-white px-4 py-2 text-gray-400 shadow-sm transition focus:border-white focus:outline-none sm:mb-0" // Default color (gray-400)
                   defaultValue=""
-                  onChange={(e) =>
-                    (e.target.className =
+                  onChange={(e) => {
+                    e.target.className =
                       e.target.value === ""
                         ? "text-md w-full rounded border-white bg-white px-4 py-2 text-gray-400 shadow-sm transition focus:border-white focus:outline-none sm:mb-0"
-                        : "text-md w-full rounded border-white bg-white px-4 py-2 text-gray-700 shadow-sm transition focus:border-white focus:outline-none sm:mb-0")
-                  }
+                        : "text-md w-full rounded border-white bg-white px-4 py-2 text-gray-700 shadow-sm transition focus:border-white focus:outline-none sm:mb-0";
+                    setSubject(e.target.value);
+                  }}
                   required
                 >
                   <option value="" className="text-gray-400">
@@ -129,6 +156,8 @@ const ContactBlock = () => {
                   placeholder="Type Message Here"
                   className="text-md w-full rounded border-white bg-white px-4 py-2 text-gray-600 shadow-sm transition focus:border-white focus:outline-none sm:mb-0"
                   required
+                  value={body}
+                  onChange={(e) => setBody(e.target.value)}
                 ></textarea>
               </div>
 
@@ -143,7 +172,7 @@ const ContactBlock = () => {
             </form>
           </div>
         </div>
-        <div className="flex gap-8">
+        <div className="flex flex-col-reverse gap-8 md:flex-row">
           <div className="flex w-full flex-col items-center p-8">
             <div className="mb-4 rounded border-2 border-primary bg-white p-2 text-primary">
               <svg
@@ -193,8 +222,8 @@ const ContactBlock = () => {
             </h3>
             <div className="flex flex-col gap-1 text-center font-medium text-gray-600">
               <p>(248) 363 1555</p>
-              <p>Sales ext. xxx</p>
-              <p>Quality ext. xxx</p>
+              <p>Sales Ext. xxx</p>
+              <p>Quality Ext. xxx</p>
             </div>
           </div>
 
@@ -211,7 +240,12 @@ const ContactBlock = () => {
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
                 />
               </svg>
             </div>

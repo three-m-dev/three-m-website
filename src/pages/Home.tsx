@@ -30,8 +30,8 @@ const Home = () => {
       <Carousel />
       <ServicePreview />
       <Testimonials />
-      <NewsletterCTA />
       <ImageMenu />
+      <NewsletterCTA />
       <Footer />
     </>
   );

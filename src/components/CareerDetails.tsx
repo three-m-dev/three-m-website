@@ -89,8 +89,8 @@ const CareerDetails = (props: Props) => {
                   </svg>
                 </button>
                 {copied && (
-                  <div className="fixed bottom-4 right-4 flex-1 rounded bg-green-500 px-4 py-2 text-sm text-white">
-                    URL Copied!
+                  <div className="fixed bottom-4 right-4 flex-1 rounded bg-blue-500 px-4 py-2 text-sm text-white">
+                    Copied to clipboard!
                   </div>
                 )}
               </div>
