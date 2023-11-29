@@ -12,6 +12,8 @@ const ContactForm = () => {
 
   const { createInquiry, error } = useCreateInquiry();
 
+  const GOOGLE_API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -73,7 +75,16 @@ const ContactForm = () => {
                 </a>
               </p>
             </div>
-            <div className="h-44 w-full rounded bg-gray-400 md:h-full"></div>
+            <div className="flex h-full w-full rounded bg-gray-400 md:h-full">
+              <iframe
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                title="Google Maps"
+                src={`https://www.google.com/maps/embed/v1/view?key=${GOOGLE_API_KEY}&center=42.577369689941406,-83.4441909790039&zoom=18`}
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
 
           <div className="w-full lg:w-1/2">
@@ -144,7 +155,7 @@ const ContactForm = () => {
 
                   <div className="flex w-full justify-end">
                     <button
-                      className="text-sm rounded border-2 border-white px-4 py-2 font-bold uppercase text-white transition-all duration-300 hover:bg-white hover:text-primary"
+                      className="rounded border-2 border-white px-4 py-2 text-sm font-bold uppercase text-white transition-all duration-300 hover:bg-white hover:text-primary"
                       type="submit"
                     >
                       Submit
