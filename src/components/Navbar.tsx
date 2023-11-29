@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useMatch } from "react-router-dom";
 import LogoText from "../assets/images/three-m-logo-with-text.png";
-import Button from "./Button";
 import MobileMenu from "./MobileMenu";
 
 const Navbar = () => {
@@ -52,12 +51,17 @@ const Navbar = () => {
           </Link>
           <div className="flex gap-2 md:order-2">
             <div className="hidden lg:flex">
-              <Button type="link" text="Contact" to="/contact" />
+              <Link
+                to="/contact"
+                className="rounded border-2 border-primary px-4 py-2 text-sm font-bold uppercase text-primary transition-all duration-500 hover:bg-primary hover:text-white"
+              >
+                Contact
+              </Link>
             </div>
             <button
               type="button"
               onClick={toggleMobileNavbar}
-              className="inline-flex items-center justify-center border-2 rounded border-primary p-2 text-primary transition-all duration-300 hover:bg-primary hover:text-white focus:outline-none lg:hidden"
+              className="inline-flex items-center justify-center rounded border-2 border-primary p-2 text-primary transition-all duration-300 hover:bg-primary hover:text-white focus:outline-none lg:hidden"
             >
               <span className="sr-only">Open main menu</span>
               <svg

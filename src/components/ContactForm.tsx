@@ -89,8 +89,8 @@ const ContactForm = () => {
 
           <div className="w-full lg:w-1/2">
             <div
-              className="flex flex-col items-center justify-center gap-4 rounded bg-primary p-8"
-              style={{ minHeight: "500px" }}
+              className="flex flex-col items-center justify-center gap-4 rounded bg-primary p-8 min-h-[400px]"
+              
             >
               {!messageSubmitted ? (
                 <form

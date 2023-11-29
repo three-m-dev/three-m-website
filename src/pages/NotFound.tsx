@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
-import { Button, Footer, Navbar } from "../components";
+import { Footer, Navbar } from "../components";
+import { Link } from "react-router-dom";
 
 const NotFound = () => {
   return (
@@ -24,7 +25,12 @@ const NotFound = () => {
           <h1 className="px-8 text-center text-3xl">
             Uh oh.. Looks like that page doesn't exist
           </h1>
-          <Button type="link" text="Return Home" to="/" />
+          <Link
+            to="/"
+            className="rounded border-2 border-primary px-4 py-2 text-sm font-bold uppercase text-primary transition-all duration-500 hover:bg-primary hover:text-white"
+          >
+            Return Home
+          </Link>
         </div>
       </div>
       <Footer />
