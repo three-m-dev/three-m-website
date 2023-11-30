@@ -11,7 +11,13 @@ const ContactBlock = () => {
 
   const { createInquiry, error } = useCreateInquiry();
 
-  const GOOGLE_API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
+  let apiKey;
+
+  if (import.meta.env.VITE_GOOGLE_API_KEY) {
+    apiKey = import.meta.env.VITE_GOOGLE_API_KEY;
+  } else {
+    apiKey = process.env.VITE_GOOGLE_API_KEY;
+  }
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -66,7 +72,7 @@ const ContactBlock = () => {
               height="100%"
               style={{ border: 0 }}
               title="Google Maps"
-              src={`https://www.google.com/maps/embed/v1/view?key=${GOOGLE_API_KEY}&center=42.577369689941406,-83.4441909790039&zoom=18`}
+              src={`https://www.google.com/maps/embed/v1/view?key=${apiKey}&center=42.577369689941406,-83.4441909790039&zoom=18`}
               allowFullScreen
             ></iframe>
           </div>
@@ -170,7 +176,7 @@ const ContactBlock = () => {
                   type="submit"
                   className="rounded border-2 border-white px-4 py-2 text-sm font-bold uppercase text-white transition-all duration-500 hover:bg-white hover:text-primary"
                 >
-                  Submit
+                  Send
                 </button>
               </div>
             </form>
@@ -259,7 +265,7 @@ const ContactBlock = () => {
             <div className="flex flex-col gap-1 text-center font-medium text-gray-600">
               <p>8155 Richardson Rd</p>
               <p>Commerce Charter Township</p>
-              <p>Michigan, 48390</p>
+              <p>Michigan 48390</p>
             </div>
           </div>
         </div>
