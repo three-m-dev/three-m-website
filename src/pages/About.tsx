@@ -1,4 +1,4 @@
-import { Footer, Navbar, Team } from "../components";
+import { Footer, HistoryBanner, Navbar, Team } from "../components";
 import { Helmet } from "react-helmet-async";
 
 const About = () => {
@@ -17,6 +17,7 @@ const About = () => {
       </Helmet>
 
       <Navbar />
+      <HistoryBanner />
       <Team />
       <Footer />
     </>
