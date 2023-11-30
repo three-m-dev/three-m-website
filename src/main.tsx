@@ -11,3 +11,15 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     </HelmetProvider>
   </React.StrictMode>,
 );
+
+// To Do:
+// - About Page
+// - Services Page
+// - Animations
+// - Connect to Blog Posts endpoint
+// - Fix loading animation error
+// - Cache in session storage
+// - Optimize images
+// - 3 blog posts
+// - Add a site map
+// - Uniform styling
