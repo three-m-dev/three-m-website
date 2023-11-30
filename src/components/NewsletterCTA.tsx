@@ -3,6 +3,7 @@ import { useCreateSubscriber } from "../hooks/useCreateSubscriber";
 
 const NewsletterCTA = () => {
   const [email, setEmail] = useState("");
+  const [emptyEmail, setEmptyEmail] = useState(false);
 
   const [dataSubmitted, setDataSubmitted] = useState(false);
 
@@ -14,6 +15,13 @@ const NewsletterCTA = () => {
     const subscriberData = {
       email: email,
     };
+
+    if (email === "") {
+      setEmptyEmail(true);
+      return;
+    } else {
+      setEmptyEmail(false);
+    }
 
     const result = await createSubscriber(subscriberData);
 
@@ -51,8 +59,9 @@ const NewsletterCTA = () => {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       className={
-                        `text-md w-full rounded bg-white px-4 py-2 text-gray-700 shadow-sm transition focus:border-white focus:outline-none sm:mb-0 ` +
-                        (error ? ` placeholder-red-500` : ``)
+                        `text-md w-full rounded bg-white px-4 py-2 text-gray-700 shadow-sm transition-all focus:border-white focus:outline-none sm:mb-0 ` +
+                        (emptyEmail ? ` placeholder-red-500` : ``) +
+                        (error ? ` text-red-500` : ``)
                       }
                     />
                   </div>
