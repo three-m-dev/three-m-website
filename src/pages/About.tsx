@@ -19,8 +19,8 @@ const About = () => {
 
       <Navbar />
       <HistoryBanner />
-      <Team />
       <Timeline />
+      <Team />
       <Footer />
     </>
   );

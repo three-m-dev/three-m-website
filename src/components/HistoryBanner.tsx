@@ -15,7 +15,7 @@ const HistoryBanner = () => {
         <div className="mx-auto max-w-screen-xl px-4">
           <div className="mx-auto mb-8 max-w-4xl text-center">
             <span className="mb-4 inline-block rounded bg-blue-200 px-2 py-1 text-sm uppercase leading-5 text-primary">
-              Our Hiusatory 
+              Family Owned
             </span>
             <h1 className="mb-4 font-bebas text-4xl font-bold leading-tight tracking-wide text-gray-800 md:text-5xl">
               Three M Tool & Machine
@@ -36,7 +36,7 @@ const HistoryBanner = () => {
               remains at the forefront of the precision engineering industry.
             </p>
 
-            <div className="h-44 w-full overflow-clip rounded bg-red-50 md:h-80">
+            <div className="h-56 w-full overflow-clip rounded bg-red-50 sm:h-80">
               <img
                 src={MichaelMedwid}
                 alt="Michael Medwid"

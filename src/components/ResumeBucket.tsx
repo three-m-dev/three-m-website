@@ -47,11 +47,17 @@ const ResumeBucket = () => {
             </p>
           </div>
 
-          <div className="rounded bg-primary p-8 lg:col-span-3">
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                <div>
-                  <label className="sr-only">First Name</label>
+          <div className="rounded bg-primary lg:col-span-3">
+            <form onSubmit={handleSubmit} className="flex flex-col p-4">
+              <h2 className="text-center font-bebas text-3xl font-bold leading-tight tracking-wide text-white md:text-4xl">
+                Upload Resume
+              </h2>
+
+              <div className="flex w-full gap-4">
+                <div className="mb-2 w-full">
+                  <label className="mb-2 block font-bold text-white">
+                    First Name
+                  </label>
                   <input
                     className="text-md w-full rounded border-gray-200 px-4 py-2 focus:outline-none"
                     placeholder="First Name"
@@ -61,8 +67,10 @@ const ResumeBucket = () => {
                   />
                 </div>
 
-                <div>
-                  <label className="sr-only">Last Name</label>
+                <div className="mb-2 w-full">
+                  <label className="mb-2 block font-bold text-white">
+                    Last Name
+                  </label>
                   <input
                     className="text-md w-full rounded border-gray-200 px-4 py-2 focus:outline-none"
                     placeholder="Last Name"
@@ -72,9 +80,12 @@ const ResumeBucket = () => {
                   />
                 </div>
               </div>
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                <div>
-                  <label className="sr-only">Email</label>
+
+              <div className="mb-4 flex w-full gap-4">
+                <div className="w-full">
+                  <label className="mb-2 block font-bold text-white">
+                    Email
+                  </label>
                   <input
                     className="text-md w-full rounded border-gray-200 px-4 py-2 focus:outline-none"
                     placeholder="Email Address"
@@ -84,8 +95,10 @@ const ResumeBucket = () => {
                   />
                 </div>
 
-                <div>
-                  <label className="sr-only">Phone</label>
+                <div className="w-full">
+                  <label className="mb-2 block font-bold text-white">
+                    Phone
+                  </label>
                   <input
                     className="text-md w-full rounded border-gray-200 px-4 py-2 focus:outline-none"
                     placeholder="Phone Number"
@@ -118,7 +131,7 @@ const ResumeBucket = () => {
                     }}
                     className="whitespace-nowrap rounded border-2 border-white px-4 py-2 text-sm font-bold uppercase text-white transition-all duration-500 hover:bg-white hover:text-primary"
                   >
-                    Upload Resume
+                    Select File
                   </button>
                 </div>
 

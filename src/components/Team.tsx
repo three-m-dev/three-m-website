@@ -30,10 +30,38 @@ const Team = () => {
         "https://t3.ftcdn.net/jpg/00/79/52/98/240_F_79529800_pPrRqNWqKRN6iRDUWibQSKlqM8pltsUZ.jpg",
       linkedin: "https://www.linkedin.com/",
     },
+    {
+      name: "Erika Miu",
+      title: "Finance Manager",
+      photo:
+        "https://t3.ftcdn.net/jpg/00/79/52/98/240_F_79529800_pPrRqNWqKRN6iRDUWibQSKlqM8pltsUZ.jpg",
+      linkedin: "https://www.linkedin.com/",
+    },
+    {
+      name: "Erika Miu",
+      title: "Finance Manager",
+      photo:
+        "https://t3.ftcdn.net/jpg/00/79/52/98/240_F_79529800_pPrRqNWqKRN6iRDUWibQSKlqM8pltsUZ.jpg",
+      linkedin: "https://www.linkedin.com/",
+    },
+    {
+      name: "Erika Miu",
+      title: "Finance Manager",
+      photo:
+        "https://t3.ftcdn.net/jpg/00/79/52/98/240_F_79529800_pPrRqNWqKRN6iRDUWibQSKlqM8pltsUZ.jpg",
+      linkedin: "https://www.linkedin.com/",
+    },
+    {
+      name: "Erika Miu",
+      title: "Finance Manager",
+      photo:
+        "https://t3.ftcdn.net/jpg/00/79/52/98/240_F_79529800_pPrRqNWqKRN6iRDUWibQSKlqM8pltsUZ.jpg",
+      linkedin: "https://www.linkedin.com/",
+    },
   ];
 
   return (
-    <section className="py-8 md:py-16">
+    <section className="py-8 md:py-16 pb-8 md:pb-8">
       <div className="container relative mx-auto px-4">
         <div className="mx-auto mb-8 max-w-4xl text-center">
           <span className="mb-4 inline-block rounded bg-blue-200 px-2 py-1 text-sm uppercase leading-5 text-primary">

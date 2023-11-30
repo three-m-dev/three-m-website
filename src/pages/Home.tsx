@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import {
-  Carousel,
+  Slideshow,
   Footer,
   ImageMenu,
   Navbar,
@@ -27,7 +27,7 @@ const Home = () => {
       </Helmet>
 
       <Navbar />
-      <Carousel />
+      <Slideshow />
       <ServicePreview />
       <Testimonials />
       <ImageMenu />

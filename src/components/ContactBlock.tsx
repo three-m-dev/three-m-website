@@ -66,7 +66,7 @@ const ContactBlock = () => {
           </p>
         </div>
         <div className="mb-8 flex flex-col-reverse gap-8 md:flex-row">
-          <div className="h-[535px] w-full overflow-clip rounded bg-red-50 md:min-h-[495px]">
+          <div className="h-[535px] w-full overflow-clip rounded bg-gray-100 md:min-h-[495px]">
             <iframe
               width="100%"
               height="100%"
@@ -82,6 +82,7 @@ const ContactBlock = () => {
               <h2 className="text-center font-bebas text-3xl font-bold leading-tight tracking-wide text-white md:text-4xl">
                 Send us a Message
               </h2>
+              
               <div className="flex w-full gap-4">
                 <div className="mb-2 w-full">
                   <label className="mb-2 block font-bold text-white">

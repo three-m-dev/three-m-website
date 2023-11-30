@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Carousel = () => {
+const Slideshow = () => {
   const [itemIndex, setItemIndex] = useState(0);
   const items = [
     {
@@ -132,4 +132,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default Slideshow;
