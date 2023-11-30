@@ -36,7 +36,7 @@ const Navbar = () => {
             sales@three-m.com
           </a>
           <a href="tel:2483631555" className="flex gap-2">
-            +1 248 363 1555
+            +1 (248) 363 1555
           </a>
         </div>
       </div>

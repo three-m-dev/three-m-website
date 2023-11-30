@@ -1,5 +1,6 @@
 import { Footer, HistoryBanner, Navbar, Team } from "../components";
 import { Helmet } from "react-helmet-async";
+import Timeline from "../components/Timeline";
 
 const About = () => {
   return (
@@ -19,6 +20,7 @@ const About = () => {
       <Navbar />
       <HistoryBanner />
       <Team />
+      <Timeline />
       <Footer />
     </>
   );

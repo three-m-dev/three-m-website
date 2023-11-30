@@ -85,13 +85,13 @@ const BulletinList = () => {
           <h1 className="mb-4 font-bebas text-3xl font-bold leading-tight tracking-wider text-gray-800 md:text-5xl">
             Latest News
           </h1>
-          <p className="mb-10 text-lg font-medium text-gray-500 md:text-xl">
+          <p className="text-lg font-medium text-gray-500 md:text-xl">
             Stay ahead of the curve. Explore our latest projects, innovations,
             and milestones, all in one place.
           </p>
         </div>
 
-        <ul className="mb-10 flex flex-wrap items-center justify-center gap-2 text-center text-sm">
+        <ul className="mb-8 flex flex-wrap items-center justify-center gap-2 text-center text-sm">
           <li>
             <button
               onClick={() => setFilter("all")}

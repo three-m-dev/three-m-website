@@ -35,14 +35,14 @@ const Team = () => {
   return (
     <section className="py-8 md:py-16">
       <div className="container relative mx-auto px-4">
-        <div className="mb-16 text-center">
+        <div className="mx-auto mb-8 max-w-4xl text-center">
           <span className="mb-4 inline-block rounded bg-blue-200 px-2 py-1 text-sm uppercase leading-5 text-primary">
             Our Experts
           </span>
-          <h3 className="font-bebas mb-4 text-4xl font-bold leading-tight tracking-wide text-gray-800 md:text-5xl">
+          <h3 className="mb-4 font-bebas text-4xl font-bold leading-tight tracking-wide text-gray-800 md:text-5xl">
             Meet the Team
           </h3>
-          <p className="mb-10 text-lg font-medium text-gray-500 md:text-xl">
+          <p className="text-lg font-medium text-gray-500 md:text-xl">
             Dedication, expertise, and innovation drive our experts. Discover
             the people who shape our vision and success.
           </p>
@@ -51,7 +51,7 @@ const Team = () => {
           {teamMembers.map((teamMember, index) => (
             <div
               key={index}
-              className="mb-10 w-full px-4 md:w-1/2 lg:w-1/3 xl:w-1/4"
+              className="mb-8 w-full px-4 md:w-1/2 lg:w-1/3 xl:w-1/4"
             >
               <div className="mx-auto max-w-xs text-center">
                 <img

@@ -60,13 +60,13 @@ const ContactBlock = () => {
           <h1 className="mb-4 font-bebas text-3xl font-bold leading-tight tracking-wide text-gray-800 md:text-5xl">
             Contact Information
           </h1>
-          <p className="mb-10 text-lg font-medium text-gray-500 md:text-xl">
+          <p className="text-lg font-medium text-gray-500 md:text-xl">
             Reach out to us for inquiries, feedback, or support. We are always
             here to assist you.
           </p>
         </div>
         <div className="mb-8 flex flex-col-reverse gap-8 md:flex-row">
-          <div className="h-[495px] w-full rounded bg-red-50 md:min-h-[495px]">
+          <div className="h-[535px] w-full overflow-clip rounded bg-red-50 md:min-h-[495px]">
             <iframe
               width="100%"
               height="100%"
@@ -79,6 +79,9 @@ const ContactBlock = () => {
 
           <div className="w-full rounded bg-primary">
             <form onSubmit={handleSubmit} className="flex flex-col p-4">
+              <h2 className="text-center font-bebas text-3xl font-bold leading-tight tracking-wide text-white md:text-4xl">
+                Send us a Message
+              </h2>
               <div className="flex w-full gap-4">
                 <div className="mb-2 w-full">
                   <label className="mb-2 block font-bold text-white">
@@ -183,7 +186,7 @@ const ContactBlock = () => {
           </div>
         </div>
         <div className="flex flex-col-reverse gap-8 md:flex-row">
-          <div className="flex w-full flex-col items-center p-8">
+          <div className="flex w-full flex-col items-center px-4 md:px-8">
             <div className="mb-4 rounded border-2 border-primary bg-white p-2 text-primary">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -200,17 +203,17 @@ const ContactBlock = () => {
                 />
               </svg>
             </div>
-            <h3 className="mb-2 text-xl font-bold leading-tight md:text-2xl">
+            <h3 className="mb-2 text-lg font-bold leading-tight text-gray-800 md:text-xl">
               Email
             </h3>
-            <div className="flex flex-col gap-1 text-center font-medium text-gray-600">
+            <div className="flex flex-col text-center font-medium text-gray-600 md:text-lg">
               <p>info@three-m.com</p>
               <p>sales@three-m.com</p>
               <p>support@three-m.com</p>
             </div>
           </div>
 
-          <div className="flex w-full flex-col items-center p-8">
+          <div className="flex w-full flex-col items-center px-4 md:px-8">
             <div className="mb-4 rounded border-2 border-primary bg-white p-2 text-primary">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -227,17 +230,17 @@ const ContactBlock = () => {
                 />
               </svg>
             </div>
-            <h3 className="mb-2 text-xl font-bold leading-tight md:text-2xl">
+            <h3 className="mb-2 text-lg font-bold leading-tight text-gray-800 md:text-xl">
               Phone
             </h3>
-            <div className="flex flex-col gap-1 text-center font-medium text-gray-600">
-              <p>(248) 363 1555</p>
+            <div className="flex flex-col text-center font-medium text-gray-600 md:text-lg">
+              <p>+1 (248) 363 1555</p>
               <p>Sales Ext. xxx</p>
               <p>Quality Ext. xxx</p>
             </div>
           </div>
 
-          <div className="flex w-full flex-col items-center p-8">
+          <div className="flex w-full flex-col items-center px-4 md:px-8">
             <div className="mb-4 rounded border-2 border-primary bg-white p-2 text-primary">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -259,10 +262,10 @@ const ContactBlock = () => {
                 />
               </svg>
             </div>
-            <h3 className="mb-2 text-xl font-bold leading-tight md:text-2xl">
-              Office
+            <h3 className="mb-2 text-lg font-bold leading-tight text-gray-800 md:text-xl">
+              Location
             </h3>
-            <div className="flex flex-col gap-1 text-center font-medium text-gray-600">
+            <div className="flex flex-col text-center font-medium text-gray-600 md:text-lg">
               <p>8155 Richardson Rd</p>
               <p>Commerce Charter Township</p>
               <p>Michigan 48390</p>

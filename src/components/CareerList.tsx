@@ -164,7 +164,7 @@ const CareerList = (props: Props) => {
           <h1 className="mb-4 font-bebas text-4xl font-bold leading-tight tracking-wide text-gray-800 md:text-5xl">
             Join the Future
           </h1>
-          <p className="mb-10 text-lg font-medium text-gray-500 md:text-xl">
+          <p className="text-lg font-medium text-gray-500 md:text-xl">
             Empower your career. Be a part of a team that values progress,
             collaboration, and excellence.
           </p>

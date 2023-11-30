@@ -12,7 +12,6 @@ export { default as HistoryBanner } from "./HistoryBanner";
 export { default as ImageMenu } from "./ImageMenu";
 export { default as Navbar } from "./Navbar";
 export { default as NewsletterCTA } from "./NewsletterCTA";
-export { default as PDFViewer } from "./PDFViewer";
 export { default as QualityPolicy } from "./QualityPolicy";
 export { default as ResumeBucket } from "./ResumeBucket";
 export { default as ServiceBlocks } from "./ServiceBlocks";
