@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import caliper from "../assets/images/caliper-on-print.jpg";
 
 const Slideshow = () => {
   const [itemIndex, setItemIndex] = useState(0);
@@ -19,6 +20,7 @@ const Slideshow = () => {
       url: "/link",
       image:
         "https://as2.ftcdn.net/v2/jpg/02/76/46/27/1000_F_276462792_C2d0t1ajrCdoBLG8jqXmqS9kqNqrbEbe.jpg",
+      imagePosition: "center",
       alt: "",
       align: "right",
     },
@@ -26,8 +28,8 @@ const Slideshow = () => {
       title: "Quality Assurance in Every Build",
       cta: "Learn More",
       url: "/link",
-      image:
-        "https://as2.ftcdn.net/v2/jpg/06/26/65/95/1000_F_626659516_xvAkYPVrVfBD4YeMEQvZIt1LBMizpy77.jpg",
+      image: caliper,
+      imagePosition: "object-center",
       alt: "",
       align: "left",
     },
@@ -54,7 +56,10 @@ const Slideshow = () => {
       <img
         src={items[itemIndex].image}
         alt={items[itemIndex].alt}
-        className="absolute z-0 h-full w-full object-cover"
+        className={
+          `absolute z-0 h-full w-full object-cover ` +
+          items[itemIndex].imagePosition
+        }
       />
       <div className="absolute z-10 h-full w-full bg-black opacity-60"></div>
 
@@ -64,12 +69,12 @@ const Slideshow = () => {
             items[itemIndex].align === "right" && "lg:ml-auto"
           } ${items[itemIndex].align === "center" && "lg:mx-auto"}`}
         >
-          <h1 className="font-bebas text-center text-5xl font-bold uppercase tracking-wider text-white">
+          <h1 className="text-center font-bebas text-5xl font-bold uppercase tracking-wider text-white">
             {items[itemIndex].title}
           </h1>
           <Link
             to={items[itemIndex].url}
-            className="text-sm rounded border-2 border-white px-4 py-2 font-bold uppercase tracking-wider text-white transition-all duration-300 hover:border-primary hover:bg-primary"
+            className="rounded border-2 border-white px-4 py-2 text-sm font-bold uppercase tracking-wider text-white transition-all duration-300 hover:border-primary hover:bg-primary"
           >
             {items[itemIndex].cta}
           </Link>

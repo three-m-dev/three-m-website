@@ -1,10 +1,10 @@
-import FamilyPhoto from "../assets/images/family-photo.webp";
+import FamilyPhoto from "../assets/images/fam.jpg";
 import MichaelMedwid from "../assets/images/michael-medwid.jpeg";
 
 const HistoryBanner = () => {
   return (
     <div className="flex flex-col">
-      <div className="h-[45vh] w-full bg-gray-100">
+      <div className="h-[60vh] w-full bg-gray-100">
         <img
           src={FamilyPhoto}
           alt="Family Photo"
